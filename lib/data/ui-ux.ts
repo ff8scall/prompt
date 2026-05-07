@@ -1060,7 +1060,7 @@ export const saasSettingsPrompt: PromptCard = {
     exif_extracted: true,
     cdn_cache_tier: "public_long_cache"
   },
-  review: { human_review_required: true, review_status_message: "Approved for logical UX structure." }
+  review: { human_review_required: true, review_status: "verified", reviewer_note: "Approved for logical UX structure." }
 };
 
 export const apiDocsPrompt: PromptCard = {
