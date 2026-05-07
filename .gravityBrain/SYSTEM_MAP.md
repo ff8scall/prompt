@@ -6,10 +6,11 @@
 - **Tech Stack**: Next.js (App Router), TypeScript, Vanilla CSS (Premium Aesthetics).
 
 ## Directory Structure
-- `app/`: Next.js App Router-based page configuration.
-  - `prompt/[slug]/`: Individual prompt detail pages (Dynamic Routing).
-  - `category/[slug]/`: Category-specific exploration pages (Static Params applied).
-  - `about/`: Service strategy and introduction.
+- `app/[lang]/`: Bilingual (EN/KO) segment routing for static export.
+  - `prompt/[slug]/`: Localized prompt detail pages.
+  - `category/[slug]/`: Localized category exploration pages.
+  - `about/`: Localized service introduction.
+- `lib/dictionary.ts`: Centralized UI localization system.
 - `components/`: Reusable premium UI components.
   - `PromptCard.tsx`: Display of prompt visual info and summary.
   - `CategoryClient.tsx`: Category-specific data rendering and filtering.
@@ -23,19 +24,24 @@
   - `prompts.ts`: Data integration hub and search utilities.
   - `types.ts`: Type definitions including the PromptCard interface.
 - `public/`: Static assets (High-resolution WebP image repository).
+- `scripts/`: Image generation and automation tools.
+  - `comfy_flow_batch.py`: Bulk generation for the entire archive.
+  - `comfy_generate_single.py`: Targeted recovery and single asset generation.
 - `.gravityBrain/`: Project long-term memory, persona, and grand strategy.
 
 ## Architecture Diagram
 ```mermaid
 graph TD
     User([User]) --> App[Next.js App Router]
-    App --> Route[Dynamic / Static Routing]
+    App --> Lang[/[lang]/ Segment]
+    Lang --> Route[Dynamic / Static Routing]
     Route --> Category[Category Pages]
     Route --> Detail[Prompt Detail Pages]
     Category --> Client[CategoryClient]
     Detail --> Sandbox[VariableSandbox]
     Client --> Hub[lib/prompts.ts Hub]
     Sandbox --> Hub
+    Hub --> Dict[lib/dictionary.ts]
     Hub --> Modules[lib/data Modules]
     Modules --> UI[ui-ux.ts]
     Modules --> Game[game-asset.ts]

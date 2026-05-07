@@ -8,9 +8,10 @@ import { PromptCard as PromptCardType } from '../lib/types';
 
 interface Props {
   prompt: PromptCardType;
+  lang?: string;
 }
 
-export default function PromptCard({ prompt }: Props) {
+export default function PromptCard({ prompt, lang = 'en' }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -18,7 +19,7 @@ export default function PromptCard({ prompt }: Props) {
       transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
       whileHover={{ y: -8 }}
     >
-      <Link href={`/prompt/${prompt.slug}`} className="group block h-full">
+      <Link href={`/${lang}/prompt/${prompt.slug}`} className="group block h-full">
         <div className="glass rounded-[2rem] overflow-hidden h-full flex flex-col group-hover:border-blue-500/30 group-hover:glow-blue transition-all duration-500">
           
           {/* Image Container with forced relative positioning */}
@@ -57,7 +58,16 @@ export default function PromptCard({ prompt }: Props) {
           <div className="p-8 flex flex-col flex-grow">
             <div className="flex items-center justify-between mb-4">
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em]">
-                {prompt.category.replace('_', ' ')}
+                {lang === 'ko' ? (
+                  prompt.category === 'ui_ux' ? 'UI/UX 디자인' :
+                  prompt.category === 'game_asset' ? '게임 에셋' :
+                  prompt.category === 'marketing' ? '마케팅' :
+                  prompt.category === 'workflow_recipe' ? '레시피' :
+                  prompt.category === 'trend' ? '트렌드' :
+                  prompt.category.replace('_', ' ')
+                ) : (
+                  prompt.category.replace('_', ' ')
+                )}
               </span>
               <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-slate-600 group-hover:text-blue-400 group-hover:bg-blue-400/10 transition-all">
                 <ArrowUpRight size={16} />
@@ -65,11 +75,11 @@ export default function PromptCard({ prompt }: Props) {
             </div>
             
             <h3 className="text-xl font-black text-white mb-3 line-clamp-1 group-hover:text-blue-400 transition-colors leading-tight uppercase tracking-tight">
-              {prompt.title}
+              {lang === 'ko' && prompt.title_ko ? prompt.title_ko : prompt.title}
             </h3>
             
             <p className="text-sm text-slate-400 line-clamp-2 leading-relaxed font-medium mb-8">
-              {prompt.short_description}
+              {lang === 'ko' && prompt.short_description_ko ? prompt.short_description_ko : prompt.short_description}
             </p>
             
             <div className="mt-auto pt-6 border-t border-white/5 flex items-center justify-between">
@@ -79,7 +89,14 @@ export default function PromptCard({ prompt }: Props) {
                 ))}
               </div>
               <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest group-hover:text-slate-400 transition-colors">
-                {prompt.quality_tier.replace('_', ' ')} Grade
+                {lang === 'ko' ? (
+                  prompt.quality_tier === 'tier_1' ? '마스터' :
+                  prompt.quality_tier === 'tier_2' ? '프로' :
+                  prompt.quality_tier === 'tier_3' ? '베이직' :
+                  prompt.quality_tier.replace('_', ' ')
+                ) : (
+                  prompt.quality_tier.replace('_', ' ')
+                )} {lang === 'ko' ? "등급" : "Grade"}
               </span>
             </div>
           </div>

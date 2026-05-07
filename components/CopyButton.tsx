@@ -3,15 +3,18 @@
 import { useState } from 'react';
 import { Copy, Check, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getDictionary, Locale } from '../lib/dictionary';
 
 interface Props {
   text: string;
   label?: string;
   className?: string;
+  lang?: Locale;
 }
 
-export default function CopyButton({ text, label, className = "" }: Props) {
+export default function CopyButton({ text, label, className = "", lang = 'en' }: Props) {
   const [copied, setCopied] = useState(false);
+  const dict = getDictionary(lang);
 
   const handleCopy = async () => {
     try {
@@ -42,7 +45,7 @@ export default function CopyButton({ text, label, className = "" }: Props) {
             className="flex items-center gap-2"
           >
             <Check size={18} strokeWidth={3} />
-            <span>Copied to Clipboard</span>
+            <span>{dict.prompt.copied}</span>
           </motion.div>
         ) : (
           <motion.div
@@ -53,7 +56,7 @@ export default function CopyButton({ text, label, className = "" }: Props) {
             className="flex items-center gap-3"
           >
             <Zap size={18} fill="currentColor" />
-            <span>{label || 'Copy Verified Prompt'}</span>
+            <span>{label || dict.prompt.copy}</span>
           </motion.div>
         )}
       </AnimatePresence>

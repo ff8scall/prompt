@@ -17,42 +17,56 @@ import {
 } from 'lucide-react';
 import PromptCard from './PromptCard';
 import { PromptCard as PromptCardType } from '../lib/types';
+import { getDictionary, Locale } from '../lib/dictionary';
 
 interface Props {
   slug: string;
   prompts: PromptCardType[];
+  lang?: Locale;
 }
 
-const categoryInfo: Record<string, { title: string; description: string; icon: any }> = {
+const categoryInfo: Record<string, { title: string; title_ko: string; description: string; description_ko: string; icon: any }> = {
   'ui_ux': {
     title: 'UI/UX Design Archive',
+    title_ko: 'UI/UX 디자인 아카이브',
     description: 'High-authority visual frameworks for modern digital interfaces and SaaS platforms. Verified Midjourney v6 and DALL-E 3 frameworks.',
+    description_ko: '현대적인 디지털 인터페이스 및 SaaS 플랫폼을 위한 고권위 비주얼 프레임워크. 검증된 미드저니 v6 및 DALL-E 3 프레임워크.',
     icon: Layout
   },
   'game_asset': {
     title: 'Game Asset Library',
+    title_ko: '게임 에셋 라이브러리',
     description: 'Modular game-ready assets engineered for consistent isometric and RPG environments. Pixel art and high-fidelity rendering modules.',
+    description_ko: '일관된 아이소메트릭 및 RPG 환경을 위해 설계된 모듈형 게임 에셋. 픽셀 아트 및 고충실도 렌더링 모듈.',
     icon: Gamepad2
   },
   'marketing': {
     title: 'Marketing & Ecommerce',
+    title_ko: '마케팅 및 이커머스',
     description: 'Conversion-optimized photography and social creative prompts for premium brands. Product hero and campaign visual frameworks.',
+    description_ko: '프리미엄 브랜드를 위한 전환 최적화 사진 및 소셜 크리에이티브 프롬프트. 제품 히어로 및 캠페인 비주얼 프레임워크.',
     icon: Megaphone
   },
   'workflow_recipe': {
     title: 'Workflow Recipes',
+    title_ko: '워크플로우 레시피',
     description: 'End-to-end procedural frameworks for professional creators and strategists. Integrated business and creative production recipes.',
+    description_ko: '전문 크리에이터와 전략가를 위한 엔드투엔드 절차적 프레임워크. 통합 비즈니스 및 크리에이티브 프로덕션 레시피.',
     icon: Library
   },
   'trend': {
     title: 'Visual Trends & Styles',
+    title_ko: '비주얼 트렌드 및 스타일',
     description: 'Cutting-edge aesthetic modules and experimental style frameworks. From retro-futurism to hyper-realism trends.',
+    description_ko: '최첨단 에스테틱 모듈 및 실험적 스타일 프레임워크. 레트로 퓨처리즘에서 하이퍼 리얼리즘 트렌드까지.',
     icon: Sparkles
   }
 };
 
-export default function CategoryClient({ slug, prompts }: Props) {
+export default function CategoryClient({ slug, prompts, lang = 'en' }: Props) {
   const info = categoryInfo[slug];
+  const dict = getDictionary(lang);
+  
   if (!info) return null;
 
   const Icon = info.icon;
@@ -69,15 +83,22 @@ export default function CategoryClient({ slug, prompts }: Props) {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group text-slate-500 hover:text-white transition-all">
+          <Link href={`/${lang}/`} className="flex items-center gap-3 group text-slate-500 hover:text-white transition-all">
             <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em]">Back to Archive</span>
+            <span className="text-[10px] font-black uppercase tracking-[0.3em]">{dict.nav.back}</span>
           </Link>
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-              <Zap className="text-white fill-white" size={16} />
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2 border-r border-white/10 pr-6 mr-2">
+              <Link href={`/en/category/${slug}/`} className={`text-[10px] font-black uppercase tracking-widest ${lang === 'en' ? 'text-blue-500' : 'text-slate-500'}`}>EN</Link>
+              <span className="text-slate-800 text-[10px]">/</span>
+              <Link href={`/ko/category/${slug}/`} className={`text-[10px] font-black uppercase tracking-widest ${lang === 'ko' ? 'text-blue-500' : 'text-slate-500'}`}>KO</Link>
             </div>
-            <span className="text-sm font-black tracking-tighter text-white uppercase">PROMPTFLOW</span>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                <Zap className="text-white fill-white" size={16} />
+              </div>
+              <span className="text-sm font-black tracking-tighter text-white uppercase">{dict.nav.logo}</span>
+            </div>
           </div>
         </div>
       </nav>
@@ -95,18 +116,23 @@ export default function CategoryClient({ slug, prompts }: Props) {
                 <Icon size={32} />
               </div>
               <div className="h-px w-16 bg-white/10" />
-              <span className="text-[11px] font-black text-blue-500 uppercase tracking-[0.5em]">Vertical Archive</span>
+              <span className="text-[11px] font-black text-blue-500 uppercase tracking-[0.5em]">{dict.category.vertical}</span>
             </div>
             
             <h1 className="text-6xl sm:text-7xl font-black tracking-tighter text-white mb-10 leading-none uppercase">
-              {info.title}
+              {lang === 'ko' ? info.title_ko : info.title}
             </h1>
             <p className="text-2xl text-slate-400 max-w-3xl leading-relaxed font-medium mb-16">
-              {info.description}
+              {lang === 'ko' ? info.description_ko : info.description}
             </p>
             
             <div className="flex flex-wrap gap-4">
-              {['Verified Assets', 'High Confidence', 'Production Ready', 'Master Tier'].map((filter) => (
+              {[
+                dict.category.tags.assets,
+                dict.category.tags.confidence,
+                dict.category.tags.ready,
+                dict.category.tags.tier
+              ].map((filter) => (
                 <button
                   key={filter}
                   className="px-8 py-3 bg-white/5 border border-white/5 hover:border-blue-500/30 hover:bg-blue-600/10 text-slate-500 hover:text-white rounded-full text-[10px] font-black uppercase tracking-widest transition-all"
@@ -129,16 +155,16 @@ export default function CategoryClient({ slug, prompts }: Props) {
             <div className="flex items-center gap-4">
               <div className="w-2 h-2 rounded-full bg-blue-500 glow-primary" />
               <h2 className="text-sm font-black text-white uppercase tracking-[0.2em]">
-                {prompts.length} Verified Master Frameworks
+                {prompts.length} {dict.category.verified}
               </h2>
             </div>
             
             <div className="flex items-center gap-6">
               <button className="flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl text-slate-500 text-[10px] font-black uppercase tracking-widest hover:text-white hover:bg-white/10 transition-all">
-                <SortAsc size={16} /> Authority Rank
+                <SortAsc size={16} /> {dict.category.sort}
               </button>
               <button className="hidden sm:flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl text-slate-500 text-[10px] font-black uppercase tracking-widest hover:text-white hover:bg-white/10 transition-all">
-                <Filter size={16} /> Filter
+                <Filter size={16} /> {dict.category.filter}
               </button>
             </div>
           </div>
@@ -150,13 +176,15 @@ export default function CategoryClient({ slug, prompts }: Props) {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
           >
             {prompts.map((prompt) => (
-              <PromptCard key={prompt.id} prompt={prompt} />
+              <PromptCard key={prompt.id} prompt={prompt} lang={lang} />
             ))}
           </motion.div>
 
           {prompts.length === 0 && (
             <div className="py-40 text-center glass rounded-[3.5rem] border-dashed">
-              <p className="text-slate-700 font-black uppercase tracking-[0.5em] text-sm">Awaiting New Framework Verifications</p>
+              <p className="text-slate-700 font-black uppercase tracking-[0.5em] text-sm">
+                {lang === 'ko' ? "새로운 프레임워크 검증 대기 중" : "Awaiting New Framework Verifications"}
+              </p>
             </div>
           )}
         </div>
@@ -166,7 +194,7 @@ export default function CategoryClient({ slug, prompts }: Props) {
       <section className="py-40 border-t border-white/5 bg-[#01040f]">
         <div className="max-w-7xl mx-auto px-6">
           <h3 className="text-[11px] font-black text-slate-600 uppercase tracking-[0.5em] mb-16 flex items-center gap-5">
-            <Target size={18} /> Cross-Vertical Exploration
+            <Target size={18} /> {dict.category.exploration}
           </h3>
           <div className="grid md:grid-cols-2 gap-10">
             {Object.entries(categoryInfo)
@@ -174,7 +202,7 @@ export default function CategoryClient({ slug, prompts }: Props) {
               .map(([key, cInfo]) => (
                 <Link
                   key={key}
-                  href={`/category/${key}/`}
+                  href={`/${lang}/category/${key}/`}
                   className="group relative p-12 bg-white/[0.01] border border-white/5 rounded-[3rem] hover:bg-white/[0.03] hover:border-blue-600/30 transition-all duration-500 overflow-hidden"
                 >
                   <div className="relative z-10 flex items-center justify-between">
@@ -183,8 +211,12 @@ export default function CategoryClient({ slug, prompts }: Props) {
                         <cInfo.icon size={32} />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-black text-white uppercase tracking-tight mb-3 group-hover:text-blue-400 transition-colors">{cInfo.title}</h4>
-                        <p className="text-sm text-slate-500 font-bold max-w-sm leading-relaxed">{cInfo.description}</p>
+                        <h4 className="text-2xl font-black text-white uppercase tracking-tight mb-3 group-hover:text-blue-400 transition-colors">
+                          {lang === 'ko' ? cInfo.title_ko : cInfo.title}
+                        </h4>
+                        <p className="text-sm text-slate-500 font-bold max-w-sm leading-relaxed">
+                          {lang === 'ko' ? cInfo.description_ko : cInfo.description}
+                        </p>
                       </div>
                     </div>
                     <ChevronRight className="text-slate-800 group-hover:text-blue-600 group-hover:translate-x-3 transition-all duration-700" size={28} />
@@ -205,10 +237,10 @@ export default function CategoryClient({ slug, prompts }: Props) {
             <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-2xl">
               <Zap className="text-white fill-white" size={20} />
             </div>
-            <span className="text-2xl font-black tracking-tighter text-white uppercase">PROMPTFLOW</span>
+            <span className="text-2xl font-black tracking-tighter text-white uppercase">{dict.nav.logo}</span>
           </div>
           <p className="text-[10px] font-black text-slate-700 uppercase tracking-[0.5em]">
-            © 2026 PromptFlow Protocol. Engineering verified results.
+            {dict.footer.rights}
           </p>
         </div>
       </footer>

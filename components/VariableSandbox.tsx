@@ -5,13 +5,17 @@ import { Sliders, Sparkles, Terminal, Info, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Variable } from '../lib/types';
 import CopyButton from './CopyButton';
+import { getDictionary, Locale } from '../lib/dictionary';
 
 interface Props {
   promptText: string;
   variables: Variable[];
+  lang?: Locale;
 }
 
-export default function VariableSandbox({ promptText, variables }: Props) {
+export default function VariableSandbox({ promptText, variables, lang = 'en' }: Props) {
+  const dict = getDictionary(lang);
+  
   const [values, setValues] = useState<Record<string, string>>(() => {
     const initial: Record<string, string> = {};
     variables.forEach(v => {
@@ -36,8 +40,8 @@ export default function VariableSandbox({ promptText, variables }: Props) {
           <Sliders size={22} />
         </div>
         <div>
-          <h3 className="text-2xl font-black text-white tracking-tighter uppercase">Variable Sandbox</h3>
-          <p className="text-[10px] font-black text-slate-500 tracking-[0.3em] uppercase mt-1">Real-time Engineering Module</p>
+          <h3 className="text-2xl font-black text-white tracking-tighter uppercase">{dict.prompt.sandbox}</h3>
+          <p className="text-[10px] font-black text-slate-500 tracking-[0.3em] uppercase mt-1">{dict.prompt.sandbox_sub}</p>
         </div>
       </div>
       
@@ -47,11 +51,11 @@ export default function VariableSandbox({ promptText, variables }: Props) {
           <div key={variable.name} className="space-y-5">
             <div className="flex items-center justify-between">
               <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
-                {variable.name}
+                {lang === 'ko' && variable.name_ko ? variable.name_ko : variable.name}
               </label>
               <div className="flex items-center gap-2 px-2 py-0.5 rounded-md bg-blue-500/10 text-[9px] font-black text-blue-400 uppercase tracking-widest">
                 <Sparkles size={10} />
-                <span>Adjustable</span>
+                <span>{dict.prompt.adjustable}</span>
               </div>
             </div>
             
@@ -69,7 +73,7 @@ export default function VariableSandbox({ promptText, variables }: Props) {
               <div className="flex gap-3 p-4 bg-white/[0.02] rounded-xl border border-white/5">
                 <Info size={14} className="text-slate-500 shrink-0 mt-0.5" />
                 <p className="text-xs text-slate-500 leading-relaxed font-bold">
-                  {variable.variable_behavior_note}
+                  {lang === 'ko' && variable.variable_behavior_note_ko ? variable.variable_behavior_note_ko : variable.variable_behavior_note}
                 </p>
               </div>
             )}
@@ -94,7 +98,7 @@ export default function VariableSandbox({ promptText, variables }: Props) {
       <div className="pt-10 border-t border-white/5 space-y-6">
         <div className="flex items-center gap-2 text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">
           <Terminal size={14} />
-          <span>Final Compiled Framework</span>
+          <span>{dict.prompt.final}</span>
         </div>
         
         <div className="relative group">
@@ -107,7 +111,7 @@ export default function VariableSandbox({ promptText, variables }: Props) {
           <div className="absolute inset-0 rounded-[2rem] bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
         </div>
         
-        <CopyButton text={finalPrompt} label="Copy Modified Prompt" />
+        <CopyButton lang={lang} text={finalPrompt} label={lang === 'ko' ? "수정된 프롬프트 복사" : "Copy Modified Prompt"} />
       </div>
     </div>
   );

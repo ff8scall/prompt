@@ -33,3 +33,11 @@ PromptFlow is not just a list of prompts; it provides an experience of **"revers
   3. Confirm automatic inclusion in the `prompts` array in `lib/prompts.ts`.
 - **Routing Addition**: When creating a new category, ensure to update `generateStaticParams` and the valid slugs list in `app/category/[slug]/page.tsx`.
 - **Image Naming Convention**: Place actual files according to the path specified in `asset_metadata.hero_image` (e.g., `/images/prompts/category-id-xxx.webp`).
+### 4. Image Generation & Asset Recovery
+- **ComfyUI Integration**: Utilizes the ComfyUI API (`127.0.0.1:8188`) to generate high-fidelity assets using the `RealVisXL_V4.0` model.
+- **Workflow Automation**:
+  - `comfy_flow_batch.py`: Scans `lib/data/*.ts` and generates hero images for all defined prompts in bulk.
+  - `comfy_generate_single.py`: A specialized script for single asset generation, used for recovering missing images or creating variations without affecting other files.
+- **Post-Processing**:
+  - Automatically converts ComfyUI's PNG output to optimized WebP format (90% quality).
+  - Maintains original files in `public/images/originals/` for future reference.

@@ -12,10 +12,10 @@ Completely eliminate all traces of Korean from all pages of the PromptFlow platf
     - [x] Replace all identified Korean with high-fidelity professional English
     - [x] Review dynamic metadata and UI text in the detail page (`app/prompt/[slug]/page.tsx`)
     - [x] Localize guide text in the Variable Sandbox (`VariableSandbox.tsx`)
-- [ ] **Phase 3: Integrity Validation**
-    - [ ] Sample audit of 10 random detail pages in local environment (`npm run dev`)
-    - [ ] Verify zero Korean across the entire project via `grep`
-    - [ ] Perform local build test (`npm run build`) and scan `dist/` artifacts
+- [x] **Phase 3: Integrity Validation**
+    - [x] Sample audit of 10 random detail pages in local environment (`npm run dev`)
+    - [x] Verify zero Korean across the entire project via `grep`
+    - [x] Perform local build test (`npm run build`) and scan `dist/` artifacts
 
 ## ✅ Completion Criteria
 1. Zero Korean characters present in source code (`.ts`, `.tsx`, `.js`, `.jsx`).
