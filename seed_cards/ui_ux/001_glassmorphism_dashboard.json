@@ -1,0 +1,166 @@
+{
+  "id": "ui-dashboard-glassmorphism-001",
+  "slug": "glassmorphism-dashboard-ui-prompt",
+  "status": "approved",
+  "quality_tier": "tier_1",
+  "verified_badge": true,
+  "last_verified_at": "2026-05-07",
+  "title": "Glassmorphism SaaS Dashboard UI Prompt",
+  "result_first_title": "A clean glassmorphism SaaS dashboard with glowing analytics cards",
+  "short_description": "A polished dashboard concept for SaaS products that need a futuristic but usable interface.",
+  "emotional_hook": "이 프롬프트는 어두운 밤의 유리 패널 위에 데이터가 조용히 빛나는 듯한 고급스러운 집중감을 만든다.",
+  "category": "ui_ux",
+  "vertical": "dashboard_design",
+  "use_cases": ["saas_landing", "product_mockup", "design_moodboard", "client_proposal"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "model_confidence": "tested",
+  "version_history": [
+    {
+      "version": "1.0.0",
+      "changed_at": "2026-05-07",
+      "change_note": "Initial verified prompt for Midjourney v6. Tested with actual generation."
+    }
+  ],
+  "prompt_text": "[subject], glassmorphism dashboard UI, translucent panels with subtle blur, glowing analytics cards with soft gradients, dark navy background #0a1628, premium SaaS interface, clean spacing, high detail, 8k render --ar 16:9 --v 6 --s 250",
+  "negative_prompt": "cluttered layout, unreadable text, low contrast, distorted typography, photorealistic, human figures, photographic elements",
+  "aspect_ratio_tags": ["16:9", "hero_image", "desktop_mockup", "widescreen"],
+  "generation_params": {
+    "aspect_ratio": "16:9",
+    "stylize": 250,
+    "seed": null,
+    "quality": null
+  },
+  "variables": [
+    {
+      "name": "subject",
+      "placeholder": "[subject]",
+      "default_value": "AI analytics dashboard",
+      "recommended_values": [
+        "finance analytics dashboard",
+        "healthcare patient monitoring dashboard",
+        "creator economy metrics dashboard",
+        "ecommerce sales dashboard",
+        "project management dashboard"
+      ],
+      "variable_behavior_note": "이 변수를 바꾸면 전체 유리 질감, 어두운 조명, SaaS 인터페이스 스타일은 유지되고, 대시보드가 표현하는 산업과 데이터 맥락만 바뀐다."
+    }
+  ],
+  "why_this_works": [
+    "glassmorphism 키워드는 반투명 패널과 배경 흐림 효과를 유도하여 현대적인 UI 느낌을 만든다.",
+    "dark navy background(#0a1628)와 soft gradients 조합은 고급 SaaS 제품의 시각적 신뢰감을 강화하며 눈의 피로를 줄인다.",
+    "clean spacing은 UI 이미지에서 흔한 과밀한 레이아웃 문제를 방지하고 실제 사용 가능해 보이는 인상을 준다.",
+    "stylize 250은 Midjourney의 기본 아티스틱 경향을 적절히 억제하여 상용 UI에 더 적합한 결과를 만든다.",
+    "negative prompt의 photorealistic, human figures 제거는 UI 이미지에서 사람이나 사진 요소가 나타나는 실패를 방지한다."
+  ],
+  "model_notes": [
+    {
+      "model": "midjourney",
+      "version": "v6",
+      "note": "UI의 전체적인 분위기와 카드 레이아웃 표현에 강하나 실제 텍스트는 깨질 수 있다. 상용도 사용 시 Figma에서 아이콘과 텍스트를 교체하는 것이 권장된다. stylize 값을 150-350 범위에서 조절하면 아티스틱 정도를 조절할 수 있다."
+    },
+    {
+      "model": "dall-e-3",
+      "version": "current",
+      "note": "설명형 프롬프트에 강하나 Midjourney식 파라미터(--ar, --v, --s)는 제거하고 plain text로 재작성하는 것이 좋다. 16:9 비율을 원하면 'widescreen aspect ratio'와 같은 자연어 설명을 사용한다."
+    },
+    {
+      "model": "stable_diffusion_xl",
+      "version": "xl",
+      "note": "controlnet이나 특정 UI lora를 사용하면 더 정확한 컴포넌트 배치가 가능하다. glassmorphism 효과는 cfg scale 7-9에서 가장 안정적으로 나타난다."
+    }
+  ],
+  "comparison_notes": "Midjourney v6는 조명과 질감이 강하고 전체적인 무드 보드로서 우수하다. DALL-E 3는 구성 의도 반영이 좋으나 아티스틱 톤이 다를 수 있다. 실제 상용 UI 텍스트가 필요한 경우 어떤 모델을 쓰더라도 Figma에서 후처리하는 편이 안전하다. glassmorphism 효과의 강도는 Midjourney가 가장 일관되게 표현한다.",
+  "variations": [
+    {
+      "label": "Bright/Light Mode",
+      "prompt_delta": "Replace dark navy background with bright white background #ffffff and subtle pastel gradients, soft shadows instead of glow effects",
+      "pre_generated_asset_id": "asset_ui_dashboard_bright_001",
+      "use_case": "Light mode preference, healthcare apps, clean minimal brands"
+    },
+    {
+      "label": "Mobile/Vertical",
+      "prompt_delta": "Change dashboard UI to mobile app analytics screen with stacked cards, --ar 9:16, touch-friendly spacing",
+      "pre_generated_asset_id": "asset_ui_dashboard_mobile_001",
+      "use_case": "Mobile app store screenshots, mobile onboarding screens"
+    },
+    {
+      "label": "Dark Cyberpunk",
+      "prompt_delta": "Replace navy with deep purple #1a0a2e, add neon accent lines, cyberpunk aesthetic, high contrast glowing elements",
+      "pre_generated_asset_id": "asset_ui_dashboard_cyberpunk_001",
+      "use_case": "Gaming dashboards, tech startups, futuristic brands"
+    }
+  ],
+  "common_failure_modes": [
+    "텍스트가 완전히 깨져서 읽을 수 없는 경우: negative prompt에 'unreadable text'를 강화하거나, stylize 값을 낮춘다.",
+    "유리 효과가 너무 강해 내용이 안 보이는 경우: 'subtle blur', 'light glassmorphism'으로 수정한다.",
+    "레이아웃이 너무 아티스틱해서 실제 UI 같지 않은 경우: 'functional layout', 'usable interface'를 프롬프트에 추가한다."
+  ],
+  "seo": {
+    "primary_keyword": "glassmorphism dashboard UI prompt",
+    "secondary_keywords": [
+      "midjourney dashboard prompt",
+      "saas dashboard ai prompt",
+      "ui design prompt",
+      "glassmorphism ui mockup"
+    ],
+    "lsi_keywords": [
+      "translucent panels",
+      "analytics cards",
+      "dark mode SaaS",
+      "futuristic UI design",
+      "dashboard mockup",
+      "glass morphism effect"
+    ],
+    "meta_title": "Glassmorphism Dashboard UI Prompt | Midjourney v6 Verified",
+    "meta_description": "Copy a verified Midjourney v6 prompt for glassmorphism SaaS dashboards. Includes variables, model notes, 3 variations, and why this works analysis."
+  },
+  "internal_links": {
+    "related_prompt_ids": [
+      "ui-dark-analytics-002",
+      "ui-saas-landing-003",
+      "ui-neumorphism-card-004"
+    ],
+    "category_slug": "ui-ux-prompts",
+    "bundle_slug": "saas-ui-prompt-pack"
+  },
+  "asset_metadata": {
+    "hero_image": "/images/prompts/ui-dashboard-glassmorphism-001-hero.webp",
+    "thumbnail": "/images/prompts/ui-dashboard-glassmorphism-001-thumb.webp",
+    "variations": [
+      "/images/prompts/ui-dashboard-glassmorphism-001-bright.webp",
+      "/images/prompts/ui-dashboard-glassmorphism-001-mobile.webp",
+      "/images/prompts/ui-dashboard-glassmorphism-001-cyberpunk.webp"
+    ],
+    "alt_text": "Glassmorphism SaaS dashboard UI with translucent cards and glowing analytics charts on dark navy background",
+    "width": 1600,
+    "height": 900,
+    "format": "webp",
+    "placeholder": "data:image/webp;base64,UklGR...",
+    "source_model": "midjourney",
+    "source_prompt_hash": "glass-dash-001",
+    "exif_extracted": true,
+    "exif_prompt": "AI analytics dashboard, glassmorphism dashboard UI...",
+    "cdn_cache_tier": "public_long_cache",
+    "generated_at": "2026-05-07T10:30:00Z",
+    "operator": "promptflow-seed-team"
+  },
+  "ugc_policy": {
+    "allow_user_submissions": true,
+    "requires_rights_confirmation": true,
+    "moderation_required": true,
+    "featured_submissions": []
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "approved",
+    "reviewer": "seed-curator-001",
+    "reviewed_at": "2026-05-07",
+    "reviewer_note": "Verified with actual Midjourney v6 generation. Text artifacts present as expected. Layout clean. 3 variations generated and confirmed. Ready for homepage feature."
+  },
+  "copy_stats": {
+    "total_copies": 0,
+    "last_copied_at": null,
+    "weekly_copies": []
+  }
+}

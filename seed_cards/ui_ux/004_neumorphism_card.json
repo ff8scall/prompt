@@ -1,0 +1,20 @@
+{
+  "id": "ui-neumorphism-card-004",
+  "slug": "neumorphism-card-ui-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Neumorphism Card Component Prompt",
+  "category": "ui_ux",
+  "vertical": "component",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "neumorphism [element_type], soft UI card, subtle shadows, light gray background, minimal icons, clean spacing --ar 1:1 --v 6",
+  "variables": [
+    {
+      "name": "element_type",
+      "placeholder": "[element_type]",
+      "default_value": "pricing card",
+      "recommended_values": ["profile card", "settings panel", "music player widget"]
+    }
+  ]
+}

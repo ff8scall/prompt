@@ -1,0 +1,1 @@
+{"id": "ui-mobile-bottom-sheet-016", "title": "Mobile Bottom Sheet Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "mobile bottom sheet UI, [sheet_type] content, draggable handle, rounded corners, overlay backdrop --ar 9:16 --v 6", "variables": [{"name": "sheet_type", "default_value": "share options"}]}

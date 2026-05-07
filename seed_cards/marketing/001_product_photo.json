@@ -1,0 +1,39 @@
+{
+  "id": "marketing-product-photo-001",
+  "slug": "luxury-product-photography-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Luxury Product Photography Prompt",
+  "result_first_title": "Premium product photo with elegant lighting and reflections",
+  "short_description": "High-end product photography for ecommerce and social media ads.",
+  "emotional_hook": "이 프롬프트는 고급 백화점 진열장의 부드러운 스포트라이트 아래 제품이 빛나는 순간을 포착한다.",
+  "category": "marketing",
+  "vertical": "ecommerce",
+  "use_cases": ["instagram_ad", "amazon_listing", "shopify_banner", "product_catalog"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[product_name], luxury product photography, soft studio lighting, elegant reflections, premium background, high-end commercial photo --ar 4:5 --v 6",
+  "negative_prompt": "busy background, harsh shadows, amateur photo, watermark, text",
+  "aspect_ratio_tags": ["4:5", "instagram_feed", "product_ad"],
+  "variables": [
+    {
+      "name": "product_name",
+      "placeholder": "[product_name]",
+      "default_value": "perfume bottle",
+      "recommended_values": ["skincare cream jar", "watch on marble surface", "headphones", "handbag"]
+    }
+  ],
+  "why_this_works": [
+    "soft studio lighting은 전자제품과 뷰티 제품 모두에 적용 가능한 보편적 설정이다.",
+    "4:5 aspect ratio는 Instagram feed에 최적화된 크기이다.",
+    "elegant reflections는 제품의 프리미엄 느낌을 강조한다."
+  ],
+  "seo": {
+    "primary_keyword": "product photography ai prompt",
+    "secondary_keywords": ["luxury product photo", "ecommerce image prompt"]
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "draft"
+  }
+}

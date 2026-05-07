@@ -1,0 +1,13 @@
+{
+  "id": "ui-login-screen-010",
+  "slug": "modern-login-screen-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Modern Login Screen Prompt",
+  "category": "ui_ux",
+  "vertical": "screen",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "modern login screen UI, [style_type] design, email and password fields, social login buttons, clean layout --ar 9:16 --v 6",
+  "variables": [{"name": "style_type", "default_value": "minimal white", "recommended_values": ["dark mode", "gradient", "illustration", "corporate"]}]
+}

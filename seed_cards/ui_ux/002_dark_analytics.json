@@ -1,0 +1,24 @@
+{
+  "id": "ui-dark-analytics-002",
+  "slug": "dark-analytics-dashboard-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Dark Mode Analytics Dashboard Prompt",
+  "category": "ui_ux",
+  "vertical": "dashboard_design",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[subject], dark mode analytics dashboard, data visualization charts, neon accent lines, midnight blue background, professional data UI, clean typography --ar 16:9 --v 6",
+  "variables": [
+    {
+      "name": "subject",
+      "placeholder": "[subject]",
+      "default_value": "financial trading dashboard",
+      "recommended_values": ["crypto portfolio dashboard", "server monitoring dashboard", "social media analytics"]
+    }
+  ],
+  "review": {
+    "human_review_required": true,
+    "review_status": "draft"
+  }
+}

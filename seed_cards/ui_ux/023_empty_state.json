@@ -1,0 +1,1 @@
+{"id": "ui-empty-state-023", "title": "Empty State Illustration Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "empty state UI screen, [empty_type] illustration, friendly character, encouraging message, CTA button --ar 4:3 --v 6", "variables": [{"name": "empty_type", "default_value": "no results"}]}

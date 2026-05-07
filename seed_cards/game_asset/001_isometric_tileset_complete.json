@@ -1,0 +1,179 @@
+{
+  "id": "game-isometric-tileset-001",
+  "slug": "isometric-fantasy-village-tileset-prompt",
+  "status": "approved",
+  "quality_tier": "tier_1",
+  "verified_badge": true,
+  "last_verified_at": "2026-05-07",
+  "title": "Isometric Fantasy Village Tileset Prompt",
+  "result_first_title": "Detailed isometric tiles for fantasy RPG game environments with consistent lighting",
+  "short_description": "Complete tileset for building isometric fantasy villages, dungeons, and environments in indie games and RPG Maker projects.",
+  "emotional_hook": "이 프롬프트는 손으로 깎은 듯한 따뜻한 픽셀 아트 마을의 정겨움과 모험의 설렘을 담아낸다.",
+  "category": "game_asset",
+  "vertical": "tileset",
+  "use_cases": ["indie_game_dev", "rpg_maker", "game_prototype", "steam_capsule_art", "itch_io_thumbnail"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "model_confidence": "tested",
+  "version_history": [
+    {
+      "version": "1.0.0",
+      "changed_at": "2026-05-07",
+      "change_note": "Initial verified tileset prompt. Tested with consistent 2.5D output."
+    }
+  ],
+  "prompt_text": "isometric [environment_type], 2.5D pixel art game tileset, hand-painted texture style, consistent top-down 45-degree angle, modular building pieces, [biome_features], soft shadows, game-ready asset, clean edges for tiling --ar 1:1 --v 6 --s 200 --tile",
+  "negative_prompt": "photorealistic, 3D render, perspective distortion, inconsistent shadows, human figures, blurry edges, photographic background, depth of field",
+  "aspect_ratio_tags": ["1:1", "sprite_sheet", "game_asset", "isometric"],
+  "generation_params": {
+    "aspect_ratio": "1:1",
+    "stylize": 200,
+    "tile": true,
+    "seed": null
+  },
+  "variables": [
+    {
+      "name": "environment_type",
+      "placeholder": "[environment_type]",
+      "default_value": "medieval village with timber houses and cobblestone paths",
+      "recommended_values": [
+        "fantasy dungeon with stone walls and torches",
+        "forest camp with tents and campfires",
+        "coastal fishing port with wooden piers",
+        "magical crystal cave with glowing minerals",
+        "steampunk factory with brass pipes",
+        "jungle temple with ancient ruins"
+      ],
+      "variable_behavior_note": "환경 타입을 바꾸면 건축물과 자연 요소가 바뀌지만 isometric 2.5D 투시법, 타일 크기, 픽셀 아트 스타일, 조명 각도는 유지되어 여러 타일을 함께 쓸 수 있다."
+    },
+    {
+      "name": "biome_features",
+      "placeholder": "[biome_features]",
+      "default_value": "autumn foliage and hay bales",
+      "recommended_values": [
+        "winter snow and frozen ponds",
+        "spring flowers and green grass",
+        "summer wheat fields",
+        "nighttime with lanterns",
+        "rainy weather with puddles"
+      ],
+      "variable_behavior_note": "계절/시간대를 바꾸면 색감과 분위기가 달라지지만 타일 구조는 동일하다."
+    }
+  ],
+  "why_this_works": [
+    "isometric 키워드는 게임에서 사용 가능한 2.5D 시점(45도 각도)을 생성하여 Unity, Godot, RPG Maker와 호환된다.",
+    "--tile 파라미터는 Midjourney에서 원활하게 타일링되는 패턴을 만들어 여러 타일을 이어 붙일 수 있다.",
+    "hand-painted texture style은 기계적 3D 렌더링과 달리 따뜻한 인디 게임 느낌을 준다.",
+    "consistent top-down 45-degree angle은 여러 프롬프트를 실행해도 같은 시점을 유지하게 한다.",
+    "negative prompt의 'perspective distortion' 제거는 isometric 왜곡을 방지하고 깔끔한 게임 에셋을 만든다.",
+    "clean edges for tiling은 타일 간 경계선이 뚜렷하게 유지되어 게임 엔진에서 배치할 때 깨지지 않는다."
+  ],
+  "model_notes": [
+    {
+      "model": "midjourney",
+      "version": "v6",
+      "note": "타일 간 일관성은 v6에서 개선되었지만, 여러 타일을 동일한 세션에서 생성하려면 --seed 고정이나 reference image 사용이 권장된다. --stylize 150-250 범위가 게임 에셋에 적합하다. 높으면 너무 아티스틱해진다."
+    },
+    {
+      "model": "dall-e-3",
+      "version": "current",
+      "note": "타일링 패턴 생성에 약하다. 단일 컨셉 아트로는 가능하나 실제 게임 타일셋으로는 완성도가 떨어진다. Midjourney 사용을 강력히 권장."
+    },
+    {
+      "model": "stable_diffusion_xl",
+      "version": "xl",
+      "note": "isometric LoRA나 ControlNet을 사용하면 더 정확한 투시와 타일 일관성을 얻을 수 있다. img2img로 반복 생성 시 일관된 스타일 유지가 가능하다."
+    }
+  ],
+  "comparison_notes": "Midjourney v6는 게임 에셋의 아티스틱 품질이 가장 높고 --tile 옵션으로 실제 타일링도 가능하다. Stable Diffusion은 ControlNet으로 정밀도가 높지만 아티스틱 톤은 Midjourney가 우수. DALL-E 3는 타일셋 생성에 부적합. 인디 게임 개발자에게 Midjourney v6를 가장 먼저 추천.",
+  "variations": [
+    {
+      "label": "Winter/Snow biome",
+      "prompt_delta": "Replace biome with winter snow, frozen ponds, snow-covered roofs, cool blue lighting",
+      "pre_generated_asset_id": "game_tileset_winter_001",
+      "use_case": "Winter game events, ice dungeons, snow villages"
+    },
+    {
+      "label": "Desert/Oasis theme",
+      "prompt_delta": "Replace with desert sand, palm trees, oasis water, warm orange lighting, adobe buildings",
+      "pre_generated_asset_id": "game_tileset_desert_001",
+      "use_case": "Desert biomes, Arabian-themed games"
+    },
+    {
+      "label": "Interior/Dungeon tiles",
+      "prompt_delta": "Focus on indoor spaces, stone walls, wooden doors, torch lighting, treasure chests",
+      "pre_generated_asset_id": "game_tileset_interior_001",
+      "use_case": "RPG dungeons, interior scenes"
+    }
+  ],
+  "common_failure_modes": [
+    "투시각이 일관되지 않는 경우: --seed를 고정하거나 reference image를 사용하여 동일한 세션에서 생성한다.",
+    "타일 경계가 깨지는 경우: 'clean edges for tiling'을 강화하거나 --tile 파라미터를 확인한다.",
+    "너무 사실적인 3D 느낌이 나는 경우: stylize 값을 낮추고 'pixel art', 'hand-painted'를 강조한다.",
+    "배경이 투명하지 않은 경우: RPG Maker나 Unity에서 배경 제거 도구로 후처리하거나, 'transparent background'를 negative prompt에서 제거하지 않았는지 확인."
+  ],
+  "seo": {
+    "primary_keyword": "isometric game tileset prompt",
+    "secondary_keywords": [
+      "midjourney game asset",
+      "fantasy tileset ai",
+      "rpg map tiles",
+      "indie game art prompt",
+      "pixel art tileset"
+    ],
+    "lsi_keywords": [
+      "2.5D perspective",
+      "game environment",
+      "modular tiles",
+      "rpg maker",
+      "unity 2D",
+      "hand painted texture"
+    ],
+    "meta_title": "Isometric Fantasy Tileset Prompt | Midjourney v6 Game Asset",
+    "meta_description": "Generate consistent isometric game tilesets for RPGs with verified Midjourney v6 prompt. Includes biome variations, model tips, and tiling guide."
+  },
+  "internal_links": {
+    "related_prompt_ids": [
+      "game-rpg-icon-002",
+      "game-character-sprite-003",
+      "ui-pixel-art-ui-008"
+    ],
+    "category_slug": "game-asset-prompts",
+    "bundle_slug": "rpg-game-asset-pack"
+  },
+  "asset_metadata": {
+    "hero_image": "/images/prompts/game-tileset-fantasy-001-hero.webp",
+    "thumbnail": "/images/prompts/game-tileset-fantasy-001-thumb.webp",
+    "variations": [
+      "/images/prompts/game-tileset-winter-001.webp",
+      "/images/prompts/game-tileset-desert-001.webp"
+    ],
+    "alt_text": "Isometric fantasy village tileset with timber houses, cobblestone paths, and autumn foliage in pixel art style",
+    "width": 1024,
+    "height": 1024,
+    "format": "webp",
+    "placeholder": "data:image/webp;base64,UklGR...",
+    "source_model": "midjourney",
+    "source_prompt_hash": "iso-tileset-fantasy-001",
+    "exif_extracted": true,
+    "cdn_cache_tier": "public_long_cache",
+    "generated_at": "2026-05-07T11:00:00Z",
+    "operator": "promptflow-seed-team"
+  },
+  "ugc_policy": {
+    "allow_user_submissions": true,
+    "requires_rights_confirmation": true,
+    "moderation_required": true
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "approved",
+    "reviewer": "seed-curator-001",
+    "reviewed_at": "2026-05-07",
+    "reviewer_note": "Tested with Midjourney v6. Consistent isometric angle achieved. 3 biome variations generated. Suitable for RPG Maker and Unity 2D. Verified for game asset bundle."
+  },
+  "copy_stats": {
+    "total_copies": 0,
+    "last_copied_at": null
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "ui-[subcategory]-[number]",
+  "slug": "[descriptive-slug]-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "verified_badge": false,
+  "last_verified_at": null,
+  "title": "[Result-focused title] Prompt",
+  "result_first_title": "[Visual description of the result]",
+  "short_description": "[One line practical description]",
+  "emotional_hook": "[Sensory/emotional one-liner in Korean]",
+  "category": "ui_ux",
+  "vertical": "[specific_vertical]",
+  "use_cases": ["use_case_1", "use_case_2", "use_case_3"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "model_confidence": "estimated",
+  "version_history": [],
+  "prompt_text": "[main_subject], [style_keywords], [technical_params] --ar [ratio] --v 6",
+  "negative_prompt": "[what_to_exclude]",
+  "aspect_ratio_tags": ["[ratio]", "[usage_tag]"],
+  "generation_params": {
+    "aspect_ratio": "[ratio]",
+    "stylize": null,
+    "seed": null
+  },
+  "variables": [
+    {
+      "name": "[variable_name]",
+      "placeholder": "[[variable_name]]",
+      "default_value": "[default]",
+      "recommended_values": ["option_1", "option_2", "option_3"],
+      "variable_behavior_note": "[What changes and what stays consistent]"
+    }
+  ],
+  "why_this_works": [
+    "[Technical explanation of keyword effect]",
+    "[Why this combination works]",
+    "[Common failure prevention]"
+  ],
+  "model_notes": [
+    {
+      "model": "midjourney",
+      "version": "v6",
+      "note": "[Specific notes for Midjourney v6]"
+    }
+  ],
+  "comparison_notes": "[Comparison with other models if applicable]",
+  "variations": [
+    {
+      "label": "[Variation name]",
+      "prompt_delta": "[What to change]",
+      "pre_generated_asset_id": null,
+      "use_case": "[When to use this variation]"
+    }
+  ],
+  "common_failure_modes": [
+    "[Failure case 1]: [Solution]",
+    "[Failure case 2]: [Solution]"
+  ],
+  "seo": {
+    "primary_keyword": "[main keyword]",
+    "secondary_keywords": ["keyword_1", "keyword_2"],
+    "lsi_keywords": ["related_term_1", "related_term_2"],
+    "meta_title": "[Title] | Midjourney v6",
+    "meta_description": "[155 char description]"
+  },
+  "internal_links": {
+    "related_prompt_ids": [],
+    "category_slug": "ui-ux-prompts",
+    "bundle_slug": null
+  },
+  "asset_metadata": {
+    "hero_image": null,
+    "thumbnail": null,
+    "alt_text": "[Descriptive alt text]",
+    "source_model": "midjourney",
+    "cdn_cache_tier": "public_long_cache"
+  },
+  "ugc_policy": {
+    "allow_user_submissions": true,
+    "requires_rights_confirmation": true,
+    "moderation_required": true
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "draft",
+    "reviewer_note": null
+  }
+}

@@ -1,0 +1,1 @@
+{"id": "ui-search-results-018", "title": "Search Results Page Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "search results page UI, [layout_type] grid, filter sidebar, sort dropdown, pagination, result cards --ar 16:9 --v 6", "variables": [{"name": "layout_type", "default_value": "list view"}]}

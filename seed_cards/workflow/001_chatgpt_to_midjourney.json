@@ -1,0 +1,59 @@
+{
+  "id": "workflow-chatgpt-midjourney-001",
+  "slug": "chatgpt-midjourney-content-workflow",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "ChatGPT → Midjourney Content Workflow",
+  "result_first_title": "Complete workflow from text concept to AI-generated visuals",
+  "short_description": "Step-by-step workflow to generate blog/Instagram content using ChatGPT for copy and Midjourney for images.",
+  "emotional_hook": "이 워크플로우는 아이디어 하나로부터 글과 이미지가 함께 자라나는 창작의 흐름을 만든다.",
+  "category": "workflow",
+  "vertical": "content_creation",
+  "use_cases": ["blog_post", "instagram_carousel", "newsletter", "marketing_campaign"],
+  "target_model": "workflow",
+  "steps": [
+    {
+      "step": 1,
+      "tool": "ChatGPT",
+      "action": "Generate blog post outline and key visual concepts",
+      "prompt_template": "Write a blog post about [topic]. Include 3 key sections. For each section, describe what kind of image would support the content.",
+      "output": "Text outline + 3 image concepts"
+    },
+    {
+      "step": 2,
+      "tool": "PromptFlow",
+      "action": "Find matching prompt templates",
+      "instruction": "Search PromptFlow for prompts matching the visual concepts from step 1"
+    },
+    {
+      "step": 3,
+      "tool": "Midjourney",
+      "action": "Generate images using selected prompts",
+      "instruction": "Copy prompts from PromptFlow and generate in Midjourney. Use --ar 16:9 for blog headers, --ar 1:1 for Instagram."
+    },
+    {
+      "step": 4,
+      "tool": "Canva/Figma",
+      "action": "Combine text and images",
+      "instruction": "Layout the blog post or social carousel with generated images"
+    },
+    {
+      "step": 5,
+      "tool": "Scheduling tool",
+      "action": "Publish or schedule",
+      "instruction": "Use Buffer, Later, or native scheduling"
+    }
+  ],
+  "required_prompts": [
+    "blog-header-prompt",
+    "instagram-square-prompt"
+  ],
+  "seo": {
+    "primary_keyword": "ai content workflow",
+    "secondary_keywords": ["chatgpt midjourney workflow", "ai marketing workflow"]
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "draft"
+  }
+}

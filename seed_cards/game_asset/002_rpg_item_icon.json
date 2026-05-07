@@ -1,0 +1,12 @@
+{
+  "id": "game-rpg-icon-002",
+  "slug": "rpg-item-icon-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "RPG Item/Weapon Icon Prompt",
+  "category": "game_asset",
+  "vertical": "icon",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[item_type] game icon, RPG item, centered composition, plain background, detailed texture, game UI asset --ar 1:1 --v 6"
+}

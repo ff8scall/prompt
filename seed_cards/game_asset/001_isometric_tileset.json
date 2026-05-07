@@ -1,0 +1,61 @@
+{
+  "id": "game-isometric-tileset-001",
+  "slug": "isometric-fantasy-tileset-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Isometric Fantasy Game Tileset Prompt",
+  "result_first_title": "Detailed isometric tiles for fantasy RPG game environments",
+  "short_description": "Complete tileset for building isometric fantasy villages and dungeons in indie games.",
+  "emotional_hook": "이 프롬프트는 손으로 깎은 듯한 따뜻한 픽셀 아트 마을의 정겨움을 담아낸다.",
+  "category": "game_asset",
+  "vertical": "tileset",
+  "use_cases": ["indie_game_dev", "rpg_maker", "concept_art", "steam_capsule"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "model_confidence": "tested",
+  "prompt_text": "isometric [environment_type], fantasy game tileset, 2.5D perspective, pixel art style, consistent lighting, transparent background, game asset, --ar 1:1 --v 6 --tile",
+  "negative_prompt": "perspective distortion, inconsistent shadows, photographic, realistic, 3D render, human figures",
+  "aspect_ratio_tags": ["1:1", "sprite_sheet", "game_asset"],
+  "variables": [
+    {
+      "name": "environment_type",
+      "placeholder": "[environment_type]",
+      "default_value": "medieval village with cobblestone paths",
+      "recommended_values": [
+        "dungeon with traps and treasures",
+        "forest camp with tents",
+        "coastal port with ships",
+        "magical crystal cave"
+      ],
+      "variable_behavior_note": "환경 타입을 바꾸면 건축물과 자연 요소가 바뀌지만 isometric 투시법, 타일 크기, 픽셀 아트 스타일은 유지된다."
+    }
+  ],
+  "why_this_works": [
+    "isometric 키워드는 게임에서 사용 가능한 2.5D 시점을 생성한다.",
+    "transparent background은 실제 게임 엔진에서 타일을 배치할 때 필수적이다.",
+    "tile 파라미터는 Midjourney에서 원활하게 타일링되는 패턴을 만든다.",
+    "pixel art style은 Unity, Godot 등에서 사용하기 좋은 일관된 미학을 제공한다."
+  ],
+  "model_notes": [
+    {
+      "model": "midjourney",
+      "version": "v6",
+      "note": "타일 간 일관성은 v6에서 개선되었지만, 여러 타일을 동일한 세션에서 생성하려면 seed 고정이나 reference image 사용이 권장된다."
+    }
+  ],
+  "variations": [
+    {
+      "label": "Autumn/Winter theme",
+      "prompt_delta": "Replace with autumn foliage or winter snow coverage",
+      "use_case": "Seasonal game events, different biomes"
+    }
+  ],
+  "seo": {
+    "primary_keyword": "isometric game tileset prompt",
+    "secondary_keywords": ["midjourney game asset", "fantasy tileset ai", "rpg map tiles"]
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "draft"
+  }
+}

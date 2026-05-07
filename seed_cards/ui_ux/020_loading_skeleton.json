@@ -1,0 +1,1 @@
+{"id": "ui-loading-skeleton-020", "title": "Loading Skeleton States Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "loading skeleton UI state, [content_type] placeholder, animated shimmer, gray boxes, pulse animation --ar 16:9 --v 6", "variables": [{"name": "content_type", "default_value": "card list"}]}

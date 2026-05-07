@@ -1,0 +1,13 @@
+{
+  "id": "ui-glassmorphism-card-008",
+  "slug": "glassmorphism-card-component-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Glassmorphism Card Component Prompt",
+  "category": "ui_ux",
+  "vertical": "component",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[card_type] glassmorphism card, translucent frosted glass effect, floating UI element, soft blur background, subtle white border, premium app interface --ar 1:1 --v 6",
+  "variables": [{"name": "card_type", "default_value": "pricing plan", "recommended_values": ["notification", "profile", "settings", "music player"]}]
+}

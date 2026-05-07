@@ -1,0 +1,12 @@
+{
+  "id": "ui-mobile-onboarding-005",
+  "slug": "mobile-app-onboarding-screens-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Mobile App Onboarding Screens Prompt",
+  "category": "ui_ux",
+  "vertical": "mobile_app",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[app_type] mobile onboarding screen, friendly illustration, minimal text, clear CTA, iOS design --ar 9:19 --v 6"
+}

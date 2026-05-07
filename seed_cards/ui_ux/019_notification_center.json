@@ -1,0 +1,1 @@
+{"id": "ui-notification-center-019", "title": "Notification Center Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "notification center UI panel, [notification_type] list, unread badges, timestamps, action buttons --ar 3:4 --v 6", "variables": [{"name": "notification_type", "default_value": "app updates"}]}

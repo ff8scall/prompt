@@ -1,0 +1,5 @@
+{
+  "/prompt/[slug]/page": "app/prompt/[slug]/page.js",
+  "/page": "app/page.js",
+  "/category/[slug]/page": "app/category/[slug]/page.js"
+}

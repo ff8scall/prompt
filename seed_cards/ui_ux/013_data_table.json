@@ -1,0 +1,1 @@
+{"id": "ui-data-table-013", "title": "Data Table with Filters Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "data table UI component, [table_type] layout, column headers, sort indicators, pagination, search bar --ar 16:9 --v 6", "variables": [{"name": "table_type", "default_value": "clean minimal"}]}

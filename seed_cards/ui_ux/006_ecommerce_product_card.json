@@ -1,0 +1,12 @@
+{
+  "id": "ui-ecommerce-card-006",
+  "slug": "ecommerce-product-card-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Ecommerce Product Card UI Prompt",
+  "category": "ui_ux",
+  "vertical": "ecommerce",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "product card UI, [platform_type] style, price tag, add to cart button, clean layout, white background --ar 4:5 --v 6"
+}

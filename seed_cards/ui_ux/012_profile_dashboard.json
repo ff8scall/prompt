@@ -1,0 +1,1 @@
+{"id": "ui-profile-dashboard-012", "title": "User Profile Dashboard Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "user profile dashboard UI, [content_type] section, statistics cards, activity timeline, edit profile button --ar 16:9 --v 6", "variables": [{"name": "content_type", "default_value": "account overview"}]}

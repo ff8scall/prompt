@@ -1,0 +1,1 @@
+{"id": "ui-charts-graphs-021", "title": "Data Visualization Charts Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "data visualization dashboard, [chart_type] chart, colorful data points, legend, axis labels --ar 16:9 --v 6", "variables": [{"name": "chart_type", "default_value": "line chart"}]}

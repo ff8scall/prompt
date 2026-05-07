@@ -1,0 +1,13 @@
+{
+  "id": "ui-neumorphism-button-009",
+  "slug": "neumorphism-button-set-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Neumorphism Button Set Prompt",
+  "category": "ui_ux",
+  "vertical": "component",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "neumorphism [button_type] button, soft UI element, subtle shadow and highlight, light gray background, pressed and unpressed states --ar 16:9 --v 6",
+  "variables": [{"name": "button_type", "default_value": "primary CTA", "recommended_values": ["toggle switch", "icon", "fab", "tab"]}]
+}

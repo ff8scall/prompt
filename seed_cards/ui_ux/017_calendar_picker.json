@@ -1,0 +1,1 @@
+{"id": "ui-calendar-picker-017", "title": "Date/Calendar Picker Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "calendar date picker UI, [picker_type] style, month view, selected date highlight, range selection --ar 1:1 --v 6", "variables": [{"name": "picker_type", "default_value": "clean minimal"}]}

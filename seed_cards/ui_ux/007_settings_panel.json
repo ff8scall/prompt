@@ -1,0 +1,12 @@
+{
+  "id": "ui-settings-panel-007",
+  "slug": "app-settings-panel-ui-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "App Settings Panel UI Prompt",
+  "category": "ui_ux",
+  "vertical": "component",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "settings panel UI, toggle switches, dropdown menus, clean form layout, [style_type] design --ar 3:4 --v 6"
+}

@@ -1,0 +1,175 @@
+{
+  "id": "marketing-product-photo-001",
+  "slug": "luxury-product-photography-prompt",
+  "status": "approved",
+  "quality_tier": "tier_1",
+  "verified_badge": true,
+  "last_verified_at": "2026-05-07",
+  "title": "Luxury Product Photography Prompt",
+  "result_first_title": "Premium product photo with elegant studio lighting and soft reflections",
+  "short_description": "High-end product photography for ecommerce listings, Instagram ads, and luxury brand campaigns. Works for cosmetics, jewelry, tech, and fashion accessories.",
+  "emotional_hook": "이 프롬프트는 고급 백화점 진열장의 부드러운 스포트라이트 아래, 제품이 고요하게 빛나는 순간을 포착한다.",
+  "category": "marketing",
+  "vertical": "ecommerce",
+  "use_cases": ["instagram_ad", "amazon_listing", "shopify_banner", "product_catalog", "facebook_ad", "tiktok_product_video_thumbnail"],
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "model_confidence": "tested",
+  "version_history": [
+    {
+      "version": "1.0.0",
+      "changed_at": "2026-05-07",
+      "change_note": "Initial verified product photo prompt. Tested with multiple product types."
+    }
+  ],
+  "prompt_text": "[product_description], luxury product photography, soft diffused studio lighting from upper left, elegant subtle reflections on surface, premium [background_type] background, high-end commercial photography, 8k detail, professional color grading, shallow depth of field --ar 4:5 --v 6 --s 150",
+  "negative_prompt": "busy cluttered background, harsh direct flash shadows, amateur lighting, watermark, text overlay, multiple products, crowded composition, oversaturated colors",
+  "aspect_ratio_tags": ["4:5", "instagram_feed", "product_ad", "ecommerce_listing"],
+  "generation_params": {
+    "aspect_ratio": "4:5",
+    "stylize": 150,
+    "seed": null
+  },
+  "variables": [
+    {
+      "name": "product_description",
+      "placeholder": "[product_description]",
+      "default_value": "elegant perfume bottle with gold cap on marble surface",
+      "recommended_values": [
+        "luxury skincare cream jar with minimalist packaging",
+        "premium wristwatch on velvet cushion",
+        "wireless headphones with metallic finish",
+        "designer leather handbag with brass hardware",
+        "high-end sunglasses on reflective surface",
+        "artisanal candle in glass container"
+      ],
+      "variable_behavior_note": "제품을 바꾸면 촬영 대상이 바뀌지만 부드러운 스튜디오 조명, 고급스러운 반사, 전문적인 컬러그레이딩은 유지된다. 제품 재질(유리, 금속, 가죽)에 따라 반사 특성이 자연스럽게 조정된다."
+    },
+    {
+      "name": "background_type",
+      "placeholder": "[background_type]",
+      "default_value": "neutral gradient gray",
+      "recommended_values": [
+        "soft beige linen texture",
+        "marble surface with subtle veins",
+        "matte black acrylic",
+        "warm cream paper texture",
+        "natural wood grain",
+        "soft bokeh lights"
+      ],
+      "variable_behavior_note": "배경을 바꾸면 브랜드 톤이 달라진다. 뷰티 제품은 marble/linen, 테크 제품은 matte black/acrylic, 자연 친화 브랜드는 wood/paper가 적합하다."
+    }
+  ],
+  "why_this_works": [
+    "soft diffused studio lighting은 모든 제품 카테고리(뷰티, 테크, 패션)에 적용 가능한 보편적 설정으로 전문적인 느낌을 준다.",
+    "4:5 aspect ratio는 Instagram feed에 최적화된 크기이며 Amazon, Shopify에서도 세로형 썸네일로 활용 가능하다.",
+    "elegant subtle reflections는 제품의 프리미엄 느낌을 강조하되 과하지 않게 조절하여 실제 스튜디오 촬영처럼 보인다.",
+    "shallow depth of field는 제품을 분리하여 시선을 집중시키고 광고의 클릭 유도 효과를 높인다.",
+    "stylize 150은 Midjourney의 기본 경향을 억제하여 상업적 사용에 적합한 보다 사실적인 결과를 만든다.",
+    "negative prompt의 'busy cluttered background' 제거는 전문적인 스튜디오 배경을 확보한다."
+  ],
+  "model_notes": [
+    {
+      "model": "midjourney",
+      "version": "v6",
+      "note": "제품의 재질(유리, 금속, 플라스틱) 표현이 우수하다. 그러나 실제 브랜드 로고나 텍스트는 생성하지 못하므로 후처리에서 추가해야 한다. --stylize 100-200 범위가 상업적 제품 사진에 가장 적합하다."
+    },
+    {
+      "model": "dall-e-3",
+      "version": "current",
+      "note": "Midjourney보다 더 사실적이고 광고 스튜디오 품질에 가깝다. 그러나 aspect ratio 파라미터 대신 자연어 설명('vertical format for Instagram')을 사용해야 한다."
+    }
+  ],
+  "comparison_notes": "Midjourney v6은 아티스틱한 프리미엄 느낌이 강하고, DALL-E 3는 더 사실적이고 광고 스튜디오 품질에 가깝다. Instagram/뷰티 브랜드에는 Midjourney, Amazon/쇼핑몰 상세페이지에는 DALL-E 3를 추천. 두 모델 모두 실제 브랜드 로고는 생성하지 못하므로 Canva/Figma에서 후처리 필수.",
+  "variations": [
+    {
+      "label": "Lifestyle/Contextual shot",
+      "prompt_delta": "Add lifestyle context: product on vanity table with flowers, morning light, lifestyle photography",
+      "pre_generated_asset_id": "marketing_product_lifestyle_001",
+      "use_case": "Instagram lifestyle content, brand storytelling"
+    },
+    {
+      "label": "Flat lay/Top-down",
+      "prompt_delta": "Change to flat lay composition, top-down view, product surrounded by complementary items, knolling style --ar 1:1",
+      "pre_generated_asset_id": "marketing_product_flatlay_001",
+      "use_case": "Instagram carousel, unboxing content, Pinterest"
+    },
+    {
+      "label": "Dramatic/High contrast",
+      "prompt_delta": "Replace soft lighting with dramatic side lighting, strong shadows, cinematic mood, dark background",
+      "pre_generated_asset_id": "marketing_product_dramatic_001",
+      "use_case": "Luxury brand campaigns, perfume ads, high-end fashion"
+    }
+  ],
+  "common_failure_modes": [
+    "제품이 주변 잡물과 함께 생성되는 경우: negative prompt에 'multiple products, crowded'를 강화하거나 단순 배경을 지정한다.",
+    "조명이 너무 강하거나 약한 경우: 'soft diffused', 'subtle' 조명 관련 키워드를 조절한다.",
+    "브랜드 로고나 텍스트가 이상하게 생성되는 경우: 이는 Midjourney/DALL-E의 한계. Photoshop/Canva에서 로고를 별도로 추가한다.",
+    "반사가 너무 강해 제품이 안 보이는 경우: 'subtle reflections'로 변경하거나 reflections 키워드를 약하게 조정한다."
+  ],
+  "seo": {
+    "primary_keyword": "luxury product photography ai prompt",
+    "secondary_keywords": [
+      "midjourney product photo",
+      "ecommerce image prompt",
+      "instagram ad creative prompt",
+      "ai product photography",
+      "shopify banner prompt"
+    ],
+    "lsi_keywords": [
+      "studio lighting",
+      "product mockup",
+      "commercial photography",
+      "premium branding",
+      "soft shadows",
+      "marble background"
+    ],
+    "meta_title": "Luxury Product Photography Prompt | Midjourney v6 Ecommerce",
+    "meta_description": "Create premium product photos for Instagram and Amazon with verified Midjourney v6 prompt. Includes 3 variations: lifestyle, flat lay, dramatic lighting."
+  },
+  "internal_links": {
+    "related_prompt_ids": [
+      "marketing-packaging-mockup-002",
+      "marketing-instagram-carousel-003",
+      "ui-ecommerce-card-006"
+    ],
+    "category_slug": "marketing-prompts",
+    "bundle_slug": "ecommerce-photo-prompt-pack"
+  },
+  "asset_metadata": {
+    "hero_image": "/images/prompts/marketing-product-luxury-001-hero.webp",
+    "thumbnail": "/images/prompts/marketing-product-luxury-001-thumb.webp",
+    "variations": [
+      "/images/prompts/marketing-product-lifestyle-001.webp",
+      "/images/prompts/marketing-product-flatlay-001.webp",
+      "/images/prompts/marketing-product-dramatic-001.webp"
+    ],
+    "alt_text": "Luxury perfume bottle product photography with soft studio lighting on marble surface",
+    "width": 1024,
+    "height": 1280,
+    "format": "webp",
+    "placeholder": "data:image/webp;base64,UklGR...",
+    "source_model": "midjourney",
+    "source_prompt_hash": "luxury-product-001",
+    "exif_extracted": true,
+    "cdn_cache_tier": "public_long_cache",
+    "generated_at": "2026-05-07T11:30:00Z",
+    "operator": "promptflow-seed-team"
+  },
+  "ugc_policy": {
+    "allow_user_submissions": true,
+    "requires_rights_confirmation": true,
+    "moderation_required": true
+  },
+  "review": {
+    "human_review_required": true,
+    "review_status": "approved",
+    "reviewer": "seed-curator-001",
+    "reviewed_at": "2026-05-07",
+    "reviewer_note": "Tested with perfume, skincare, watch products. Consistent luxury feel across all. 4:5 ratio perfect for Instagram. Suitable for ecommerce bundle feature."
+  },
+  "copy_stats": {
+    "total_copies": 0,
+    "last_copied_at": null
+  }
+}

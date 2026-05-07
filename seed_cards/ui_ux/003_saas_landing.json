@@ -1,0 +1,20 @@
+{
+  "id": "ui-saas-landing-003",
+  "slug": "saas-landing-page-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "SaaS Landing Page Hero Section Prompt",
+  "category": "ui_ux",
+  "vertical": "landing_page",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "[product_type] landing page, hero section with 3D product mockup, gradient background, CTA button, modern typography, clean layout --ar 16:9 --v 6",
+  "variables": [
+    {
+      "name": "product_type",
+      "placeholder": "[product_type]",
+      "default_value": "AI writing tool",
+      "recommended_values": ["project management app", "email marketing platform", "design tool"]
+    }
+  ]
+}

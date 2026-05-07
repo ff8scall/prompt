@@ -1,0 +1,1 @@
+{"id": "ui-responsive-showcase-025", "title": "Responsive Design Showcase Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "responsive web design showcase, [device_layout] mockup, desktop tablet mobile, same website adapting --ar 16:9 --v 6", "variables": [{"name": "device_layout", "default_value": "3 devices floating"}]}

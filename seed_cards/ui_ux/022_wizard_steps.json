@@ -1,0 +1,1 @@
+{"id": "ui-wizard-steps-022", "title": "Multi-step Form Wizard Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "multi-step form wizard UI, [step_type] indicator, progress bar, back and next buttons --ar 16:9 --v 6", "variables": [{"name": "step_type", "default_value": "numbered circles"}]}

@@ -1,0 +1,13 @@
+{
+  "id": "ui-checkout-flow-011",
+  "slug": "ecommerce-checkout-flow-prompt",
+  "status": "draft",
+  "quality_tier": "tier_1",
+  "title": "Ecommerce Checkout Flow Prompt",
+  "category": "ui_ux",
+  "vertical": "ecommerce",
+  "target_model": "midjourney",
+  "model_version": "v6",
+  "prompt_text": "ecommerce checkout UI, [step_type] step, payment form, order summary, trust badges, progress indicator --ar 9:16 --v 6",
+  "variables": [{"name": "step_type", "default_value": "payment", "recommended_values": ["shipping", "review", "confirmation", "cart"]}]
+}

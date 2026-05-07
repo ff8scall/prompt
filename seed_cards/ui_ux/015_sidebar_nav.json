@@ -1,0 +1,1 @@
+{"id": "ui-sidebar-nav-015", "title": "Sidebar Navigation Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "sidebar navigation UI, [nav_type] menu, collapsible sections, active state indicator, icons with labels --ar 3:4 --v 6", "variables": [{"name": "nav_type", "default_value": "admin dashboard"}]}

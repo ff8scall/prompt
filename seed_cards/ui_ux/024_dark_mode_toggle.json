@@ -1,0 +1,1 @@
+{"id": "ui-dark-mode-toggle-024", "title": "Dark Mode Settings UI Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "dark mode settings UI, [toggle_style] switch, theme preview cards, accent color picker --ar 9:16 --v 6", "variables": [{"name": "toggle_style", "default_value": "iOS style"}]}

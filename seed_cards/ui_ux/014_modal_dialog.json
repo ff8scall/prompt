@@ -1,0 +1,1 @@
+{"id": "ui-modal-dialog-014", "title": "Modal/Dialog Component Prompt", "category": "ui_ux", "target_model": "midjourney", "prompt_text": "modal dialog UI, [modal_type] overlay, centered card, close button, backdrop blur, action buttons --ar 4:3 --v 6", "variables": [{"name": "modal_type", "default_value": "confirmation"}]}
