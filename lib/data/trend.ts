@@ -10,7 +10,7 @@ export const claymorphismPrompt: PromptCard = {
   title: "Claymorphism 3D Character Design",
   result_first_title: "Cute and playful claymorphism 3D characters with soft matte textures and plump shapes",
   short_description: "Trending clay-style 3D illustrations for modern web design, mobile apps, and brand mascots.",
-  emotional_hook: "이 프롬프트는 차가운 디지털 화면 속에 말랑말랑한 클레이의 온기와 유머를 불어넣는다.",
+  emotional_hook: "This prompt breathes the warmth and humor of squishy clay into the cold digital screen.",
   category: "trend",
   vertical: "3d_illustration",
   use_cases: ["web_illustration", "app_onboarding", "brand_mascot", "social_media_content"],
@@ -26,17 +26,17 @@ export const claymorphismPrompt: PromptCard = {
       placeholder: "[character_concept]",
       default_value: "friendly robot holding a heart",
       recommended_values: ["cute animal explorer", "floating crypto coin with a face", "minimalist human character with large hands", "personified cloud with a smile"],
-      variable_behavior_note: "캐릭터 컨셉을 바꾸면 디자인의 중심 대상이 변경되지만, 말랑한 질감과 단순한 기하학적 매력은 유지된다."
+      variable_behavior_note: "Changing the character concept updates the subject while maintaining the soft texture and simple geometric charm."
     }
   ],
   why_this_works: [
-    "soft matte clay texture는 사용자에게 친근하고 포근한 인상을 주어 서비스의 진입 장벽을 낮춘다.",
-    "plump rounded shapes는 현대 모바일 앱 디자인 트렌드인 'Joyful design'과 완벽하게 일치한다."
+    "The soft matte clay texture creates a friendly and inviting impression, lowering the barrier to entry for users.",
+    "Plump rounded shapes align perfectly with the 'Joyful design' trend in modern mobile app aesthetics."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "질감의 매트함과 부드러운 전역 조명(Global Illumination) 표현이 우수함." }],
-  comparison_notes: "블렌더(Blender) 없이도 전문가급 클레이 캐릭터를 즉시 생성할 수 있는 가장 빠른 방법이다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Excellent at rendering matte textures and soft Global Illumination (GI)." }],
+  comparison_notes: "The fastest way to generate professional clay characters without needing Blender expertise.",
   variations: [{ label: "Glossy/Plastic", prompt_delta: "Change matte clay to glossy plastic with high reflections", use_case: "Toy-like aesthetic", pre_generated_asset_id: null }],
-  common_failure_modes: ["질감이 너무 거칠게 나오는 경우 → 'smooth surfaces, fine clay' 키워드 추가"],
+  common_failure_modes: ["If texture appears too grainy -> add 'smooth surfaces, fine clay' keywords."],
   seo: {
     primary_keyword: "claymorphism 3d prompt",
     secondary_keywords: ["3d character design ai", "clay style illustration"],
@@ -45,13 +45,13 @@ export const claymorphismPrompt: PromptCard = {
     meta_description: "Create trendy clay-style characters for web and apps. Verified Midjourney v6 prompt for modern 3D illustrations."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/trend-claymorphism-001-hero.png",
+    hero_image: "/images/prompts/trend-claymorphism-001-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Playful claymorphism 3D robot character",
     width: 1024,
     height: 1024,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "clay-001",
@@ -71,7 +71,7 @@ export const futuristicTypographyPrompt: PromptCard = {
   title: "Futuristic Typographic Art",
   result_first_title: "Experimental typography with liquid metal and glowing glass textures",
   short_description: "Cutting-edge typographic compositions for posters, branding, and motion graphics backgrounds.",
-  emotional_hook: "이 프롬프트는 언어라는 기호가 해체되어 빛과 질감의 시각적 선율로 재탄생하는 찰나를 포착한다.",
+  emotional_hook: "This prompt captures the moment where language deconstructs into a visual melody of light and texture.",
   category: "trend",
   vertical: "typography",
   use_cases: ["poster_design", "brand_identity", "experimental_art", "motion_graphics"],
@@ -87,17 +87,17 @@ export const futuristicTypographyPrompt: PromptCard = {
       placeholder: "[letter_concept]",
       default_value: "abstract letter 'X' with organic curves",
       recommended_values: ["futuristic 'A' with sharp metallic edges", "floating 'O' made of light filaments", "intertwined 'M' with translucent layers", "minimalist 'S' in zero gravity"],
-      variable_behavior_note: "글자 컨셉을 바꾸면 중심 형태가 변경되지만, 액체 금속과 유리 질감이 어우러진 실험적 미학은 유지된다."
+      variable_behavior_note: "Changing the letter concept modifies the core form while maintaining the avant-garde liquid metal and glass aesthetic."
     }
   ],
   why_this_works: [
-    "liquid chrome and frosted glass는 현재 가장 유행하는 'Y2K 퓨처리즘'의 핵심 소재로 세련된 시각적 충격을 준다.",
-    "ar 3:4 비율은 포스터 디자인에 적합한 구도를 형성하여 즉각적인 상업적 활용이 가능하다."
+    "Liquid chrome and frosted glass are core materials of the trending 'Y2K Futurism,' providing a sophisticated visual impact.",
+    "The 3:4 aspect ratio creates a composition ideal for poster design, allowing for immediate commercial application."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "비정형적 형태와 복잡한 질감 겹침 표현이 우수함." }],
-  comparison_notes: "가독성보다는 예술적 상징성을 추구하는 그래픽 디자이너를 위한 최상의 소스를 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Superb at rendering amorphous forms and complex texture layering." }],
+  comparison_notes: "Provides the ultimate source for graphic designers seeking artistic symbolism over legibility.",
   variations: [{ label: "Iridescent Burn", prompt_delta: "Add iridescent heat-map colors and oil-slick reflections", use_case: "Music album art", pre_generated_asset_id: null }],
-  common_failure_modes: ["형태가 너무 단순하게 나오는 경우 → 'intricate geometric complexity' 키워드 추가"],
+  common_failure_modes: ["If form appears too simple -> add 'intricate geometric complexity' keywords."],
   seo: {
     primary_keyword: "futuristic typography prompt",
     secondary_keywords: ["experimental art ai", "liquid metal typography"],
@@ -106,13 +106,13 @@ export const futuristicTypographyPrompt: PromptCard = {
     meta_description: "Generate cutting-edge typographic art with liquid metal and glass. Verified Midjourney v6 prompt for designers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/trend-typography-002-hero.png",
+    hero_image: "/images/prompts/trend-typography-002-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Experimental futuristic liquid metal typography",
     width: 900,
     height: 1200,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "typo-002",
@@ -132,7 +132,7 @@ export const hyperSurrealismPrompt: PromptCard = {
   title: "Hyper-Surrealism Digital Art",
   result_first_title: "Mind-bending hyper-surrealist digital art with extreme detail and dreamlike logic",
   short_description: "High-concept surrealist illustrations that push the boundaries of AI imagination and visual storytelling.",
-  emotional_hook: "이 프롬프트는 현실의 중력이 멈추고, 잠재의식 속 가장 깊은 꿈의 파편들이 선명한 질감으로 부활하는 경험을 제공한다.",
+  emotional_hook: "This prompt offers an experience where gravity ceases, and the deepest fragments of the subconscious awaken in vivid texture.",
   category: "trend",
   vertical: "digital_art",
   use_cases: ["concept_art", "editorial_illustration", "art_exhibition", "creative_inspiration"],
@@ -148,17 +148,17 @@ export const hyperSurrealismPrompt: PromptCard = {
       placeholder: "[surreal_concept]",
       default_value: "a grand piano made of ocean waves in a desert",
       recommended_values: ["floating islands shaped like human brains", "a clock melting into a forest of glass butterflies", "a giant eye reflected in a liquid mercury lake", "staircase leading into a nebula inside a library"],
-      variable_behavior_note: "초현실적 컨셉을 바꾸면 작품의 서사는 완전히 달라지지만, 꿈속을 걷는 듯한 기묘한 공간감과 극도로 세밀한 묘사는 유지된다."
+      variable_behavior_note: "Changing the surreal concept completely shifts the narrative while maintaining the uncanny sense of space and extreme detail."
     }
   ],
   why_this_works: [
-    "illogical spatial composition은 AI가 현실의 물리 법칙을 무시하고 오직 시각적 경이로움에만 집중하도록 유도한다.",
-    "high stylize(s 500)는 Midjourney의 창의성을 극대화하여 인간이 상상하기 힘든 비주얼을 생성한다."
+    "Illogical spatial composition induces the AI to ignore physics and focus purely on visual wonder.",
+    "High stylize (s 500) maximizes Midjourney's creativity to generate visuals beyond human imagination."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "비유적이고 추상적인 개념의 시각화 능력이 압도적임." }],
-  comparison_notes: "AI 아트의 본질인 '상상력의 확장'을 가장 잘 보여주는 프롬프트 체계이다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Overwhelming ability to visualize metaphorical and abstract concepts." }],
+  comparison_notes: "A framework that best demonstrates the essence of AI art: the expansion of imagination.",
   variations: [{ label: "Dark Macabre", prompt_delta: "Change lighting to dark and moody, add gothic surrealist elements", use_case: "Horror concept art", pre_generated_asset_id: null }],
-  common_failure_modes: ["구성이 너무 평범한 경우 → 'paradoxical geometry' 키워드 추가"],
+  common_failure_modes: ["If composition appears too mundane -> add 'paradoxical geometry' keywords."],
   seo: {
     primary_keyword: "hyper-surrealism digital art prompt",
     secondary_keywords: ["surrealist ai art", "creative concept art prompt"],
@@ -167,13 +167,13 @@ export const hyperSurrealismPrompt: PromptCard = {
     meta_description: "Generate mind-bending surrealist art with extreme detail. Verified Midjourney v6 prompt for high-concept illustrations."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/trend-surrealism-003-hero.png",
+    hero_image: "/images/prompts/trend-surrealism-003-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Hyper-surrealist digital art of a wave piano",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "surreal-003",
@@ -193,7 +193,7 @@ export const retroFuturismPrompt: PromptCard = {
   title: "Retro-Futurism Graphic Poster",
   result_first_title: "Vintage 1960s space age aesthetic combined with modern digital graphics",
   short_description: "Nostalgic yet futuristic poster designs inspired by mid-century sci-fi and space exploration.",
-  emotional_hook: "이 프롬프트는 과거의 인류가 꿈꿨던 낙관적인 미래, 그 순수한 호기심과 거대한 우주에 대한 동경을 시각화한다.",
+  emotional_hook: "This prompt visualizes the optimistic future dreamt by the past—pure curiosity and yearning for the vast cosmos.",
   category: "trend",
   vertical: "graphic_design",
   use_cases: ["poster_art", "merchandise_design", "editorial_graphic", "brand_campaign"],
@@ -209,17 +209,17 @@ export const retroFuturismPrompt: PromptCard = {
       placeholder: "[space_age_concept]",
       default_value: "utopian city on Mars with glass domes",
       recommended_values: ["interstellar travel through a colorful nebula", "monorail passing through a forest of tomorrow", "sleek chrome spaceship entering an orbital ring", "futuristic communication device with floating screens"],
-      variable_behavior_note: "미래 컨셉을 바꾸면 포스터의 주제가 변경되지만, 60년대 특유의 낙관적인 컬러 팔레트와 평면적인 그래픽 스타일은 유지된다."
+      variable_behavior_note: "Changing the concept updates the theme while maintaining the signature optimistic 60s color palette and flat graphic style."
     }
   ],
   why_this_works: [
-    "halftone dot patterns와 vibrant flat colors는 실제 빈티지 인쇄물의 질감을 재현하여 독특한 미학적 매력을 준다.",
-    "sleek chrome rockets는 레트로 퓨처리즘의 아이코닉한 요소로, 시대를 초월한 세련됨을 전달한다."
+    "Halftone dot patterns and vibrant flat colors recreate the texture of vintage prints for a unique aesthetic charm.",
+    "Sleek chrome rockets are iconic elements of retro-futurism, delivering timeless sophistication."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "플랫한 그래픽 디자인과 빈티지 색감 재현력이 탁월함." }],
-  comparison_notes: "굿즈 디자인이나 레트로 감성의 마케팅 캠페인에 가장 완벽한 시각적 도구를 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional at flat graphic design and vintage color reproduction." }],
+  comparison_notes: "Provides the perfect visual tools for merchandise design or nostalgic marketing campaigns.",
   variations: [{ label: "Bauhaus Mix", prompt_delta: "Add Bauhaus geometric shapes and primary colors red blue yellow", use_case: "Minimalist posters", pre_generated_asset_id: null }],
-  common_failure_modes: ["너무 사실적인 사진처럼 나오는 경우 → 'graphic flat illustration' 키워드 보강"],
+  common_failure_modes: ["If result appears too photographic -> reinforce with 'graphic flat illustration' keywords."],
   seo: {
     primary_keyword: "retro-futurism poster prompt",
     secondary_keywords: ["vintage sci-fi art ai", "space age aesthetic prompt"],
@@ -228,13 +228,13 @@ export const retroFuturismPrompt: PromptCard = {
     meta_description: "Create nostalgic space age posters with verified Midjourney v6 prompt. Includes vintage colors and halftone textures."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/trend-retrofuturism-004-hero.png",
+    hero_image: "/images/prompts/trend-retrofuturism-004-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Vintage retro-futurism space poster",
     width: 1000,
     height: 1500,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "retro-004",
@@ -254,7 +254,7 @@ export const archVizPrompt: PromptCard = {
   title: "Parametric Architecture Visualization",
   result_first_title: "Breathtaking parametric building design with flowing organic forms and futuristic materials",
   short_description: "High-end architectural visualization for vanguard building designs and urban planning concepts.",
-  emotional_hook: "이 프롬프트는 딱딱한 콘크리트의 한계를 넘어, 생명체처럼 유연하게 흐르는 미래 건축의 새로운 지평을 보여준다.",
+  emotional_hook: "This prompt goes beyond the limits of rigid concrete, showing new horizons of futuristic architecture that flows like a living organism.",
   category: "trend",
   vertical: "architecture",
   use_cases: ["architectural_concept", "urban_planning", "interior_design", "real_estate_marketing"],
@@ -270,24 +270,24 @@ export const archVizPrompt: PromptCard = {
       placeholder: "[building_context]",
       default_value: "grand cultural center with skeletal white structures",
       recommended_values: ["luxury oceanfront villa with glass bridges", "sustainable vertical garden skyscraper", "modern airport terminal with light-filtering roof", "minimalist museum inside a mountain"],
-      variable_behavior_note: "건축물의 용도를 바꾸면 구조적 복잡성과 공간적 맥락이 변경되지만, 비정형(Parametric) 건축 특유의 유려한 곡선 미학은 유지된다."
+      variable_behavior_note: "Changing the building context modifies the structural complexity while maintaining the signature parametric organic aesthetic."
     },
     {
       name: "material_details",
       placeholder: "[material_details]",
       default_value: "self-cleaning white polymer and solar-responsive glass",
       recommended_values: ["iridescent carbon fiber and polished wood", "translucent bio-plastics and vertical moss walls", "weathered copper and smart glass panels", "3D printed concrete with organic textures"],
-      variable_behavior_note: "소재를 바꾸면 건축물의 질감과 지속 가능성 무드가 달라진다. 화이트 폴리머는 순수함, 카본 파이버는 기술적 정교함을 강조한다."
+      variable_behavior_note: "Changing materials shifts the texture and sustainability mood. White polymer emphasizes purity, while carbon fiber stresses technical precision."
     }
   ],
   why_this_works: [
-    "Zaha Hadid style은 곡선의 미학을 극대화하여 현대 건축의 가장 아방가르드한 측면을 즉각적으로 소환한다.",
-    "integrated greenery는 환경 친화적이고 미래지향적인 도시 비전을 제시하여 높은 시각적 설득력을 가진다."
+    "The Zaha Hadid style maximizes the aesthetic of curves, instantly evoking the most avant-garde aspects of modern architecture.",
+    "Integrated greenery presents an eco-friendly and futuristic urban vision with high visual persuasiveness."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "복잡한 기하학적 구조와 빛의 산란 표현이 매우 사실적임." }],
-  comparison_notes: "3D 렌더링 툴(V-Ray, Lumion)의 한계를 뛰어넘는 예술적 영감과 시각적 충격을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Geometric structures and light scattering are rendered with extreme realism." }],
+  comparison_notes: "Provides artistic inspiration and visual impact that goes beyond traditional 3D rendering tools like V-Ray or Lumion.",
   variations: [{ label: "Interior View", prompt_delta: "Change focus to interior space, flowing atrium, natural light filtering from above", use_case: "Interior design concepts", pre_generated_asset_id: null }],
-  common_failure_modes: ["건축물이 너무 붕 떠 보이는 경우 → 'grounded composition, heavy foundations' 키워드 보강"],
+  common_failure_modes: ["If building appears disconnected from the ground -> reinforce with 'grounded composition, heavy foundations' keywords."],
   seo: {
     primary_keyword: "parametric architecture prompt",
     secondary_keywords: ["modern building design ai", "archviz prompt midjourney"],
@@ -296,13 +296,13 @@ export const archVizPrompt: PromptCard = {
     meta_description: "Generate breathtaking futuristic building designs. Verified Midjourney v6 prompt for architects and designers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/trend-archviz-005-hero.png",
+    hero_image: "/images/prompts/trend-archviz-005-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Futuristic parametric white building design",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "arch-005",

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   title: "PROMPTFLOW | Professional AI Prompt Archive",
   description: "Visual-first prompt library for high-authority AI image frameworks. Find the result, copy the prompt.",
   metadataBase: new URL("https://prompt.lego-sia.com"),
+  verification: {
+    other: {
+      'msvalidate.01': '048AB450B6B91E03CAF13FDE8415F954',
+      'naver-site-verification': '68ce53e8ac3dd29c10688a6efabae4686c72a32c',
+    },
+  },
 };
 
 export default function RootLayout({

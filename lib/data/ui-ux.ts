@@ -10,7 +10,7 @@ export const dashboardPrompt: PromptCard = {
   title: "Glassmorphism SaaS Dashboard UI Prompt",
   result_first_title: "A clean glassmorphism SaaS dashboard with glowing analytics cards",
   short_description: "A polished dashboard concept for SaaS products that need a futuristic but usable interface.",
-  emotional_hook: "이 프롬프트는 어두운 밤의 유리 패널 위에 데이터가 조용히 빛나는 듯한 고급스러운 집중감을 만든다.",
+  emotional_hook: "This prompt creates a premium sense of focus, as if data is quietly glowing over dark glass panels in the dead of night.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["saas_landing", "product_mockup", "design_moodboard", "client_proposal"],
@@ -32,34 +32,34 @@ export const dashboardPrompt: PromptCard = {
         "ecommerce sales dashboard",
         "project management dashboard"
       ],
-      variable_behavior_note: "이 변수를 바꾸면 전체 유리 질감, 어두운 조명, SaaS 인터페이스 스타일은 유지되고, 대시보드가 표현하는 산업과 데이터 맥락만 바뀐다."
+      variable_behavior_note: "Changing this variable modifies the industry and data context while maintaining the glass texture, dark lighting, and SaaS interface style."
     }
   ],
   why_this_works: [
-    "glassmorphism 키워드는 반투명 패널과 배경 흐림 효과를 유도하여 현대적인 UI 느낌을 만든다.",
-    "dark navy background(#0a1628)와 soft gradients 조합은 고급 SaaS 제품의 시각적 신뢰감을 강화하며 눈의 피로를 줄인다.",
-    "clean spacing은 UI 이미지에서 흔한 과밀한 레이아웃 문제를 방지하고 실제 사용 가능해 보이는 인상을 준다.",
-    "stylize 250은 Midjourney의 기본 아티스틱 경향을 적절히 억제하여 상용 UI에 더 적합한 결과를 만든다.",
-    "negative prompt의 photorealistic, human figures 제거는 UI 이미지에서 사람이나 사진 요소가 나타나는 실패를 방지한다."
+    "The 'glassmorphism' keyword induces translucent panels and background blur for a modern UI feel.",
+    "The combination of dark navy background (#0a1628) and soft gradients enhances visual trust for premium SaaS products and reduces eye strain.",
+    "Clean spacing prevents the overcrowded layouts common in AI-generated UI, creating a professional and usable impression.",
+    "Stylize 250 moderates Midjourney's default artistic tendencies to produce results more suitable for commercial UI design.",
+    "Removing 'photorealistic' and 'human figures' in the negative prompt prevents unwanted photographic elements from appearing in the UI."
   ],
   model_notes: [
     {
       model: "midjourney",
       version: "v6",
-      note: "UI의 전체적인 분위기와 카드 레이아웃 표현에 강하나 실제 텍스트는 깨질 수 있다. 상용도 사용 시 Figma에서 아이콘과 텍스트를 교체하는 것이 권장된다. stylize 값을 150-350 범위에서 조절하면 아티스틱 정도를 조절할 수 있다."
+      note: "Strong at rendering overall UI mood and card layouts, though actual text may be garbled. For commercial use, replacing icons and text in Figma is recommended. Adjusting the stylize value between 150-350 controls the artistic level."
     },
     {
       model: "dall-e-3",
       version: "current",
-      note: "설명형 프롬프트에 강하나 Midjourney식 파라미터(--ar, --v, --s)는 제거하고 plain text로 재작성하는 것이 좋다. 16:9 비율을 원하면 'widescreen aspect ratio'와 같은 자연어 설명을 사용한다."
+      note: "Excellent at descriptive prompts. It is best to remove Midjourney parameters (--ar, --v, --s) and rewrite as plain text. Use 'widescreen aspect ratio' for a 16:9 effect."
     },
     {
       model: "stable_diffusion_xl",
       version: "xl",
-      note: "controlnet이나 특정 UI lora를 사용하면 더 정확한 컴포넌트 배치가 가능하다. glassmorphism 효과는 cfg scale 7-9에서 가장 안정적으로 나타난다."
+      note: "Precise component placement is possible using ControlNet or specific UI LoRAs. Glassmorphism effects are most stable at CFG scale 7-9."
     }
   ],
-  comparison_notes: "Midjourney v6는 조명과 질감이 강하고 전체적인 무드 보드로서 우수하다. DALL-E 3는 구성 의도 반영이 좋으나 아티스틱 톤이 다를 수 있다. 실제 상용 UI 텍스트가 필요한 경우 어떤 모델을 쓰더라도 Figma에서 후처리하는 편이 안전하다. glassmorphism 효과의 강도는 Midjourney가 가장 일관되게 표현한다.",
+  comparison_notes: "Midjourney v6 excels in lighting and texture, making it ideal for mood boards. DALL-E 3 follows design intent accurately but may have a different artistic tone. Regardless of the model, Figma post-processing is essential for production-ready text. Midjourney remains the most consistent in rendering glassmorphism effects.",
   variations: [
     {
       label: "Bright/Light Mode",
@@ -81,9 +81,9 @@ export const dashboardPrompt: PromptCard = {
     }
   ],
   common_failure_modes: [
-    "텍스트가 완전히 깨져서 읽을 수 없는 경우: negative prompt에 'unreadable text'를 강화하거나, stylize 값을 낮춘다.",
-    "유리 효과가 너무 강해 내용이 안 보이는 경우: 'subtle blur', 'light glassmorphism'으로 수정한다.",
-    "레이아웃이 너무 아티스틱해서 실제 UI 같지 않은 경우: 'functional layout', 'usable interface'를 프롬프트에 추가한다."
+    "Garbled or unreadable text: Strengthen 'unreadable text' in the negative prompt or lower the stylize value.",
+    "Overpowering glass effect: Soften with keywords like 'subtle blur' or 'light glassmorphism'.",
+    "Overly artistic layout: Add 'functional layout' or 'usable interface' to anchor the result in realism."
   ],
   seo: {
     primary_keyword: "glassmorphism dashboard UI prompt",
@@ -105,12 +105,12 @@ export const dashboardPrompt: PromptCard = {
     meta_description: "Copy a verified Midjourney v6 prompt for glassmorphism SaaS dashboards. Includes variables, model notes, 3 variations, and why this works analysis."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-dashboard-glassmorphism-001-hero.png",
-    thumbnail: "/images/prompts/ui-dashboard-glassmorphism-001-thumb.png",
+    hero_image: "/images/prompts/ui-dashboard-glassmorphism-001-hero.webp",
+    thumbnail: "/images/prompts/ui-dashboard-glassmorphism-001-thumb.webp",
     variations: [
-      "/images/prompts/ui-dashboard-glassmorphism-001-bright.png",
-      "/images/prompts/ui-dashboard-glassmorphism-001-mobile.png",
-      "/images/prompts/ui-dashboard-glassmorphism-001-cyberpunk.png"
+      "/images/prompts/ui-dashboard-glassmorphism-001-bright.webp",
+      "/images/prompts/ui-dashboard-glassmorphism-001-mobile.webp",
+      "/images/prompts/ui-dashboard-glassmorphism-001-cyberpunk.webp"
     ],
     alt_text: "Glassmorphism SaaS dashboard UI with translucent cards and glowing analytics charts on dark navy background",
     width: 1600,
@@ -139,7 +139,7 @@ export const darkAnalyticsPrompt: PromptCard = {
   title: "Dark Mode Analytics Dashboard Prompt",
   result_first_title: "Professional dark mode dashboard with neon data visualization charts",
   short_description: "Dark mode analytics dashboard for crypto, fintech, and data-heavy applications. Neon accents on deep backgrounds.",
-  emotional_hook: "이 프롬프트는 심해처럼 깊은 어둠 속에서 데이터가 은은하게 빛나는 미래적 긴장감을 만든다.",
+  emotional_hook: "This prompt evokes a futuristic sense of tension, where data glows softly within a void as deep as the ocean floor.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["crypto_dashboard", "fintech_app", "trading_interface", "server_monitoring"],
@@ -155,22 +155,22 @@ export const darkAnalyticsPrompt: PromptCard = {
       placeholder: "[dashboard_type]",
       default_value: "crypto portfolio dashboard",
       recommended_values: ["server monitoring dashboard", "social media analytics", "sales metrics dashboard", "trading platform interface"],
-      variable_behavior_note: "대시보드 타입을 바꾸면 표시되는 데이터와 위젯이 바뀌지만 어두운 테마와 네온 강조 스타일은 유지된다."
+      variable_behavior_note: "Changing the dashboard type updates the data and widgets while maintaining the dark theme and neon accent style."
     }
   ],
   why_this_works: [
-    "dark mode는 눈의 피로를 줄이고 데이터 집중을 도와준다.",
-    "neon accent는 중요 데이터 포인트를 강조한다.",
-    "midnight blue 배경은 전문적인 fintech/enterprise 느낌을 준다."
+    "Dark mode reduces eye strain and helps users focus on critical data points.",
+    "Neon accents highlight key metrics and data visualizations against the deep background.",
+    "The midnight blue background provides a professional fintech and enterprise aesthetic."
   ],
   model_notes: [
-    { model: "midjourney", version: "v6", note: "어두운 배경과 네온 조합이 강하다. stylize 150-250 권장." }
+    { model: "midjourney", version: "v6", note: "Strong at rendering dark backgrounds and neon combinations. Stylize 150-250 recommended." }
   ],
-  comparison_notes: "Midjourney v6가 어두운 UI와 발광 효과에서 가장 일관된 결과를 보여준다.",
+  comparison_notes: "Midjourney v6 provides the most consistent results for dark UI and glowing effects.",
   variations: [
     { label: "Cyberpunk", prompt_delta: "Add cyberpunk aesthetic, purple and cyan neon, glitch effects", use_case: "Gaming dashboards", pre_generated_asset_id: null }
   ],
-  common_failure_modes: ["네온이 너무 강하면 텍스트가 안보임 → neon intensity 조절"],
+  common_failure_modes: ["If neon intensity is too high, text becomes unreadable -> adjust neon intensity keywords."],
   seo: {
     primary_keyword: "dark mode dashboard prompt",
     secondary_keywords: ["analytics ui prompt", "dark theme dashboard"],
@@ -179,13 +179,13 @@ export const darkAnalyticsPrompt: PromptCard = {
     meta_description: "Create professional dark mode dashboards with neon accents. Verified Midjourney v6 prompt for fintech and crypto interfaces."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-dark-analytics-002-hero.png",
+    hero_image: "/images/prompts/ui-dark-analytics-002-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Dark mode analytics dashboard with neon charts",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "dark-analytics-002",
@@ -209,7 +209,7 @@ export const landingPagePrompt: PromptCard = {
   title: "SaaS Landing Page Hero Prompt",
   result_first_title: "Modern SaaS landing page with 3D product mockup and gradient background",
   short_description: "Clean, conversion-focused landing page design for SaaS products with hero section, CTA, and product visualization.",
-  emotional_hook: "이 프롬프트는 방문자의 시선을 자연스럽게 제품으로 이끄는 세련된 설득의 공간을 만든다.",
+  emotional_hook: "This prompt creates a sophisticated space of persuasion that naturally leads visitors' attention to the product.",
   category: "ui_ux",
   vertical: "landing_page",
   use_cases: ["saas_homepage", "product_launch", "startup_website", "conversion_page"],
@@ -225,22 +225,22 @@ export const landingPagePrompt: PromptCard = {
       placeholder: "[product_type]",
       default_value: "AI writing tool",
       recommended_values: ["project management app", "design tool", "analytics platform", "email marketing service"],
-      variable_behavior_note: "제품 타입을 바꾸면 목업과 히어로 이미지가 바뀌지만 랜딩 페이지 구조와 깔끔한 스타일은 유지된다."
+      variable_behavior_note: "Changing the product type modifies the mockup and hero image, but maintains the landing page structure and clean style."
     }
   ],
   why_this_works: [
-    "3D product mockup은 제품의 실물감을 준다.",
-    "gradient background는 현대적이고 생동감 있는 느낌을 준다.",
-    "clean layout은 전환율에 직접적인 영향을 주는 디자인 원칙이다."
+    "3D product mockups provide a sense of reality to the product.",
+    "Gradient backgrounds grant a modern and vibrant feel.",
+    "Clean layout is a design principle that directly affects conversion rates."
   ],
   model_notes: [
-    { model: "midjourney", version: "v6", note: "3D 목업과 그라데이션 조합이 강하다." }
+    { model: "midjourney", version: "v6", note: "Strong combination of 3D mockups and gradients." }
   ],
-  comparison_notes: "Midjourney가 SaaS 랜딩 페이지의 현대적 미학에서 우수하다.",
+  comparison_notes: "Midjourney excels in the modern aesthetics of SaaS landing pages.",
   variations: [
     { label: "Minimal", prompt_delta: "Replace gradient with pure white background, minimal style", use_case: "Enterprise SaaS", pre_generated_asset_id: null }
   ],
-  common_failure_modes: ["목업이 너무 사실적이면 실제 제품 사진인지 혼동 → 적절한 3D 느낌 유지"],
+  common_failure_modes: ["Mockup appearing too realistic might confuse it with an actual product photo -> maintain a proper 3D feel."],
   seo: {
     primary_keyword: "saas landing page prompt",
     secondary_keywords: ["website design prompt", "landing page ai"],
@@ -249,13 +249,13 @@ export const landingPagePrompt: PromptCard = {
     meta_description: "Create modern SaaS landing pages with 3D product mockups. Verified prompt for startup websites and product launches."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-landing-003-hero.png",
+    hero_image: "/images/prompts/ui-saas-landing-003-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "SaaS landing page with 3D product mockup",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "saas-landing-003",
@@ -279,7 +279,7 @@ export const fintechMobilePrompt: PromptCard = {
   title: "Premium Fintech Mobile App UI",
   result_first_title: "High-end mobile banking interface with sleek dark gradients and neon highlights",
   short_description: "A modern fintech mobile application design focusing on transaction history and asset visualization.",
-  emotional_hook: "이 프롬프트는 사용자의 자산이 안전하면서도 역동적으로 관리되고 있다는 기술적 확신을 시각화한다.",
+  emotional_hook: "This prompt visualizes technical assurance that the user's assets are managed both securely and dynamically.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["fintech_startup", "banking_app", "crypto_wallet_ui", "finance_portfolio"],
@@ -295,18 +295,18 @@ export const fintechMobilePrompt: PromptCard = {
       placeholder: "[app_context]",
       default_value: "digital wallet main dashboard",
       recommended_values: ["stock trading interface", "savings goal tracker", "spending analytics chart", "credit card management"],
-      variable_behavior_note: "앱의 컨텍스트를 바꾸면 금융 도메인에 맞는 위젯과 차트 구성이 변경되지만, 전체적인 프리미엄 다크 무드는 유지된다."
+      variable_behavior_note: "Changing the app context modifies widget and chart configurations suitable for the financial domain, but maintains the overall premium dark mood."
     }
   ],
   why_this_works: [
-    "deep violet과 emerald 조합은 현대 핀테크 디자인의 표준으로, 혁신과 성장을 동시에 상징한다.",
-    "glowing balance는 시각적 위계의 최상단에 위치하여 사용자의 핵심 관심사를 즉각적으로 타격한다.",
-    "9:16 비율은 실제 모바일 스크린 비율과 일치하여 목업 제작 시 후처리가 용이하다."
+    "The combination of deep violet and emerald is a standard in modern fintech design, symbolizing both innovation and growth.",
+    "The glowing balance is positioned at the top of the visual hierarchy to immediately strike the user's core interest.",
+    "The 9:16 ratio matches actual mobile screen proportions, facilitating post-processing during mockup production."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "모바일 인터페이스의 아이콘 정밀도가 높다." }],
-  comparison_notes: "모바일 특유의 밀도 있는 레이아웃 표현에서 Midjourney v6가 압도적이다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "High precision in mobile interface icons." }],
+  comparison_notes: "Midjourney v6 is overwhelming in its representation of mobile-specific dense layouts.",
   variations: [{ label: "Light Professional", prompt_delta: "Replace deep violet with soft gray and blue, white background", use_case: "Traditional banking", pre_generated_asset_id: null }],
-  common_failure_modes: ["내비게이션 바가 뭉개지는 경우 → 'clean bottom navigation' 키워드 추가"],
+  common_failure_modes: ["Navigation bar appearing blurry -> add 'clean bottom navigation' keywords."],
   seo: {
     primary_keyword: "fintech mobile app ui prompt",
     secondary_keywords: ["mobile banking ui", "finance app design ai"],
@@ -315,13 +315,13 @@ export const fintechMobilePrompt: PromptCard = {
     meta_description: "Create high-end fintech mobile apps with neon highlights. Verified Midjourney v6 prompt for banking and trading interfaces."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-fintech-mobile-004-hero.png",
+    hero_image: "/images/prompts/ui-fintech-mobile-004-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Premium fintech mobile app UI with dark mode",
     width: 900,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "fintech-mob-004",
@@ -341,7 +341,7 @@ export const elearningDashboardPrompt: PromptCard = {
   title: "E-learning Platform Dashboard UI",
   result_first_title: "Clean and focused e-learning dashboard with progress tracking and course cards",
   short_description: "A minimalist educational platform interface designed to maximize focus and learning efficiency.",
-  emotional_hook: "이 프롬프트는 정돈된 그리드와 차분한 색감을 통해 학습자가 지적 성장에만 몰입할 수 있는 환경을 선사한다.",
+  emotional_hook: "This prompt presents an environment where learners can immerse themselves solely in intellectual growth through an organized grid and calm colors.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["lms_platform", "online_course_site", "educational_app", "student_portal"],
@@ -357,17 +357,17 @@ export const elearningDashboardPrompt: PromptCard = {
       placeholder: "[educational_theme]",
       default_value: "coding bootcamp student interface",
       recommended_values: ["language learning app", "creative arts masterclass", "corporate training portal", "K-12 classroom management"],
-      variable_behavior_note: "학습 주제를 바꾸면 그에 맞는 아이콘과 시각 자료가 생성되지만, 집중력을 높이는 화이트 톤의 깔끔한 구조는 유지된다."
+      variable_behavior_note: "Changing the learning topic generates suitable icons and visuals, but maintains the clean white-toned structure that enhances focus."
     }
   ],
   why_this_works: [
-    "soft pastel highlights는 눈의 피로를 최소화하며 교육 브랜드 특유의 친근함을 준다.",
-    "clean grid layout은 복잡한 교육 콘텐츠를 체계적으로 분류하여 사용자의 인지 부하를 줄인다."
+    "Soft pastel highlights minimize eye fatigue and grant a friendly feel unique to educational brands.",
+    "Clean grid layout systematically categorizes complex educational content to reduce user cognitive load."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "카드 기반 레이아웃 생성 능력이 우수함." }],
-  comparison_notes: "정돈된 화이트 UI 디자인에서 가장 안정적인 결과물을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional card-based layout generation capabilities." }],
+  comparison_notes: "Provides the most stable results in organized white UI design.",
   variations: [{ label: "Gamified Version", prompt_delta: "Add badges, experience bars, and more vibrant colors", use_case: "Children education", pre_generated_asset_id: null }],
-  common_failure_modes: ["텍스트 영역이 너무 비어 보이는 경우 → 'detailed course list' 키워드 보강"],
+  common_failure_modes: ["Text areas appearing too empty -> reinforce with 'detailed course list' keywords."],
   seo: {
     primary_keyword: "elearning dashboard prompt",
     secondary_keywords: ["lms ui design ai", "educational platform prompt"],
@@ -376,13 +376,13 @@ export const elearningDashboardPrompt: PromptCard = {
     meta_description: "Design clean educational platforms with progress tracking. Verified Midjourney v6 prompt for LMS and student portals."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-elearning-dashboard-005-hero.png",
+    hero_image: "/images/prompts/ui-elearning-dashboard-005-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Clean e-learning dashboard UI",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "edu-dash-005",
@@ -402,7 +402,7 @@ export const smartHomePrompt: PromptCard = {
   title: "Smart Home Control Center UI",
   result_first_title: "Minimalist smart home interface with intuitive device toggles and ambient lighting controls",
   short_description: "A clean, user-friendly control center for home automation systems, focusing on hierarchy and ease of use.",
-  emotional_hook: "이 프롬프트는 복잡한 기술을 단순한 시각적 언어로 번역하여, 주거 공간에 대한 완벽한 통제권을 선사한다.",
+  emotional_hook: "This prompt translates complex technology into a simple visual language, granting perfect control over living spaces.",
   category: "ui_ux",
   vertical: "smart_home",
   use_cases: ["iot_app", "home_automation", "tablet_interface", "smart_display"],
@@ -418,17 +418,17 @@ export const smartHomePrompt: PromptCard = {
       placeholder: "[home_context]",
       default_value: "living room lighting and temperature control",
       recommended_values: ["security camera grid view", "kitchen appliance monitoring", "energy consumption analytics", "entertainment system master control"],
-      variable_behavior_note: "제어 대상을 바꾸면 아이콘과 슬라이더의 기능이 그에 맞게 변경되지만, 따뜻하고 정갈한 미니멀리즘 스타일은 유지된다."
+      variable_behavior_note: "Changing the control target modifies icons and slider functions accordingly, but maintains the warm and neat minimalist style."
     }
   ],
   why_this_works: [
-    "minimalist skeuomorphic buttons는 실제 물리적 버튼을 누르는 듯한 직관적 피드백을 제공한다.",
-    "neutral warm gray 배경은 집이라는 공간의 따뜻함과 기술의 정교함을 조화롭게 연결한다."
+    "Minimalist skeuomorphic buttons provide intuitive feedback as if pressing actual physical buttons.",
+    "The neutral warm gray background harmoniously connects the warmth of a home with the precision of technology."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "부드러운 그림자와 질감 표현력이 탁월함." }],
-  comparison_notes: "태블릿 및 스마트 디스플레이용 가로형 인터페이스 설계에 최적화된 비율과 레이아웃을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional representation of soft shadows and textures." }],
+  comparison_notes: "Provides optimal ratios and layouts for horizontal interface design intended for tablets and smart displays.",
   variations: [{ label: "Dark Interface", prompt_delta: "Replace warm gray with charcoal black and dim blue glow", use_case: "Night mode use", pre_generated_asset_id: null }],
-  common_failure_modes: ["버튼의 간격이 너무 좁은 경우 → 'spacious layout' 키워드 추가"],
+  common_failure_modes: ["Button spacing too narrow -> add 'spacious layout' keywords."],
   seo: {
     primary_keyword: "smart home ui prompt",
     secondary_keywords: ["iot app design ai", "home automation interface"],
@@ -437,13 +437,13 @@ export const smartHomePrompt: PromptCard = {
     meta_description: "Design intuitive home automation interfaces with soft shadows. Verified Midjourney v6 prompt for IoT and smart displays."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-smart-home-006-hero.png",
+    hero_image: "/images/prompts/ui-smart-home-006-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Minimalist smart home control UI",
     width: 1200,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "home-ui-006",
@@ -463,7 +463,7 @@ export const cryptoWalletPrompt: PromptCard = {
   title: "Next-Gen Crypto Wallet UI",
   result_first_title: "Secure and vibrant crypto wallet interface with asset allocation charts and transaction flow",
   short_description: "A high-fidelity mobile wallet design for digital assets, prioritizing security and clear data visualization.",
-  emotional_hook: "이 프롬프트는 복잡한 블록체인 데이터를 한눈에 파악할 수 있는 시각적 질서를 부여한다.",
+  emotional_hook: "This prompt grants visual order to understand complex blockchain data at a glance.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["web3_app", "crypto_wallet", "nft_marketplace", "defi_protocol"],
@@ -479,17 +479,17 @@ export const cryptoWalletPrompt: PromptCard = {
       placeholder: "[wallet_context]",
       default_value: "multi-chain portfolio overview",
       recommended_values: ["NFT collection gallery", "staking rewards history", "token swap interface", "security settings and recovery"],
-      variable_behavior_note: "지갑의 기능을 바꾸면 자산 리스트나 차트의 형태가 Web3 문법에 맞게 최적화되지만, 고유의 미래지향적 다크 테마는 유지된다."
+      variable_behavior_note: "Changing the wallet functions optimizes asset lists or chart forms for Web3 grammar, but maintains the unique futuristic dark theme."
     }
   ],
   why_this_works: [
-    "vibrant asset pie chart는 포트폴리오 구성을 직관적으로 파악하게 하여 사용자 경험을 강화한다.",
-    "electric blue와 neon purple은 Web3 브랜드의 기술적 정체성을 강력하게 전달한다."
+    "Vibrant asset pie charts strengthen the user experience by allowing intuitive grasping of portfolio composition.",
+    "Electric blue and neon purple powerfully communicate the technical identity of Web3 brands."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "발광 효과와 그라데이션 표현이 매우 뛰어남." }],
-  comparison_notes: "Web3/Crypto 특유의 고대비 다크 모드 디자인에서 가장 높은 퀄리티를 보장한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional representation of emissive effects and gradients." }],
+  comparison_notes: "Guarantees top-tier quality in High-contrast dark mode designs unique to Web3/Crypto.",
   variations: [{ label: "Professional White", prompt_delta: "Change to bright white background with blue accents", use_case: "Corporate crypto services", pre_generated_asset_id: null }],
-  common_failure_modes: ["차트가 너무 복잡하게 꼬이는 경우 → 'simple geometric charts' 키워드 추가"],
+  common_failure_modes: ["Charts appearing too complex and tangled -> add 'simple geometric charts' keywords."],
   seo: {
     primary_keyword: "crypto wallet ui prompt",
     secondary_keywords: ["web3 app design ai", "mobile wallet prompt"],
@@ -498,13 +498,13 @@ export const cryptoWalletPrompt: PromptCard = {
     meta_description: "Create futuristic crypto wallet interfaces with glassmorphism. Verified Midjourney v6 prompt for Web3 and DeFi apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-crypto-wallet-007-hero.png",
+    hero_image: "/images/prompts/ui-crypto-wallet-007-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Futuristic crypto wallet mobile UI",
     width: 900,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "crypto-ui-007",
@@ -524,7 +524,7 @@ export const healthcarePortalPrompt: PromptCard = {
   title: "Healthcare Patient Portal UI",
   result_first_title: "Professional healthcare dashboard with patient data visualization and appointment schedule",
   short_description: "A clean, trustworthy medical interface designed for hospital management and patient monitoring.",
-  emotional_hook: "이 프롬프트는 생명과 직결된 데이터를 가장 명확하고 안정적으로 전달하는 시각적 신뢰를 구축한다.",
+  emotional_hook: "This prompt builds visual trust to deliver life-critical data with the utmost clarity and stability.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["hospital_mgmt", "telemedicine_app", "patient_monitoring", "health_data_analytics"],
@@ -540,17 +540,17 @@ export const healthcarePortalPrompt: PromptCard = {
       placeholder: "[medical_context]",
       default_value: "cardiac health monitoring dashboard",
       recommended_values: ["telemedicine video consultation UI", "prescription history and management", "MRI/CT scan result viewer", "hospital bed occupancy tracker"],
-      variable_behavior_note: "의료 맥락을 바꾸면 그에 맞는 특수 차트(심박수, 스케줄러 등)가 생성되지만, 의료 서비스의 본질인 깨끗함과 신뢰감은 유지된다."
+      variable_behavior_note: "Changing the medical context generates suitable special charts (heart rate, scheduler, etc.), but maintains the essence of medical services: cleanliness and trust."
     }
   ],
   why_this_works: [
-    "sky blue 팔레트는 의료 분야의 표준으로, 환자와 의료진 모두에게 심리적 안정감과 신뢰를 준다.",
-    "appointment calendar widget은 복잡한 의료 일정을 직관적으로 관리할 수 있는 구조를 제안한다."
+    "The sky blue palette is a standard in the medical field, providing psychological stability and trust to both patients and medical staff.",
+    "The appointment calendar widget proposes a structure to intuitively manage complex medical schedules."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "전문적인 폰트 레이아웃과 도표 표현력이 좋음." }],
-  comparison_notes: "안정적이고 보수적인 의료용 대시보드 디자인에서 가장 높은 실용성을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Good representation of professional font layouts and diagrams." }],
+  comparison_notes: "Provides the highest practicality in stable and conservative medical dashboard designs.",
   variations: [{ label: "Emergency Red", prompt_delta: "Add emergency red highlights for critical alerts", use_case: "ICU monitoring", pre_generated_asset_id: null }],
-  common_failure_modes: ["아이콘이 너무 아동용처럼 보이는 경우 → 'minimalist professional icons' 키워드 보강"],
+  common_failure_modes: ["Icons appearing too juvenile -> reinforce with 'minimalist professional icons' keywords."],
   seo: {
     primary_keyword: "healthcare portal ui prompt",
     secondary_keywords: ["medical dashboard ai", "telemedicine app prompt"],
@@ -559,13 +559,13 @@ export const healthcarePortalPrompt: PromptCard = {
     meta_description: "Design clean medical interfaces with patient data tracking. Verified Midjourney v6 prompt for hospital systems and telemedicine."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-healthcare-portal-008-hero.png",
+    hero_image: "/images/prompts/ui-healthcare-portal-008-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional healthcare patient portal UI",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "health-ui-008",
@@ -585,7 +585,7 @@ export const shoppingCartPrompt: PromptCard = {
   title: "Modern Shopping Cart UI",
   result_first_title: "Sleek and intuitive shopping cart interface for fashion e-commerce apps",
   short_description: "Professional cart design with clear item list, quantity controls, and total price summary.",
-  emotional_hook: "이 프롬프트는 구매 직전의 설렘을 방해하지 않는 흐르듯 유연한 사용자 인터페이스를 선사한다.",
+  emotional_hook: "This prompt presents a fluid and flexible user interface that doesn't disrupt the excitement right before purchase.",
   category: "ui_ux",
   vertical: "ecommerce",
   use_cases: ["shopping_app", "ecommerce_web", "ui_mockup", "mobile_payment"],
@@ -601,17 +601,17 @@ export const shoppingCartPrompt: PromptCard = {
       placeholder: "[platform_type]",
       default_value: "ios mobile app",
       recommended_values: ["android mobile app", "responsive desktop web", "ipad tablet interface"],
-      variable_behavior_note: "플랫폼을 바꾸면 버튼의 크기와 전반적인 레이아웃 밀도가 최적화되지만, 미니멀한 구성 요소들은 유지된다."
+      variable_behavior_note: "Changing the platform optimizes button size and overall layout density, but maintains the minimalist components."
     }
   ],
   why_this_works: [
-    "quantity steppers는 사용자에게 직관적인 조작감을 제공하여 장바구니 관리의 피로도를 낮춘다.",
-    "clear price breakdown은 예상치 못한 비용 발생에 대한 불안을 제거하여 전환율을 높인다."
+    "Quantity steppers provide intuitive control for users, reducing fatigue in cart management.",
+    "Clear price breakdown increases conversion rates by removing anxiety regarding unexpected costs."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "카드 레이아웃의 구분과 폰트 정렬이 매우 깔끔함." }],
-  comparison_notes: "실제 유통 앱의 베스트 프랙티스를 충실히 따르는 표준 장바구니 레이아웃을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Very clean card layout separation and font alignment." }],
+  comparison_notes: "Provides standard cart layouts that faithfully follow best practices of actual retail apps.",
   variations: [{ label: "Empty State", prompt_delta: "Replace item list with 'Your cart is empty' message and 'Start Shopping' button", use_case: "Empty cart UI", pre_generated_asset_id: null }],
-  common_failure_modes: ["폰트가 깨져 보이는 경우 → 'clean sans-serif typography' 키워드 보강"],
+  common_failure_modes: ["Fonts appearing blurry -> reinforce with 'clean sans-serif typography' keywords."],
   seo: {
     primary_keyword: "shopping cart ui prompt",
     secondary_keywords: ["ecommerce app design ai", "checkout ui prompt"],
@@ -620,13 +620,13 @@ export const shoppingCartPrompt: PromptCard = {
     meta_description: "Design sleek and intuitive shopping carts for ecommerce. Verified Midjourney v6 prompt for mobile and web apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-ecommerce-cart-009-hero.png",
+    hero_image: "/images/prompts/ui-ecommerce-cart-009-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Sleek mobile shopping cart UI",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "cart-009",
@@ -646,7 +646,7 @@ export const checkoutPaymentPrompt: PromptCard = {
   title: "Secure Checkout & Payment UI",
   result_first_title: "Trustworthy and professional payment interface with credit card entry and Apple Pay option",
   short_description: "Final checkout screen focusing on trust, security, and multiple payment method selection.",
-  emotional_hook: "이 프롬프트는 돈이 오가는 가장 예민한 순간, 견고한 보안성과 편안한 시각적 안정감을 동시에 제공한다.",
+  emotional_hook: "This prompt provides both solid security and comfortable visual stability during the most sensitive moments of financial transactions.",
   category: "ui_ux",
   vertical: "ecommerce",
   use_cases: ["payment_gateway", "checkout_process", "fintech_ui", "subscription_billing"],
@@ -662,17 +662,17 @@ export const checkoutPaymentPrompt: PromptCard = {
       placeholder: "[device_type]",
       default_value: "mobile phone display",
       recommended_values: ["web browser window", "kiosk touch screen", "smart watch payment screen"],
-      variable_behavior_note: "기기를 바꾸면 입력 폼의 크기와 버튼 배치가 변경되어 각 환경에 맞는 최적의 입력을 유도한다."
+      variable_behavior_note: "Changing the device modifies input form size and button placement to induce optimal input for each environment."
     }
   ],
   why_this_works: [
-    "security badges는 사용자의 심리적 불안을 해소하여 최종 결제 버튼을 누르게 하는 결정적 역할을 한다.",
-    "professional blue and white 컬러 스키마는 금융 서비스에서 가장 선호되는 '신뢰'의 색감이다."
+    "Security badges play a decisive role in resolving user psychological anxiety and encouraging the final payment button click.",
+    "The professional blue and white color scheme is the most preferred 'trust' palette in financial services."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "카드 아이콘과 입력 필드의 정렬이 정교함." }],
-  comparison_notes: "핀테크 기업의 실제 결제 모듈 수준의 높은 완성도를 보장한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Sophisticated alignment of card icons and input fields." }],
+  comparison_notes: "Guarantees high completeness on par with actual payment modules of fintech companies.",
   variations: [{ label: "Success Screen", prompt_delta: "Replace payment fields with large green checkmark and 'Payment Successful' message", use_case: "Payment confirmation", pre_generated_asset_id: null }],
-  common_failure_modes: ["버튼이 너무 작아 보이는 경우 → 'large accessible tap targets' 키워드 추가"],
+  common_failure_modes: ["Buttons appearing too small -> add 'large accessible tap targets' keywords."],
   seo: {
     primary_keyword: "checkout payment ui prompt",
     secondary_keywords: ["payment gateway design ai", "fintech checkout prompt"],
@@ -681,13 +681,13 @@ export const checkoutPaymentPrompt: PromptCard = {
     meta_description: "Design professional and trustworthy payment interfaces. Verified Midjourney v6 prompt for secure checkout."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-ecommerce-checkout-010-hero.png",
+    hero_image: "/images/prompts/ui-ecommerce-checkout-010-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional mobile payment UI",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "payment-010",
@@ -707,7 +707,7 @@ export const productDetailPrompt: PromptCard = {
   title: "Premium Product Detail Page",
   result_first_title: "High-end product detail page with large hero image and elegant typography",
   short_description: "A conversion-focused product page for luxury and fashion brands with detailed descriptions and reviews.",
-  emotional_hook: "이 프롬프트는 제품이 가진 고유의 가치를 대담한 레이아웃과 섬세한 타이포그래피로 스토리텔링한다.",
+  emotional_hook: "This prompt storyboards the unique value of a product through bold layouts and delicate typography.",
   category: "ui_ux",
   vertical: "ecommerce",
   use_cases: ["luxury_brand_web", "fashion_retail", "product_catalog", "landing_page"],
@@ -723,17 +723,17 @@ export const productDetailPrompt: PromptCard = {
       placeholder: "[industry_type]",
       default_value: "high-end luxury watch brand",
       recommended_values: ["minimalist designer furniture", "premium organic skincare", "concept electric bicycle", "boutique winery"],
-      variable_behavior_note: "산업군을 바꾸면 제품의 무드와 정보 구성이 변경되지만, 프리미엄 브랜드 특유의 여백과 고급스러운 정제미는 유지된다."
+      variable_behavior_note: "Changing the industry modifies the product's mood and information structure, but maintains the whitespace and sophisticated refinement unique to premium brands."
     }
   ],
   why_this_works: [
-    "large hero image는 제품에 대한 첫인상을 압도적으로 전달하여 사용자 체류 시간을 늘린다.",
-    "elegant serif typography는 브랜드의 역사와 신뢰를 시각적으로 대변한다."
+    "A large hero image overwhelmingly conveys the first impression of the product, increasing user dwell time.",
+    "Elegant serif typography visually represents the brand's history and trust."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "웹사이트 레이아웃의 여백과 정렬이 매우 우수함." }],
-  comparison_notes: "글로벌 명품 브랜드의 웹사이트와 비교해도 손색없는 우아한 비주얼을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional whitespace and alignment in website layouts." }],
+  comparison_notes: "Provides elegant visuals comparable to the websites of global luxury brands.",
   variations: [{ label: "Dark Mode", prompt_delta: "Change to deep charcoal background, gold accents, ultra-premium vibe", use_case: "Evening wear or tech", pre_generated_asset_id: null }],
-  common_failure_modes: ["정보가 너무 부족해 보이는 경우 → 'detailed product specifications section' 키워드 추가"],
+  common_failure_modes: ["Information appearing too sparse -> add 'detailed product specifications section' keywords."],
   seo: {
     primary_keyword: "product detail page ui prompt",
     secondary_keywords: ["luxury ecommerce design ai", "fashion landing page prompt"],
@@ -742,13 +742,13 @@ export const productDetailPrompt: PromptCard = {
     meta_description: "Design high-end product detail pages for luxury brands. Verified Midjourney v6 prompt for conversion focus."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-ecommerce-detail-011-hero.png",
+    hero_image: "/images/prompts/ui-ecommerce-detail-011-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Elegant luxury product detail web design",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "detail-011",
@@ -768,7 +768,7 @@ export const advancedFilteringPrompt: PromptCard = {
   title: "Advanced E-commerce Filtering UI",
   result_first_title: "Sophisticated sidebar filtering system for high-density product catalogs",
   short_description: "A complex yet usable filtering interface for large marketplaces with price ranges, categories, and attributes.",
-  emotional_hook: "이 프롬프트는 수만 개의 제품 속에서도 사용자가 원하는 단 하나의 보석을 찾아낼 수 있는 정교한 나침반을 설계한다.",
+  emotional_hook: "This prompt designs a sophisticated compass that allows users to find the one jewel they want among tens of thousands of products.",
   category: "ui_ux",
   vertical: "ecommerce",
   use_cases: ["marketplace_web", "electronic_store", "large_retailer", "product_listing_page"],
@@ -784,17 +784,17 @@ export const advancedFilteringPrompt: PromptCard = {
       placeholder: "[listing_type]",
       default_value: "electronics marketplace with complex specs",
       recommended_values: ["furniture catalog with material filters", "professional photography gear store", "luxury fashion house with seasonal filters", "outdoor adventure gear shop"],
-      variable_behavior_note: "리스팅 유형을 바꾸면 필터의 세부 항목(색상, 소재, 스펙 등)이 최적화되지만, 전체적인 사이드바 레이아웃 구조는 유지된다."
+      variable_behavior_note: "Changing the listing type optimizes filter details (color, material, specs, etc.), but maintains the overall sidebar layout structure."
     }
   ],
   why_this_works: [
-    "price range slider와 color swatches는 텍스트 위주의 필터보다 시각적으로 즐겁고 빠른 탐색을 돕는다.",
-    "sidebar layout은 대형 쇼핑몰에서 가장 검증된 정보 구조로, 사용자의 학습 비용을 최소화한다."
+    "Price range sliders and color swatches facilitate visually enjoyable and faster navigation compared to text-based filters.",
+    "Sidebar layout is the most verified information structure in large malls, minimizing user learning costs."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "슬라이더와 체크박스 같은 인터랙티브 요소의 표현이 정교함." }],
-  comparison_notes: "아마존이나 쿠팡 같은 대형 플랫폼의 고급 검색 기능을 벤치마킹하여 설계되었다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Sophisticated representation of interactive elements like sliders and checkboxes." }],
+  comparison_notes: "Designed by benchmarking advanced search functions of major platforms like Amazon or eBay.",
   variations: [{ label: "Mobile Bottom Sheet", prompt_delta: "Change sidebar to mobile bottom sheet UI with large tap targets", use_case: "Mobile shopping filters", pre_generated_asset_id: null }],
-  common_failure_modes: ["필터 항목이 너무 빽빽한 경우 → 'generous spacing, hierarchy' 키워드 추가"],
+  common_failure_modes: ["Filter items too crowded -> add 'generous spacing, hierarchy' keywords."],
   seo: {
     primary_keyword: "ecommerce filtering ui prompt",
     secondary_keywords: ["product listing design ai", "marketplace ui prompt"],
@@ -803,13 +803,13 @@ export const advancedFilteringPrompt: PromptCard = {
     meta_description: "Design sophisticated filtering systems for large marketplaces. Verified Midjourney v6 prompt for high-density catalogs."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-ecommerce-filter-012-hero.png",
+    hero_image: "/images/prompts/ui-ecommerce-filter-012-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Sophisticated marketplace filtering system UI",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "filter-012",
@@ -829,7 +829,7 @@ export const userReviewsPrompt: PromptCard = {
   title: "Social Proof & Reviews UI",
   result_first_title: "Engaging user reviews section with photo gallery and rating summary",
   short_description: "A trust-building UI component for product pages, featuring photo reviews, helpful votes, and detailed ratings.",
-  emotional_hook: "이 프롬프트는 다른 사람들의 생생한 목소리를 시각적으로 정렬하여, 구매 결정의 마지막 불안을 확신으로 바꾼다.",
+  emotional_hook: "This prompt visually aligns the vivid voices of others, turning the final anxiety of purchase decisions into confidence.",
   category: "ui_ux",
   vertical: "ecommerce",
   use_cases: ["product_review_section", "testimonial_block", "community_feedback", "trust_building"],
@@ -845,17 +845,17 @@ export const userReviewsPrompt: PromptCard = {
       placeholder: "[app_context]",
       default_value: "skincare brand with before-and-after photos",
       recommended_values: ["tech gadget store with unboxing shots", "travel booking app with hotel photos", "fitness app with transformation stories", "designer furniture with customer home shots"],
-      variable_behavior_note: "앱 컨텍스트를 바꾸면 리뷰 사진의 종류와 강조되는 정보(피부 상태, 가구 배치 등)가 달라지지만, 신뢰를 주는 레이아웃은 유지된다."
+      variable_behavior_note: "Changing the app context modifies the types of review photos and highlighted information, but maintains the trustworthy layout."
     }
   ],
   why_this_works: [
-    "photo review gallery는 텍스트보다 훨씬 강력한 구매 동기를 부여하며 제품의 실제 모습을 확인시켜준다.",
-    "verified buyer badges는 리뷰의 진실성을 보장하여 플랫폼 전체의 신뢰도를 높인다."
+    "Photo review galleries provide a much stronger purchase motive than text and verify the product's actual appearance.",
+    "Verified buyer badges guarantee the truthfulness of reviews, increasing overall platform trust."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "사진 그리드와 평점 카드 사이의 균형감이 뛰어남." }],
-  comparison_notes: "현대적인 커머스 플랫폼이 추구하는 '리뷰 중심 쇼핑'의 핵심 UI를 구현한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Excellent balance between photo grids and rating cards." }],
+  comparison_notes: "Implements the core UI of 'review-centric shopping' pursued by modern commerce platforms.",
   variations: [{ label: "Simplified", prompt_delta: "Remove photos, focus on large text testimonials and brand logos", use_case: "B2B SaaS testimonials", pre_generated_asset_id: null }],
-  common_failure_modes: ["리뷰 사진이 불쾌하게 나오는 경우 → 'aesthetic lifestyle photography, clean subjects' 키워드 추가"],
+  common_failure_modes: ["Review photos appearing unpleasant -> add 'aesthetic lifestyle photography, clean subjects' keywords."],
   seo: {
     primary_keyword: "user reviews ui prompt",
     secondary_keywords: ["social proof design ai", "photo review ui prompt"],
@@ -864,13 +864,13 @@ export const userReviewsPrompt: PromptCard = {
     meta_description: "Design engaging user review sections for ecommerce. Verified Midjourney v6 prompt for trust building."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-ecommerce-review-013-hero.png",
+    hero_image: "/images/prompts/ui-ecommerce-review-013-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Engaging photo reviews UI section",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "review-013",
@@ -890,7 +890,7 @@ export const crmDashboardPrompt: PromptCard = {
   title: "SaaS CRM Dashboard",
   result_first_title: "High-density CRM dashboard with sales pipeline and customer metrics",
   short_description: "A data-rich interface for managing sales leads, customer relationships, and revenue forecasting.",
-  emotional_hook: "이 프롬프트는 흩어진 비즈니스 데이터를 하나의 강력한 시각적 전략으로 결합하여 의사결정의 속도를 높인다.",
+  emotional_hook: "This prompt accelerates decision-making by combining scattered business data into a single, powerful visual strategy.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["crm_software", "sales_analytics", "enterprise_saas", "b2b_dashboard"],
@@ -906,17 +906,17 @@ export const crmDashboardPrompt: PromptCard = {
       placeholder: "[company_type]",
       default_value: "real estate agency management",
       recommended_values: ["tech startup sales team", "global logistics enterprise", "subscription-based media company", "professional consulting firm"],
-      variable_behavior_note: "업종을 바꾸면 데이터의 항목과 지표(예: 평당가 vs 이탈률)가 그에 맞게 최적화되지만, 전문적인 B2B 인터페이스 무드는 유지된다."
+      variable_behavior_note: "Changing the industry optimizes data items and metrics, but maintains the professional B2B interface mood."
     }
   ],
   why_this_works: [
-    "sales pipeline funnel은 매출 흐름의 병목 구간을 시각적으로 즉시 파악하게 하여 전략 수립을 돕는다.",
-    "indigo color palette는 기업용 소프트웨어에 요구되는 안정감과 지적인 세련미를 동시에 전달한다."
+    "Sales pipeline funnels visually facilitate the immediate identification of bottlenecks in revenue flow, aiding strategy establishment.",
+    "The indigo color palette delivers both the stability and intellectual sophistication required in enterprise software."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "복잡한 표(Table)와 차트의 레이아웃 균형이 뛰어남." }],
-  comparison_notes: "세일즈포스나 허브스팟 같은 메이저 CRM 솔루션의 전문성을 벤치마킹하여 설계되었다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional layout balance between complex tables and charts." }],
+  comparison_notes: "Designed by benchmarking the professionalism of major CRM solutions like Salesforce or HubSpot.",
   variations: [{ label: "Dark Theme", prompt_delta: "Change palette to deep slate background with cyan accents, glowing charts", use_case: "Modern tech CRM", pre_generated_asset_id: null }],
-  common_failure_modes: ["데이터 밀도가 너무 낮아 보이는 경우 → 'compact layout, detailed metrics' 키워드 추가"],
+  common_failure_modes: ["Data density appearing too low -> add 'compact layout, detailed metrics' keywords."],
   seo: {
     primary_keyword: "crm dashboard ui prompt",
     secondary_keywords: ["saas design ai", "sales pipeline prompt"],
@@ -925,13 +925,13 @@ export const crmDashboardPrompt: PromptCard = {
     meta_description: "Design high-density CRM dashboards for enterprise sales. Verified Midjourney v6 prompt for data-rich SaaS."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-crm-014-hero.png",
+    hero_image: "/images/prompts/ui-saas-crm-014-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional SaaS CRM dashboard interface",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "crm-014",
@@ -951,7 +951,7 @@ export const userManagementPrompt: PromptCard = {
   title: "User Management System UI",
   result_first_title: "Clean and scalable user management interface with role-based access control",
   short_description: "An administrative interface for managing team members, permission levels, and account status.",
-  emotional_hook: "이 프롬프트는 수백 명의 조직원을 한 화면에서 질서 정연하게 관리할 수 있는 완벽한 통제력을 제공한다.",
+  emotional_hook: "This prompt provides perfect control to manage hundreds of organization members orderly on a single screen.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["admin_portal", "hr_software", "team_collaboration", "access_control"],
@@ -967,17 +967,17 @@ export const userManagementPrompt: PromptCard = {
       placeholder: "[org_type]",
       default_value: "global software engineering team",
       recommended_values: ["hospital medical staff directory", "university student portal admin", "e-commerce support team", "government agency directory"],
-      variable_behavior_note: "조직 유형을 바꾸면 유저 필드(직함, 학번, 소속 등)가 변경되지만, 관리용 테이블의 높은 가독성은 유지된다."
+      variable_behavior_note: "Changing the organization type modifies user fields (title, ID, affiliation, etc.), but maintains high readability of the management table."
     }
   ],
   why_this_works: [
-    "role badges는 권한 체계를 시각적으로 명확히 구분하여 관리 실수를 방지한다.",
-    "searchable user table은 대규모 조직에서도 특정 인원을 빠르게 찾을 수 있는 실용적 구조를 제안한다."
+    "Role badges clearly distinguish authority systems visually, preventing management errors.",
+    "Searchable user tables propose practical structures to quickly find specific individuals even in large-scale organizations."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "텍스트 정렬과 버튼 배치가 정갈하게 표현됨." }],
-  comparison_notes: "엔터프라이즈 어드민 페이지의 표준적인 정보 설계를 충실히 따른다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Text alignment and button placement are expressed neatly." }],
+  comparison_notes: "Faithfully follows the standard information design of enterprise admin pages.",
   variations: [{ label: "Empty State", prompt_delta: "Replace table with 'No users found' illustration and 'Add First User' button", use_case: "Initial setup UI", pre_generated_asset_id: null }],
-  common_failure_modes: ["테이블 경계선이 불분명한 경우 → 'subtle borders, zebra stripping' 키워드 보강"],
+  common_failure_modes: ["Table boundaries unclear -> reinforce with 'subtle borders, zebra stripping' keywords."],
   seo: {
     primary_keyword: "user management ui prompt",
     secondary_keywords: ["admin portal design ai", "permission management ui"],
@@ -986,13 +986,13 @@ export const userManagementPrompt: PromptCard = {
     meta_description: "Design clean administrative interfaces for user management. Verified Midjourney v6 prompt for scalable teams."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-users-015-hero.png",
+    hero_image: "/images/prompts/ui-saas-users-015-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Clean administrative user management interface",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "users-015",
@@ -1012,7 +1012,7 @@ export const saasSettingsPrompt: PromptCard = {
   title: "Settings & Permissions UI",
   result_first_title: "Logical and easy-to-navigate settings page with toggle switches and grouped sections",
   short_description: "A comprehensive settings interface for SaaS apps, managing everything from profile to security and integrations.",
-  emotional_hook: "이 프롬프트는 복잡한 시스템의 수많은 스위치를 가장 논리적이고 안전하게 배치하는 정교함을 담는다.",
+  emotional_hook: "This prompt contains the sophistication of placing numerous switches of complex systems in the most logical and safe manner.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["settings_page", "account_security", "system_config", "app_preferences"],
@@ -1028,17 +1028,17 @@ export const saasSettingsPrompt: PromptCard = {
       placeholder: "[settings_context]",
       default_value: "security and two-factor authentication",
       recommended_values: ["billing and subscription plans", "notification preferences", "third-party integrations", "team workspace settings"],
-      variable_behavior_note: "설정 주제를 바꾸면 입력 폼과 토글의 배치가 용도에 맞게 변경되지만, 수직 탭 기반의 탐색 구조는 일관되게 유지된다."
+      variable_behavior_note: "Changing the setting theme modifies the placement of input forms and toggles, but maintains the consistent vertical tab-based navigation structure."
     }
   ],
   why_this_works: [
-    "toggle switches는 즉각적인 설정 변경 상태를 시각적으로 보여주어 사용자에게 제어감을 준다.",
-    "vertical tab navigation은 많은 설정 항목을 범주화하여 인지 부하를 낮추는 최적의 레이아웃이다."
+    "Toggle switches visually show immediate setting change states, giving the user a sense of control.",
+    "Vertical tab navigation is the optimal layout to categorize many setting items and lower cognitive load."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "UI 구성 요소들의 표준적인 배치를 매우 잘 이해함." }],
-  comparison_notes: "노션이나 슬랙 같은 모던한 SaaS의 설정 화면 감각을 완벽히 재현한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Excellent understanding of standard placement of UI components." }],
+  comparison_notes: "Perfectly replicates the setting screen sense of modern SaaS like Notion or Slack.",
   variations: [{ label: "Modal View", prompt_delta: "Change full page to a centered modal window for quick settings", use_case: "Quick preferences UI", pre_generated_asset_id: null }],
-  common_failure_modes: ["섹션 구분이 모호한 경우 → 'clearly defined card sections' 키워드 추가"],
+  common_failure_modes: ["Section boundaries ambiguous -> add 'clearly defined card sections' keywords."],
   seo: {
     primary_keyword: "saas settings ui prompt",
     secondary_keywords: ["settings page design ai", "toggle switch ui prompt"],
@@ -1047,13 +1047,13 @@ export const saasSettingsPrompt: PromptCard = {
     meta_description: "Design logical and easy-to-use settings pages. Verified Midjourney v6 prompt for SaaS configuration."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-settings-016-hero.png",
+    hero_image: "/images/prompts/ui-saas-settings-016-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Clean SaaS settings interface with toggles",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "settings-016",
@@ -1073,7 +1073,7 @@ export const apiDocsPrompt: PromptCard = {
   title: "API Documentation UI",
   result_first_title: "Developer-friendly API documentation with side-by-side code snippets and parameters",
   short_description: "A technical interface for developers, featuring dark mode code blocks, endpoint descriptions, and response examples.",
-  emotional_hook: "이 프롬프트는 기술적 난해함을 명료한 시각적 질서로 승화시켜, 개발자의 창의성을 자극하는 최고의 도큐먼트를 설계한다.",
+  emotional_hook: "This prompt sublimates technical complexity into a clear visual order, designing the best documents that stimulate developer creativity.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["developer_portal", "api_docs", "technical_writing", "software_integration"],
@@ -1089,17 +1089,17 @@ export const apiDocsPrompt: PromptCard = {
       placeholder: "[api_type]",
       default_value: "payment gateway integration",
       recommended_values: ["social media data analytics", "machine learning model endpoint", "cloud storage management", "real-time messaging protocol"],
-      variable_behavior_note: "API 종류를 바꾸면 코드 스니펫의 언어와 파라미터 내용이 변경되지만, 2단 레이아웃의 문서화 표준은 유지된다."
+      variable_behavior_note: "Changing the API type modifies the code snippet language and parameter content, but maintains the 2-column documentation standard."
     }
   ],
   why_this_works: [
-    "two-column layout은 설명과 코드를 동시에 참조할 수 있게 하여 개발 효율을 극대화한다.",
-    "syntax highlighting은 코드의 가독성을 높여 에러를 예방하고 전문적인 느낌을 준다."
+    "The two-column layout maximizes developer efficiency by allowing simultaneous reference to descriptions and code.",
+    "Syntax highlighting increases code readability, prevents errors, and grants a professional feel."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "코드 블록의 질감과 텍스트 영역의 정렬이 매우 정교함." }],
-  comparison_notes: "Stripe나 Twilio 같은 글로벌 개발자 지향 플랫폼의 문서화 미학을 재현한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Highly sophisticated alignment of code block textures and text areas." }],
+  comparison_notes: "Replicates the documentation aesthetics of global developer-oriented platforms like Stripe or Twilio.",
   variations: [{ label: "Dark Only", prompt_delta: "Change entire UI to dark mode, high contrast green and purple syntax colors", use_case: "Dark theme dev portal", pre_generated_asset_id: null }],
-  common_failure_modes: ["코드 블록이 평면적으로 보이는 경우 → 'beveled code blocks, subtle depth' 키워드 추가"],
+  common_failure_modes: ["Code blocks appearing flat -> add 'beveled code blocks, subtle depth' keywords."],
   seo: {
     primary_keyword: "api documentation ui prompt",
     secondary_keywords: ["developer portal design ai", "code block ui prompt"],
@@ -1108,13 +1108,13 @@ export const apiDocsPrompt: PromptCard = {
     meta_description: "Design developer-friendly API documentation. Verified Midjourney v6 prompt for technical interfaces."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-api-017-hero.png",
+    hero_image: "/images/prompts/ui-saas-api-017-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional API documentation interface",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "api-017",
@@ -1134,7 +1134,7 @@ export const kanbanBoardPrompt: PromptCard = {
   title: "SaaS Kanban Board UI",
   result_first_title: "Intuitive project management kanban board with draggable cards and status columns",
   short_description: "A collaborative interface for tracking tasks and workflows, featuring colorful priority tags and user avatars.",
-  emotional_hook: "이 프롬프트는 복잡한 할 일들을 명확한 시각적 흐름으로 정렬하여, 매일 아침의 업무 시작을 즐겁게 만든다.",
+  emotional_hook: "This prompt aligns complex tasks into a clear visual flow, making the start of every work morning enjoyable.",
   category: "ui_ux",
   vertical: "dashboard_design",
   use_cases: ["project_management", "task_tracking", "agile_workflow", "team_collaboration"],
@@ -1150,17 +1150,17 @@ export const kanbanBoardPrompt: PromptCard = {
       placeholder: "[task_context]",
       default_value: "software development sprint",
       recommended_values: ["marketing campaign content plan", "home renovation checklist", "customer support ticket system", "event planning schedule"],
-      variable_behavior_note: "작업 맥락을 바꾸면 카드의 내용과 태그가 변경되지만, 칸반 특유의 수직 컬럼 구조와 카드 배치는 유지된다."
+      variable_behavior_note: "Changing the work context modifies card content and tags, but maintains the Kanban-specific vertical column structure and card placement."
     }
   ],
   why_this_works: [
-    "vertical columns는 작업의 상태 전이를 한눈에 보여주어 진행 상황을 직관적으로 파악하게 한다.",
-    "priority badges는 긴급도를 시각적으로 우선순위화하여 효율적인 리소스 배분을 돕는다."
+    "Vertical columns show task state transitions at a glance, allowing intuitive grasping of progress.",
+    "Priority badges visually prioritize urgency, aiding efficient resource allocation."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "카드와 컬럼 사이의 간격 및 정렬이 매우 우수함." }],
-  comparison_notes: "Trello나 Jira, Linear 같은 협업 툴의 정갈하고 실용적인 미학을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional spacing and alignment between cards and columns." }],
+  comparison_notes: "Provides the neat and practical aesthetics of collaboration tools like Trello, Jira, or Linear.",
   variations: [{ label: "Simple/Minimal", prompt_delta: "Remove avatars and tags, focus on pure text and clean lines", use_case: "Minimalist task manager", pre_generated_asset_id: null }],
-  common_failure_modes: ["카드가 너무 빽빽하게 붙어 나오는 경우 → 'generous card spacing' 키워드 보강"],
+  common_failure_modes: ["Cards appearing too densely packed -> reinforce with 'generous card spacing' keywords."],
   seo: {
     primary_keyword: "kanban board ui prompt",
     secondary_keywords: ["project management design ai", "task tracking prompt"],
@@ -1169,13 +1169,13 @@ export const kanbanBoardPrompt: PromptCard = {
     meta_description: "Design intuitive kanban boards for project management. Verified Midjourney v6 prompt for agile workflows."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-saas-kanban-018-hero.png",
+    hero_image: "/images/prompts/ui-saas-kanban-018-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Intuitive project management kanban board interface",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "kanban-018",
@@ -1195,7 +1195,7 @@ export const onboardingSliderPrompt: PromptCard = {
   title: "App Onboarding Slider",
   result_first_title: "Engaging app onboarding carousel with vibrant illustrations and smooth transitions",
   short_description: "A sequence of introductory screens for mobile apps, featuring character illustrations, value propositions, and a skip button.",
-  emotional_hook: "이 프롬프트는 앱과의 첫 만남을 기분 좋은 설렘으로 바꾸는 시각적 스토리텔링을 설계한다.",
+  emotional_hook: "This prompt designs visual storytelling that turns the first encounter with an app into a pleasant excitement.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["app_launch", "user_education", "brand_intro", "onboarding_flow"],
@@ -1211,24 +1211,24 @@ export const onboardingSliderPrompt: PromptCard = {
       placeholder: "[app_theme]",
       default_value: "mindfulness and meditation app",
       recommended_values: ["fast-paced delivery service", "personal finance management", "creative social network", "pet care and adoption"],
-      variable_behavior_note: "앱 테마를 바꾸면 일러스트의 내용과 컬러 팔레트가 그에 맞게 최적화되지만, 깔끔한 슬라이더 레이아웃은 유지된다."
+      variable_behavior_note: "Changing the app theme optimizes illustration content and color palette accordingly, but maintains the clean slider layout."
     },
     {
       name: "illustration_style",
       placeholder: "[illustration_style]",
       default_value: "minimalist vector",
       recommended_values: ["playful 3D claymorphism", "warm hand-drawn texture", "modern isometric", "abstract geometric shapes"],
-      variable_behavior_note: "일러스트 스타일을 바꾸면 앱의 전체적인 감성과 타겟 오디언스에 대한 인상이 완전히 달라진다."
+      variable_behavior_note: "Changing the illustration style completely alters the overall app sentiment and impression on the target audience."
     }
   ],
   why_this_works: [
-    "pagination dots는 사용자에게 전체 과정을 안내하여 온보딩 이탈률을 낮추는 핵심 UX 장치다.",
-    "character illustrations는 무미건조한 앱 기능 설명을 친근한 서비스 경험으로 승화시킨다."
+    "Pagination dots are a key UX device that guides users through the entire process and lowers onboarding churn rates.",
+    "Character illustrations sublimate dry app function descriptions into a friendly service experience."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "일러스트와 버튼 사이의 레이아웃 균형이 매우 안정적임." }],
-  comparison_notes: "글로벌 상위권 앱들의 온보딩 트렌드를 분석하여 가장 '따라하고 싶은' 비주얼을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Highly stable layout balance between illustrations and buttons." }],
+  comparison_notes: "Provides 'most-wanted' visuals by analyzing onboarding trends of top global apps.",
   variations: [{ label: "Dark Mode", prompt_delta: "Change to deep navy background with neon glow illustrations", use_case: "Gaming or security apps", pre_generated_asset_id: null }],
-  common_failure_modes: ["일러스트가 너무 복잡한 경우 → 'simple shapes, focused subject' 키워드 보강"],
+  common_failure_modes: ["Illustrations appearing too complex -> reinforce with 'simple shapes, focused subject' keywords."],
   seo: {
     primary_keyword: "app onboarding ui prompt",
     secondary_keywords: ["mobile intro slider design ai", "onboarding illustration prompt"],
@@ -1237,13 +1237,13 @@ export const onboardingSliderPrompt: PromptCard = {
     meta_description: "Design engaging app onboarding screens with vibrant illustrations. Verified Midjourney v6 prompt for mobile UX."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-onboarding-019-hero.png",
+    hero_image: "/images/prompts/ui-mobile-onboarding-019-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Engaging mobile app onboarding slider interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "onboarding-019",
@@ -1263,7 +1263,7 @@ export const profileSettingsPrompt: PromptCard = {
   title: "Mobile Profile & Settings",
   result_first_title: "Clean and organized mobile profile screen with account settings and activity summary",
   short_description: "A centralized user hub for mobile apps, featuring avatar management, account links, and preference toggles.",
-  emotional_hook: "이 프롬프트는 유저의 디지털 페르소나를 가장 정갈하게 요약하고 관리할 수 있는 공간을 제공한다.",
+  emotional_hook: "This prompt provides a space where users can most neatly summarize and manage their digital persona.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["profile_page", "account_mgmt", "user_settings", "social_app"],
@@ -1279,17 +1279,17 @@ export const profileSettingsPrompt: PromptCard = {
       placeholder: "[app_type]",
       default_value: "professional networking app",
       recommended_values: ["creative portfolio app", "fitness tracker", "language learning platform", "luxury shopping app"],
-      variable_behavior_note: "앱 유형을 바꾸면 프로필 이미지 주변의 장식과 하위 메뉴 구성이 변경되지만, 사용자 중심의 레이아웃은 유지된다."
+      variable_behavior_note: "Changing the app type modifies decorations around the profile image and sub-menu configurations, but maintains the user-centric layout."
     }
   ],
   why_this_works: [
-    "centered avatar는 사용자의 정체성을 명확히 드러내며 개인화된 서비스 경험의 시작점이 된다.",
-    "icon-based list는 글자만 있는 것보다 인지 속도가 빠르고 글로벌 사용자에게 범용적인 사용성을 제공한다."
+    "A centered avatar clearly reveals user identity and becomes the starting point of a personalized service experience.",
+    "Icon-based lists offer faster cognitive speed than text-only lists and provide universal usability for global users."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "프로필 카드와 리스트 아이템의 간격 조절이 매우 정교함." }],
-  comparison_notes: "애플 시스템 설정이나 유명 소셜 앱의 프로필 화면을 연상시키는 깔끔함을 보장한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Highly sophisticated spacing adjustment between profile cards and list items." }],
+  comparison_notes: "Guarantees neatness reminiscent of Apple system settings or famous social app profile screens.",
   variations: [{ label: "Gamified", prompt_delta: "Add progress bars, level badges, and achievements section", use_case: "Learning or gaming apps", pre_generated_asset_id: null }],
-  common_failure_modes: ["메뉴 아이콘이 너무 작은 경우 → 'large accessible tap targets' 키워드 추가"],
+  common_failure_modes: ["Menu icons appearing too small -> add 'large accessible tap targets' keywords."],
   seo: {
     primary_keyword: "mobile profile ui prompt",
     secondary_keywords: ["account settings design ai", "user hub ui prompt"],
@@ -1298,13 +1298,13 @@ export const profileSettingsPrompt: PromptCard = {
     meta_description: "Design clean mobile profile and account settings. Verified Midjourney v6 prompt for professional apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-profile-020-hero.png",
+    hero_image: "/images/prompts/ui-mobile-profile-020-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Clean mobile profile and account settings UI",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "profile-020",
@@ -1324,7 +1324,7 @@ export const notificationsPrompt: PromptCard = {
   title: "Mobile Notification Center",
   result_first_title: "Elegant notification list with activity feed and time-stamped updates",
   short_description: "A comprehensive notification interface for mobile apps, featuring categorized alerts and action buttons.",
-  emotional_hook: "이 프롬프트는 쏟아지는 정보들 속에서 사용자에게 진짜 중요한 소식만을 선명하게 전달한다.",
+  emotional_hook: "This prompt vividly delivers only the truly important news to users among a flood of information.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["activity_feed", "alert_center", "social_notifications", "system_updates"],
@@ -1340,17 +1340,17 @@ export const notificationsPrompt: PromptCard = {
       placeholder: "[feed_context]",
       default_value: "social media engagement feed",
       recommended_values: ["finance alert and transaction history", "smart home security log", "team collaboration update list", "e-learning task reminders"],
-      variable_behavior_note: "피드 맥락을 바꾸면 알림 카드의 아이콘과 강조 텍스트가 변경되지만, 시간순으로 정렬된 리스트 구조는 유지된다."
+      variable_behavior_note: "Changing the feed context modifies notification card icons and highlighted text, but maintains the chronological list structure."
     }
   ],
   why_this_works: [
-    "time stamps는 정보의 시의성을 즉각적으로 알려주어 사용자가 우선순위를 판단하게 돕는다.",
-    "unread indicator dots는 아직 확인하지 않은 중요한 정보를 시각적으로 강조하여 재유입을 유도한다."
+    "Timestamps immediately inform information timeliness, helping users judge priorities.",
+    "Unread indicator dots visually emphasize important unread information, inducing re-engagement."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "알림 카드의 그림자와 경계선 표현이 매우 자연스러움." }],
-  comparison_notes: "iOS/Android의 시스템 알림 미학을 세련되게 변형하여 적용하기에 최적이다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Very natural representation of notification card shadows and borders." }],
+  comparison_notes: "Optimal for applying sophisticated variations of iOS/Android system notification aesthetics.",
   variations: [{ label: "Rich Media", prompt_delta: "Add small thumbnail images and expanded preview text to each card", use_case: "Content-rich social apps", pre_generated_asset_id: null }],
-  common_failure_modes: ["카드가 너무 평면적으로 보이는 경우 → 'subtle elevation, card depth' 키워드 추가"],
+  common_failure_modes: ["Cards appearing too flat -> add 'subtle elevation, card depth' keywords."],
   seo: {
     primary_keyword: "mobile notification ui prompt",
     secondary_keywords: ["activity feed design ai", "alert center prompt"],
@@ -1359,13 +1359,13 @@ export const notificationsPrompt: PromptCard = {
     meta_description: "Design elegant mobile notification and activity feeds. Verified Midjourney v6 prompt for real-time alerts."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-notif-021-hero.png",
+    hero_image: "/images/prompts/ui-mobile-notif-021-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Elegant mobile notification center interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "notif-021",
@@ -1385,7 +1385,7 @@ export const mapServicePrompt: PromptCard = {
   title: "Map-based Service Interface",
   result_first_title: "Intuitive map-based mobile interface with floating action buttons and service pins",
   short_description: "A location-first interface for ride-sharing, food delivery, or travel apps, featuring interactive maps and bottom sheets.",
-  emotional_hook: "이 프롬프트는 실제 지리 정보 위에 사용자의 일상을 편리하게 연결하는 인터랙티브 지도를 설계한다.",
+  emotional_hook: "This prompt designs interactive maps that conveniently connect the user's daily life on top of actual geographical information.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["ride_sharing", "food_delivery", "travel_booking", "local_discovery"],
@@ -1401,17 +1401,17 @@ export const mapServicePrompt: PromptCard = {
       placeholder: "[service_type]",
       default_value: "ride-sharing app like Uber",
       recommended_values: ["food delivery tracker", "luxury hotel discovery", "outdoor hiking trail navigator", "electric scooter rental service"],
-      variable_behavior_note: "서비스 유형을 바꾸면 핀의 아이콘과 바텀 시트의 상세 정보(차량 번호, 메뉴 등)가 변경되지만, 맵 중심의 레이아웃은 유지된다."
+      variable_behavior_note: "Changing the service type modifies pin icons and bottom sheet details, but maintains the map-centric layout."
     }
   ],
   why_this_works: [
-    "interactive vector map은 정보의 과부하를 줄이고 핵심 지점(핀)에만 집중하게 하여 직관성을 높인다.",
-    "bottom sheet는 추가 정보를 필요할 때만 보여줌으로써 화면 공간을 효율적으로 활용하는 모바일 표준 UX다."
+    "Interactive vector maps increase intuitiveness by reducing information overload and focusing only on core points (pins).",
+    "Bottom sheets are a mobile standard UX that efficiently utilizes screen space by showing additional information only when needed."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "지도의 텍스처와 부유형 버튼(FAB)의 입체감이 뛰어남." }],
-  comparison_notes: "우버나 에어비앤비 같은 글로벌 성공 서비스의 맵 UX 감각을 재현한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional map textures and three-dimensional feel of floating action buttons (FAB)." }],
+  comparison_notes: "Replicates the map UX sense of successful global services like Uber or Airbnb.",
   variations: [{ label: "Night View", prompt_delta: "Change map to dark theme with glowing neon routes and pins", use_case: "Nightlife or delivery apps", pre_generated_asset_id: null }],
-  common_failure_modes: ["지도가 너무 복잡하게 뭉개지는 경우 → 'simplified vector map, clean streets' 키워드 추가"],
+  common_failure_modes: ["Map appearing too complex and blurry -> add 'simplified vector map, clean streets' keywords."],
   seo: {
     primary_keyword: "map based service ui prompt",
     secondary_keywords: ["ride sharing app design ai", "location service ui prompt"],
@@ -1420,13 +1420,13 @@ export const mapServicePrompt: PromptCard = {
     meta_description: "Design intuitive map interfaces for mobile services. Verified Midjourney v6 prompt for ride-sharing and discovery apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-map-022-hero.png",
+    hero_image: "/images/prompts/ui-mobile-map-022-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Interactive mobile map service interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "map-022",
@@ -1446,7 +1446,7 @@ export const searchDiscoveryPrompt: PromptCard = {
   title: "Search & Discovery UI",
   result_first_title: "Smart mobile search interface with trending tags and personalized discovery feed",
   short_description: "A discovery-focused UI for content-heavy apps, featuring a prominent search bar and dynamic recommendation cards.",
-  emotional_hook: "이 프롬프트는 사용자의 취향을 읽고 끝없는 발견의 즐거움을 선사하는 지능적인 탐색 창을 설계한다.",
+  emotional_hook: "This prompt designs an intelligent discovery window that reads user tastes and presents the pleasure of endless discovery.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["content_discovery", "ecommerce_search", "streaming_app", "social_media"],
@@ -1462,17 +1462,17 @@ export const searchDiscoveryPrompt: PromptCard = {
       placeholder: "[discovery_type]",
       default_value: "short-form video platform",
       recommended_values: ["luxury fashion marketplace", "gourmet restaurant guide", "indie music discovery", "adventure travel blog"],
-      variable_behavior_note: "탐색 유형을 바꾸면 추천 카드의 미디어(영상, 사진, 앨범 아트)와 태그 내용이 변경되지만, 탐색 중심의 레이아웃은 유지된다."
+      variable_behavior_note: "Changing the discovery type modifies recommended card media and tag content, but maintains the discovery-centric layout."
     }
   ],
   why_this_works: [
-    "trending tags pills는 검색어를 직접 입력하기 전에 유행하는 키워드를 제공하여 탐색의 문턱을 낮춘다.",
-    "personalized feed는 사용자 맞춤형 콘텐츠를 카드 형태로 배치하여 즉각적인 클릭을 유도한다."
+    "Trending tags pills lower the entry barrier to exploration by providing trending keywords before users even type a search.",
+    "Personalized feeds induce immediate clicks by placing user-tailored content in card forms."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "검색창과 태그 버튼의 비례감이 매우 좋음." }],
-  comparison_notes: "핀터레스트나 유튜브의 탐색 페이지가 주는 '무한 탐험'의 감각을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Very good proportion between search bar and tag buttons." }],
+  comparison_notes: "Provides the sense of 'endless exploration' given by discovery pages of Pinterest or YouTube.",
   variations: [{ label: "Dark mode", prompt_delta: "Change to dark theme with colorful glowing highlights", use_case: "Entertainment apps", pre_generated_asset_id: null }],
-  common_failure_modes: ["태그가 너무 빽빽하게 나오는 경우 → 'spacious tag layout' 키워드 추가"],
+  common_failure_modes: ["Tags appearing too densely packed -> add 'spacious tag layout' keywords."],
   seo: {
     primary_keyword: "search discovery ui prompt",
     secondary_keywords: ["discovery feed design ai", "mobile search bar prompt"],
@@ -1481,13 +1481,13 @@ export const searchDiscoveryPrompt: PromptCard = {
     meta_description: "Design smart mobile search and discovery feeds. Verified Midjourney v6 prompt for content apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-search-023-hero.png",
+    hero_image: "/images/prompts/ui-mobile-search-023-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Smart mobile search and discovery interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "search-023",
@@ -1507,7 +1507,7 @@ export const chatInterfacePrompt: PromptCard = {
   title: "Messaging & Chat Interface",
   result_first_title: "Clean and real-time mobile chat interface with message bubbles and media attachments",
   short_description: "A messaging UI for social and business apps, featuring clear chat bubbles, typing indicators, and an input bar.",
-  emotional_hook: "이 프롬프트는 사람과 사람 사이의 대화가 막힘없이 흐르는 가장 투명하고 정갈한 통로를 구축한다.",
+  emotional_hook: "This prompt builds the most transparent and neat passage where conversation between people flows without obstruction.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["social_messaging", "customer_support", "team_chat", "dating_app"],
@@ -1523,17 +1523,17 @@ export const chatInterfacePrompt: PromptCard = {
       placeholder: "[chat_context]",
       default_value: "friendly social conversation with photos",
       recommended_values: ["professional customer support with tickets", "team project discussion with file links", "playful dating app with icebreakers", "medical consultation with secure data"],
-      variable_behavior_note: "채팅 맥락을 바꾸면 말풍선 안의 내용과 첨부 파일의 종류가 변경되지만, 대화 흐름을 방해하지 않는 깔끔한 구조는 유지된다."
+      variable_behavior_note: "Changing the chat context modifies speech bubble content and attachment types, but maintains the clean structure that doesn't disrupt conversation flow."
     }
   ],
   why_this_works: [
-    "round chat bubbles는 딱딱한 대화를 더 부드럽고 인간적인 소통으로 느껴지게 한다.",
-    "typing indicator는 실시간성을 시각화하여 사용자가 대화에 몰입하게 만드는 작지만 강력한 장치다."
+    "Round chat bubbles make rigid conversations feel softer and more human.",
+    "Typing indicators are a small but powerful device that visualizes real-time presence and immerses users in the conversation."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "말풍선의 둥근 정도와 그림자 깊이가 적절함." }],
-  comparison_notes: "아이메시지나 텔레그램의 '간결한 대화' 미학을 현대적으로 재해석한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Appropriate roundness of speech bubbles and shadow depth." }],
+  comparison_notes: "Modernly reinterprets the 'concise conversation' aesthetics of iMessage or Telegram.",
   variations: [{ label: "Business Dark", prompt_delta: "Change to dark theme, professional slate colors, sharp corners for bubbles", use_case: "Enterprise messaging", pre_generated_asset_id: null }],
-  common_failure_modes: ["메시지가 너무 빽빽하게 붙는 경우 → 'spacious chat history' 키워드 추가"],
+  common_failure_modes: ["Messages appearing too densely packed -> add 'spacious chat history' keywords."],
   seo: {
     primary_keyword: "messaging chat ui prompt",
     secondary_keywords: ["mobile chat design ai", "customer support ui prompt"],
@@ -1542,13 +1542,13 @@ export const chatInterfacePrompt: PromptCard = {
     meta_description: "Design clean and real-time mobile messaging interfaces. Verified Midjourney v6 prompt for social and business apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-chat-024-hero.png",
+    hero_image: "/images/prompts/ui-mobile-chat-024-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Clean mobile messaging chat interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "chat-024",
@@ -1568,7 +1568,7 @@ export const musicPlayerPrompt: PromptCard = {
   title: "Music & Audio Player UI",
   result_first_title: "Vibrant mobile music player with large album art and glassmorphism controls",
   short_description: "An immersive audio player interface for music and podcast apps, focusing on media controls and visual aesthetics.",
-  emotional_hook: "이 프롬프트는 귀로 들리는 소리의 감동을 눈으로 보는 시각적 전율로 확장한다.",
+  emotional_hook: "This prompt expands the emotion of sound heard by the ear into a visual thrill seen by the eye.",
   category: "ui_ux",
   vertical: "mobile_app",
   use_cases: ["music_streaming", "podcast_app", "audiobook_player", "media_controller"],
@@ -1584,17 +1584,17 @@ export const musicPlayerPrompt: PromptCard = {
       placeholder: "[audio_type]",
       default_value: "ambient synthwave album",
       recommended_values: ["minimalist tech podcast", "classical piano collection", "modern urban hip-hop", "soothing nature sounds"],
-      variable_behavior_note: "오디오 유형을 바꾸면 앨범 아트의 스타일과 배경의 색감이 그 정서에 맞게 동기화되지만, 핵심 재생 인터페이스는 유지된다."
+      variable_behavior_note: "Changing the audio type synchronizes the album art style and background color mood accordingly, but maintains the core playback interface."
     }
   ],
   why_this_works: [
-    "large album art는 서비스의 시각적 주인공 역할을 하며 사용자의 정서적 만족도를 높인다.",
-    "glassmorphism controls는 세련된 미래 지향적 느낌을 주면서도 앨범 아트의 색감을 배경으로 투영하여 시각적 일관성을 만든다."
+    "Large album art serves as the visual protagonist of the service, increasing user emotional satisfaction.",
+    "Glassmorphism controls grant a sophisticated futuristic feel while creating visual consistency by projecting album art colors onto the background."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "앨범 아트의 글로우 효과와 유리 질감이 매우 환상적임." }],
-  comparison_notes: "스포티파이나 애플 뮤직의 미니멀하면서도 감각적인 플레이어 디자인을 능가하는 비주얼을 제공한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Fantastic glow effects and glass textures of the album art." }],
+  comparison_notes: "Provides visuals that surpass the minimalist yet sensual player designs of Spotify or Apple Music.",
   variations: [{ label: "Light Mode", prompt_delta: "Change to bright white background, clean lines, no glow, focus on typography", use_case: "Minimalist podcast player", pre_generated_asset_id: null }],
-  common_failure_modes: ["버튼이 배경과 구분이 안 되는 경우 → 'high contrast controls' 키워드 추가"],
+  common_failure_modes: ["Buttons indistinguishable from the background -> add 'high contrast controls' keywords."],
   seo: {
     primary_keyword: "music player ui prompt",
     secondary_keywords: ["audio app design ai", "media player ui prompt"],
@@ -1603,13 +1603,13 @@ export const musicPlayerPrompt: PromptCard = {
     meta_description: "Design immersive mobile music and audio players. Verified Midjourney v6 prompt for media apps."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/ui-mobile-music-025-hero.png",
+    hero_image: "/images/prompts/ui-mobile-music-025-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Immersive mobile music player interface",
     width: 1000,
     height: 1778,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "music-025",

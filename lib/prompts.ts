@@ -5,7 +5,7 @@ import { marketingPrompts } from './data/marketing';
 import { workflowRecipePrompts } from './data/workflow-recipe';
 import { trendPrompts } from './data/trend';
 
-// 모든 카테고리의 프롬프트를 통합
+// Consolidate prompts from all categories
 export const prompts: PromptCard[] = [
   ...uiUxPrompts,
   ...gameAssetPrompts,

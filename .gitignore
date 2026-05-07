@@ -35,3 +35,6 @@ Thumbs.db
 
 # original images
 /public/images/originals/
+
+# static export
+/dist/

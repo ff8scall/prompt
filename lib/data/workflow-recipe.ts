@@ -10,7 +10,7 @@ export const headshotRecipe: PromptCard = {
   title: "Professional Headshot Workflow",
   result_first_title: "Step-by-step pipeline for creating photorealistic corporate headshots",
   short_description: "A complete workflow from Midjourney generation to AI upscaling and final retouching for professional profiles.",
-  emotional_hook: "이 레시피는 AI로 생성한 이미지를 어떻게 실제 비즈니스 프로필로 사용할 수 있는지 그 비밀 통로를 안내한다.",
+  emotional_hook: "This recipe guides you through the secret pipeline for transforming AI-generated images into high-authority professional business profiles.",
   category: "workflow_recipe",
   vertical: "portrait",
   use_cases: ["linkedin_profile", "corporate_bio", "virtual_avatar", "speaker_intro"],
@@ -26,17 +26,17 @@ export const headshotRecipe: PromptCard = {
       placeholder: "[persona]",
       default_value: "confident tech executive in his 40s",
       recommended_values: ["young creative director", "experienced medical doctor", "friendly customer success manager", "modern architect"],
-      variable_behavior_note: "페르소나를 바꾸면 인물의 인상과 직업적 분위기가 바뀌지만, 신뢰감을 주는 스튜디오 조명과 구도는 유지된다."
+      variable_behavior_note: "Changing the persona modifies the subject's impression and professional vibe while maintaining the trusted studio lighting and composition."
     }
   ],
   why_this_works: [
-    "85mm lens 설정은 인물 사진에 가장 적합한 압축감을 주어 얼굴을 왜곡 없이 표현한다.",
-    "low stylize(s 50)는 Midjourney의 예술적 과장을 억제하여 실제 사진과 구별하기 힘든 사실성을 확보한다."
+    "The 85mm lens setting provides the ideal compression for portrait photography, rendering the face without distortion.",
+    "Low stylize (s 50) suppresses Midjourney's artistic exaggeration to achieve realism indistinguishable from actual photography."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "피부 모공 수준의 디테일을 위해 --v 6 사용 필수." }],
-  comparison_notes: "단순 생성이 아닌, 업스케일러(Magnific AI 등)와 연동했을 때 최고의 프로필 사진을 보장한다.",
+  model_notes: [{ model: "midjourney", version: "v6", note: "Use of --v 6 is mandatory for skin pore level detail." }],
+  comparison_notes: "Guarantees the best profile results when integrated with upscalers like Magnific AI rather than just raw generation.",
   variations: [{ label: "Outdoor/Urban", prompt_delta: "Replace studio background with blurred modern office building background", use_case: "Casual professional", pre_generated_asset_id: null }],
-  common_failure_modes: ["눈동자가 부자연스러운 경우 → 'symmetrical eyes, realistic catchlight' 키워드 추가"],
+  common_failure_modes: ["Unnatural eyes -> add 'symmetrical eyes, realistic catchlight' keywords."],
   seo: {
     primary_keyword: "professional headshot ai workflow",
     secondary_keywords: ["linkedin profile photo ai", "midjourney portrait recipe"],
@@ -45,13 +45,13 @@ export const headshotRecipe: PromptCard = {
     meta_description: "Master the pipeline for photorealistic AI headshots. From Midjourney v6 to final retouching."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-headshot-001-hero.png",
+    hero_image: "/images/prompts/recipe-headshot-001-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional AI generated headshot workflow",
     width: 1000,
     height: 1250,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "midjourney",
     source_prompt_hash: "headshot-001",
@@ -71,7 +71,7 @@ export const youtubeVideoPlanPrompt: PromptCard = {
   title: "YouTube Video Production Plan",
   result_first_title: "Comprehensive YouTube video production strategy from hook to call-to-action",
   short_description: "A structured workflow for planning high-engagement YouTube videos, including script structure, visual cues, and SEO optimization.",
-  emotional_hook: "이 레시피는 당신의 파편화된 아이디어를 시청자가 끝까지 보게 만드는 강력한 알고리즘 친화적 서사로 변환한다.",
+  emotional_hook: "This recipe transforms your fragmented ideas into a powerful, algorithm-friendly narrative that keeps viewers watching until the very end.",
   category: "workflow_recipe",
   vertical: "content_creation",
   use_cases: ["youtube_scripting", "video_planning", "content_strategy", "audience_retention"],
@@ -87,24 +87,24 @@ export const youtubeVideoPlanPrompt: PromptCard = {
       placeholder: "[video_title]",
       default_value: "How AI is changing the creative industry",
       recommended_values: ["10 Days with a Minimalist Lifestyle", "The Secret to Viral Marketing in 2026", "Exploring the Deepest Caves in Asia", "Top 5 Mistakes Junior Developers Make"],
-      variable_behavior_note: "영상 제목을 바꾸면 해당 장르(교육, 다큐멘터리, 브이로그 등)에 최적화된 서술 구조가 자동으로 생성된다."
+      variable_behavior_note: "Changing the video title automatically generates a narrative structure optimized for that specific genre (Education, Documentary, Vlog, etc.)."
     },
     {
       name: "target_tone",
       placeholder: "[target_tone]",
       default_value: "energetic and fast-paced",
       recommended_values: ["calm and educational", "dramatic and cinematic", "humorous and casual", "professional and authoritative"],
-      variable_behavior_note: "톤을 바꾸면 스크립트의 어휘 선택과 영상의 호흡(Pacing) 전략이 변경된다."
+      variable_behavior_note: "Changing the tone adjusts the vocabulary choices in the script and the overall pacing strategy of the video."
     }
   ],
   why_this_works: [
-    "Hook strategy는 초기 이탈율을 방지하여 알고리즘 노출 확률을 극대화한다.",
-    "Pattern interrupts 제안은 긴 영상에서도 시청자의 주의를 환기시켜 시청 지속시간을 높인다."
+    "The 'Hook strategy' prevents early dropout and maximizes the probability of algorithm exposure.",
+    "Pattern interrupt suggestions keep viewers engaged even in long-form videos, increasing overall watch time."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "구조적인 목차 생성과 실질적인 연출 제안 능력이 탁월함." }],
-  comparison_notes: "단순 스크립트 생성을 넘어, 실제 영상 편집과 연출 단계까지 고려한 제작 지침을 제공한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Exceptional at structured outlining and practical production suggestions." }],
+  comparison_notes: "Goes beyond simple script generation to provide production guidelines that consider actual video editing and directing.",
   variations: [{ label: "Shorts Mode", prompt_delta: "Optimize for 60-second vertical format, focus on rapid-fire delivery and loops", use_case: "YouTube Shorts / TikTok", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 일반적인 경우 → 'include specific industry data and case studies' 키워드 보강"],
+  common_failure_modes: ["Generic content -> reinforce with 'include specific industry data and case studies' keywords."],
   seo: {
     primary_keyword: "youtube video production plan prompt",
     secondary_keywords: ["youtube script structure ai", "video marketing strategy prompt"],
@@ -113,13 +113,13 @@ export const youtubeVideoPlanPrompt: PromptCard = {
     meta_description: "Plan high-engagement YouTube videos with a structured production workflow. Verified GPT-4 prompt for scripts and strategy."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-yt-002-hero.png",
+    hero_image: "/images/prompts/recipe-creator-yt-002-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Structured YouTube video production plan document",
     width: 1200,
     height: 800,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "yt-plan-002",
@@ -139,7 +139,7 @@ export const characterBiblePrompt: PromptCard = {
   title: "Master Character Bible",
   result_first_title: "In-depth character profile with psychological traits, backstory, and visual design",
   short_description: "A comprehensive framework for building complex, multidimensional characters for novels, games, or screenplays.",
-  emotional_hook: "이 레시피는 백지 위에서 살아 숨 쉬는 인물을 조각하여, 독자가 잊지 못할 강렬한 페르소나를 탄생시킨다.",
+  emotional_hook: "This recipe carves out a living, breathing character from a blank page, giving birth to a compelling persona that readers will never forget.",
   category: "workflow_recipe",
   vertical: "storytelling",
   use_cases: ["novel_writing", "game_design", "screenwriting", "character_development"],
@@ -155,24 +155,24 @@ export const characterBiblePrompt: PromptCard = {
       placeholder: "[character_name]",
       default_value: "Elias Vance",
       recommended_values: ["Aria the Renegade Mage", "Commander Kael of the Iron Guard", "Sora, the Last Urban Fox", "Professor Morbius the Time-Thief"],
-      variable_behavior_note: "이름을 통해 캐릭터의 문화적 배경과 세계관의 톤을 추측하여 상세 설정을 보강한다."
+      variable_behavior_note: "The character's name helps the AI infer cultural backgrounds and world-building tones to enhance detailed settings."
     },
     {
       name: "story_genre",
       placeholder: "[story_genre]",
       default_value: "Cyberpunk Dystopia",
       recommended_values: ["High Fantasy", "Contemporary Thriller", "Space Opera", "Historical Romance"],
-      variable_behavior_note: "장르를 바꾸면 캐릭터의 생존 방식과 시각적 요소가 장르적 문법에 맞춰 재설계된다."
+      variable_behavior_note: "Changing the genre redesigns the character's survival methods and visual elements to match genre conventions."
     }
   ],
   why_this_works: [
-    "Psychological Profile은 캐릭터의 행동에 개연성을 부여하여 독자의 몰입을 돕는다.",
-    "Voice & Mannerisms는 대사 작성 시 캐릭터 고유의 색깔을 유지하게 하는 핵심 지표가 된다."
+    "The Psychological Profile grants plausibility to character actions, aiding reader immersion.",
+    "Voice & Mannerisms serve as key indicators to maintain a character's unique identity during dialogue writing."
   ],
-  model_notes: [{ model: "claude-3-opus", version: "current", note: "인물의 내면 세계를 탐구하고 창의적인 백스토리를 생성하는 데 매우 탁월함." }],
-  comparison_notes: "단순 프로필 작성을 넘어, 실제 창작 과정에서 캐릭터의 일관성을 유지하는 '기준서' 역할을 한다.",
+  model_notes: [{ model: "claude-3-opus", version: "current", note: "Exceptional at exploring a character's inner world and generating creative backstories." }],
+  comparison_notes: "Functions as a 'reference guide' to maintain character consistency throughout the creative process, beyond simple profile creation.",
   variations: [{ label: "Antagonist Mode", prompt_delta: "Focus on motivations for villainy, moral ambiguity, and the 'hidden human' side", use_case: "Villain development", pre_generated_asset_id: null }],
-  common_failure_modes: ["너무 평면적인 경우 → 'add internal conflict and contradictory desires' 키워드 보강"],
+  common_failure_modes: ["Too one-dimensional -> reinforce with 'add internal conflict and contradictory desires' keywords."],
   seo: {
     primary_keyword: "character bible creation prompt",
     secondary_keywords: ["storytelling character development ai", "game character profile prompt"],
@@ -181,13 +181,13 @@ export const characterBiblePrompt: PromptCard = {
     meta_description: "Create complex, multidimensional characters with an in-depth bible. Verified Claude 3 prompt for writers and designers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-char-003-hero.png",
+    hero_image: "/images/prompts/recipe-creator-char-003-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "In-depth character bible document illustration",
     width: 1000,
     height: 1250,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "claude-3-opus",
     source_prompt_hash: "char-bible-003",
@@ -207,7 +207,7 @@ export const twitchOverlayPlanPrompt: PromptCard = {
   title: "Twitch Stream Overlay Strategy",
   result_first_title: "Strategic layout for Twitch stream overlays, widgets, and brand identity",
   short_description: "A layout plan for streamers to optimize their broadcast visuals, focusing on engagement, clarity, and brand consistency.",
-  emotional_hook: "이 레시피는 당신의 방송을 단순한 송출을 넘어, 시청자가 머물고 싶어 하는 매력적인 디지털 테마파크로 바꾼다.",
+  emotional_hook: "This recipe transforms your stream from simple broadcasting into a captivating digital theme park where viewers want to stay.",
   category: "workflow_recipe",
   vertical: "streaming",
   use_cases: ["twitch_overlay", "stream_design", "brand_identity", "viewer_engagement"],
@@ -223,24 +223,24 @@ export const twitchOverlayPlanPrompt: PromptCard = {
       placeholder: "[stream_genre]",
       default_value: "lo-fi study and coding",
       recommended_values: ["fast-paced FPS gaming", "variety talk show", "art and digital drawing", "high-stakes competitive esports"],
-      variable_behavior_note: "방송 장르를 바꾸면 해당 시청층의 성향(정적인 집중 vs 동적인 에너지)에 맞는 레이아웃 구조가 제안된다."
+      variable_behavior_note: "Changing the genre suggests a layout structure optimized for that specific audience's preference (Static focus vs Dynamic energy)."
     },
     {
       name: "color_palette",
       placeholder: "[color_palette]",
       default_value: "soft lavender and dark charcoal",
       recommended_values: ["vibrant neon cyan and magenta", "clean minimalist white and slate", "warm retro orange and cream", "luxury gold and black"],
-      variable_behavior_note: "컬러 팔레트를 바꾸면 방송의 전반적인 정서적 온도와 브랜드 아이덴티티가 결정된다."
+      variable_behavior_note: "Changing the color palette determines the overall emotional temperature and brand identity of the broadcast."
     }
   ],
   why_this_works: [
-    "Widget Strategy는 방송 화면의 빈틈을 전략적인 소통 공간으로 활용하게 한다.",
-    "Scene Layouts은 방송의 흐름에 따라 전문적인 분위기를 연출하여 대형 스트리머 같은 인상을 준다."
+    "Widget Strategy enables the strategic use of screen real estate for communication.",
+    "Scene Layouts project a professional atmosphere throughout different phases of the broadcast, mimicking major streamers."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "스트리밍 플랫폼의 시각적 문법과 시청자 심리에 대한 이해도가 높음." }],
-  comparison_notes: "전문 디자인 외주를 맡기기 전, 완벽한 기획안을 수립하거나 스스로 OBS 설정을 최적화하는 데 필수적이다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "High understanding of streaming platform visual grammar and viewer psychology." }],
+  comparison_notes: "Essential for establishing a perfect plan or optimizing OBS settings before commissioning professional design work.",
   variations: [{ label: "Minimalist Mode", prompt_delta: "Focus on maximum game visibility, subtle semi-transparent widgets, no facecam border", use_case: "Competitive gaming", pre_generated_asset_id: null }],
-  common_failure_modes: ["화면이 너무 복잡해지는 경우 → 'prioritize game screen, 30% max overlay coverage' 키워드 보강"],
+  common_failure_modes: ["Overly cluttered screen -> reinforce with 'prioritize game screen, 30% max overlay coverage' keywords."],
   seo: {
     primary_keyword: "twitch stream overlay strategy prompt",
     secondary_keywords: ["stream layout design ai", "twitch brand identity prompt"],
@@ -249,13 +249,13 @@ export const twitchOverlayPlanPrompt: PromptCard = {
     meta_description: "Optimize your Twitch broadcast with a strategic overlay and widget plan. Verified GPT-4 prompt for streamers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-twitch-004-hero.png",
+    hero_image: "/images/prompts/recipe-creator-twitch-004-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Strategic Twitch stream overlay layout plan",
     width: 1920,
     height: 1080,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "twitch-plan-004",
@@ -275,7 +275,7 @@ export const nftCollectionConceptPrompt: PromptCard = {
   title: "NFT Collection Master Concept",
   result_first_title: "Unique NFT collection theme with traits, rarity system, and roadmap",
   short_description: "A strategic framework for planning generative NFT collections, covering artistic theme, trait categories, and utility.",
-  emotional_hook: "이 프롬프트는 디지털 자산에 고유한 가치와 서사를 부여하여, 단순한 그림을 하나의 강력한 브랜드 프로젝트로 변모시킨다.",
+  emotional_hook: "This prompt imbues digital assets with unique value and narrative, transforming simple art into a powerful branded project.",
   category: "workflow_recipe",
   vertical: "web3",
   use_cases: ["nft_planning", "generative_art", "web3_marketing", "crypto_project"],
@@ -291,24 +291,24 @@ export const nftCollectionConceptPrompt: PromptCard = {
       placeholder: "[collection_theme]",
       default_value: "cyberpunk nomads of Mars",
       recommended_values: ["mythological creatures in business suits", "floating architectural islands", "abstract liquid geometric shapes", "historical figures as street artists"],
-      variable_behavior_note: "컬렉션 테마를 바꾸면 NFT의 세계관과 타겟 컬렉터 층이 변화한다."
+      variable_behavior_note: "Changing the collection theme shifts the world-building and the target collector audience."
     },
     {
       name: "art_style",
       placeholder: "[art_style]",
       default_value: "hand-drawn retro anime style",
       recommended_values: ["3D hyper-realistic glass textures", "minimalist vector silhouettes", "pixel art 32x32", "painterly oil brushstrokes"],
-      variable_behavior_note: "아트 스타일을 바꾸면 생성될 레이어들의 작업 가이드라인이 달라진다."
+      variable_behavior_note: "Changing the art style modifies the generation guidelines for individual trait layers."
     }
   ],
   why_this_works: [
-    "Trait Categories 제안은 실제 생성 아트(Generative Art) 엔진에 넣을 소스들을 체계적으로 기획하게 돕는다.",
-    "Utility & Roadmap은 투자자들에게 장기적인 가치를 증명하는 마케팅 도구가 된다."
+    "The Trait Categories suggestion helps in systematically planning sources for generative art engines.",
+    "Utility & Roadmap serves as a marketing tool to prove long-term value to investors."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "시장 트렌드와 기술적 구현 가능성을 고려한 기획 능력이 우수함." }],
-  comparison_notes: "성공적인 NFT 프로젝트들의 공통적인 구성 요소를 분석하여, 프로페셔널한 프로젝트 설계도를 제공한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Excellent at planning with consideration for market trends and technical feasibility." }],
+  comparison_notes: "Provides a professional project blueprint by analyzing the common elements of successful NFT projects.",
   variations: [{ label: "Art Focus", prompt_delta: "Focus heavily on the visual evolution and unique artistic techniques, less on utility", use_case: "Fine art NFT drops", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 뻔한 경우 → 'introduce a unique twist or cross-genre fusion' 키워드 보강"],
+  common_failure_modes: ["If content is too generic -> reinforce with 'introduce a unique twist or cross-genre fusion' keywords."],
   seo: {
     primary_keyword: "nft collection concept prompt",
     secondary_keywords: ["generative art planning ai", "web3 brand strategy prompt"],
@@ -317,13 +317,13 @@ export const nftCollectionConceptPrompt: PromptCard = {
     meta_description: "Plan a successful generative NFT collection with unique lore and traits. Verified GPT-4 prompt for Web3 creators."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-nft-005-hero.png",
+    hero_image: "/images/prompts/recipe-creator-nft-005-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Detailed NFT collection concept roadmap and traits document",
     width: 1200,
     height: 1200,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "nft-plan-005",
@@ -343,7 +343,7 @@ export const podcastOutlinePrompt: PromptCard = {
   title: "Podcast Series Outline",
   result_first_title: "Structured podcast episode flow with guest questions, intro, and call-to-action",
   short_description: "A complete framework for planning professional podcast episodes, ensuring a smooth conversational flow and clear listener value.",
-  emotional_hook: "이 레시피는 청취자의 귀를 사로잡는 대화의 리듬을 설계하여, 단순한 수다가 아닌 여운이 남는 오디오 경험을 만든다.",
+  emotional_hook: "This recipe designs a conversational rhythm that captivates listeners' ears, creating a lingering audio experience rather than simple chatter.",
   category: "workflow_recipe",
   vertical: "audio_content",
   use_cases: ["podcast_planning", "interview_prep", "audio_content_strategy", "brand_storytelling"],
@@ -359,24 +359,24 @@ export const podcastOutlinePrompt: PromptCard = {
       placeholder: "[podcast_topic]",
       default_value: "the psychology of modern dating",
       recommended_values: ["startup failure and comeback stories", "future of sustainable architecture", "behind the scenes of indie game dev", "investing in your 20s for long-term wealth"],
-      variable_behavior_note: "에피소드 주제를 바꾸면 청취자가 궁금해할 만한 타겟 질문들이 장르에 맞춰 자동 생성된다."
+      variable_behavior_note: "Changing the episode topic automatically generates target questions that listeners would be curious about, tailored to the specific genre."
     },
     {
       name: "guest_description",
       placeholder: "[guest_description]",
       default_value: "a behavioral psychologist with 20 years experience",
       recommended_values: ["a serial entrepreneur with 3 failed exits", "a lead designer at a Fortune 500 company", "a solo developer of a viral mobile game", "a professional minimalist and author"],
-      variable_behavior_note: "게스트 프로필을 바꾸면 인터뷰의 깊이와 질문의 전문성이 조정된다."
+      variable_behavior_note: "Changing the guest profile adjusts the depth of the interview and the technicality of the questions."
     }
   ],
   why_this_works: [
-    "Segmented flow는 청취자가 오디오만으로도 전체 맥락을 놓치지 않게 하는 가이드라인이 된다.",
-    "Guest Profile 기반 질문 생성은 뻔한 질문이 아닌 본질을 꿰뚫는 대화를 유도한다."
+    "The segmented flow serves as a guideline ensuring listeners don't lose the core context through audio alone.",
+    "Guest profile-based question generation leads to insightful conversations that go beyond generic inquiries."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "자연스러운 대화 흐름과 정보 전달의 균형을 잘 맞춤." }],
-  comparison_notes: "프로페셔널 오디오 프로듀서의 기획 노하우를 담아, 방송 사고 없는 안정적인 진행을 돕는다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Excellent at balancing natural conversational flow with effective information delivery." }],
+  comparison_notes: "Incorporates the planning expertise of professional audio producers to ensure stable, accident-free broadcasting.",
   variations: [{ label: "Solo Episode", prompt_delta: "Change guest questions to personal narrative storytelling beats and reflection points", use_case: "Solo commentary podcasts", pre_generated_asset_id: null }],
-  common_failure_modes: ["너무 교과서적인 경우 → 'add personal anecdotes and controversial opinion prompts' 키워드 보강"],
+  common_failure_modes: ["Too textbook-like -> reinforce with 'add personal anecdotes and controversial opinion prompts' keywords."],
   seo: {
     primary_keyword: "podcast episode outline prompt",
     secondary_keywords: ["podcast script ai planner", "interview prep workflow prompt"],
@@ -385,13 +385,13 @@ export const podcastOutlinePrompt: PromptCard = {
     meta_description: "Plan professional podcast episodes with a structured flow and engaging questions. Verified GPT-4 prompt for audio creators."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-pod-006-hero.png",
+    hero_image: "/images/prompts/recipe-creator-pod-006-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Structured podcast episode outline document",
     width: 1000,
     height: 1500,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "pod-plan-006",
@@ -411,7 +411,7 @@ export const webtoonChapterPlanPrompt: PromptCard = {
   title: "Webtoon Chapter Plan",
   result_first_title: "Dynamic webtoon storyboard plan with panel flow, dialogue, and cliffhanger",
   short_description: "A specialized framework for webtoon/manga creators to plan a single chapter's narrative flow and visual composition.",
-  emotional_hook: "이 레시피는 스크롤을 내릴 때마다 독자의 심박수를 조절하며, 다음 화를 보지 않고는 못 배기게 만든다.",
+  emotional_hook: "This recipe controls the reader's heart rate with every scroll, making it impossible to stop without seeing the next episode.",
   category: "workflow_recipe",
   vertical: "comics",
   use_cases: ["webtoon_writing", "storyboarding", "manga_creation", "comic_planning"],
@@ -427,24 +427,24 @@ export const webtoonChapterPlanPrompt: PromptCard = {
       placeholder: "[story_genre]",
       default_value: "Action Fantasy with leveling system",
       recommended_values: ["Modern Office Romance", "Psychological Horror", "Slice of Life Drama", "Historical Martial Arts"],
-      variable_behavior_note: "장르를 바꾸면 웹툰 특유의 연출 기법(박진감 넘치는 액션 컷 vs 감성적인 여백)이 자동으로 조정된다."
+      variable_behavior_note: "Changing the genre automatically adjusts webtoon-specific directing techniques (Fast-paced action cuts vs emotional negative space)."
     },
     {
       name: "main_character",
       placeholder: "[main_character]",
       default_value: "Jin, the reluctant hero",
       recommended_values: ["Sara, the ambitious CEO", "The mysterious masked observer", "Min, a high school student with a secret", "Elder Wei, the ancient master"],
-      variable_behavior_note: "캐릭터 성격에 따라 대사의 톤과 독백의 깊이가 달라진다."
+      variable_behavior_note: "The character's personality adjusts the tone of dialogue and the depth of internal monologues."
     }
   ],
   why_this_works: [
-    "Panel Flow는 웹툰의 세로 스크롤 방식에 최적화된 리듬감을 부여하여 가독성을 높인다.",
-    "The Cliffhanger는 웹툰 플랫폼의 수익성과 직결되는 '다음 화 결제' 유도 전략을 담고 있다."
+    "Panel Flow provides an optimized rhythm for the webtoon's vertical scrolling format, enhancing readability.",
+    "The Cliffhanger includes strategies to drive 'next-chapter payments,' directly linked to the profitability of webtoon platforms."
   ],
-  model_notes: [{ model: "claude-3-opus", version: "current", note: "시각적 연출과 심리적 긴장감을 텍스트로 구현하는 능력이 매우 뛰어남." }],
-  comparison_notes: "실제 웹툰 작가들의 주간 연재 프로세스를 반영하여, 효율적인 콘티 작업의 전단계 기획을 지원한다.",
+  model_notes: [{ model: "claude-3-opus", version: "current", note: "Exceptional at implementing visual directing and psychological tension through text." }],
+  comparison_notes: "Reflects the weekly serialization process of actual webtoon artists, supporting efficient pre-storyboard planning.",
   variations: [{ label: "Romance Focus", prompt_delta: "Focus on emotional tension, subtle facial expressions in key panels, and internal monologue", use_case: "Romance/Drama webtoons", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 방대한 경우 → 'break down into 10 key storyboard beats' 키워드 보강"],
+  common_failure_modes: ["Too much content -> reinforce with 'break down into 10 key storyboard beats' keywords."],
   seo: {
     primary_keyword: "webtoon chapter storyboard plan prompt",
     secondary_keywords: ["comic storyboarding ai guide", "manga script workflow prompt"],
@@ -453,13 +453,13 @@ export const webtoonChapterPlanPrompt: PromptCard = {
     meta_description: "Plan dynamic webtoon chapters with optimized panel flow and cliffhangers. Verified Claude 3 prompt for creators."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-webtoon-007-hero.png",
+    hero_image: "/images/prompts/recipe-creator-webtoon-007-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Vertical webtoon storyboard planning document",
     width: 800,
     height: 2000,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "claude-3-opus",
     source_prompt_hash: "webtoon-plan-007",
@@ -479,7 +479,7 @@ export const artStyleGuidePrompt: PromptCard = {
   title: "Digital Art Style Guide",
   result_first_title: "Consistent art style guide with color palette, brush settings, and texture rules",
   short_description: "A technical manual for digital artists and illustrators to maintain a consistent visual identity across a series or project.",
-  emotional_hook: "이 프롬프트는 당신의 예술적 취향을 명확한 규칙으로 정의하여, 어떤 작품에서도 당신만의 서명을 느낄 수 있게 한다.",
+  emotional_hook: "This prompt defines your artistic taste as clear rules, ensuring your unique signature is felt in every work.",
   category: "workflow_recipe",
   vertical: "digital_art",
   use_cases: ["art_direction", "illustration_system", "game_art_guide", "consistent_branding"],
@@ -495,17 +495,17 @@ export const artStyleGuidePrompt: PromptCard = {
       placeholder: "[art_aesthetic]",
       default_value: "modern painterly impressionism with high saturation",
       recommended_values: ["clean flat vector with isometric depth", "gritty noir comic style with heavy ink", "cyberpunk neon glow with chromatic aberration", "soft watercolor storybook aesthetic"],
-      variable_behavior_note: "미학 스타일을 바꾸면 배합되는 컬러의 조화와 권장되는 브러시 질감이 완전히 재설계된다."
+      variable_behavior_note: "Changing the aesthetic style completely redesigns the color harmony and recommended brush textures."
     }
   ],
   why_this_works: [
-    "Line & Shape Language는 팀 단위 작업 시 모든 아티스트가 하나의 그림체처럼 작업하게 만드는 핵심 규격이 된다.",
-    "Rendering Rules는 조명과 질감 처리 방식을 표준화하여 프로젝트의 시각적 완성도를 보장한다."
+    "Line & Shape Language serves as a core specification ensuring all artists in a team project work with a unified style.",
+    "Rendering Rules guarantee the visual completeness of the project by standardizing lighting and texture processing."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "미술 기술론과 시각적 조형 원리에 대한 이해가 깊어 매우 실무적인 지침을 제공함." }],
-  comparison_notes: "글로벌 게임 스튜디오나 애니메이션 제작사에서 사용하는 '아트 바이블'의 구조를 간소화하여 제공한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Provides highly practical guidelines due to deep understanding of art theory and visual composition principles." }],
+  comparison_notes: "Provides a streamlined version of the 'Art Bible' structure used by global game studios and animation production companies.",
   variations: [{ label: "Character Focus", prompt_delta: "Add specific rules for skin tones, eye rendering, and hair highlights", use_case: "Character design systems", pre_generated_asset_id: null }],
-  common_failure_modes: ["설명이 너무 추상적인 경우 → 'provide specific Photoshop/Procreate setting examples' 키워드 보강"],
+  common_failure_modes: ["Abstract descriptions -> reinforce with 'provide specific Photoshop/Procreate setting examples' keywords."],
   seo: {
     primary_keyword: "digital art style guide prompt",
     secondary_keywords: ["art direction ai manual", "consistent illustration system prompt"],
@@ -514,13 +514,13 @@ export const artStyleGuidePrompt: PromptCard = {
     meta_description: "Maintain a consistent visual identity in your digital art projects. Verified GPT-4 prompt for artists and directors."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-art-008-hero.png",
+    hero_image: "/images/prompts/recipe-creator-art-008-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional digital art style guide with color swatches",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "art-guide-008",
@@ -540,7 +540,7 @@ export const portfolioCuratorPrompt: PromptCard = {
   title: "Portfolio Curator Plan",
   result_first_title: "Strategic portfolio selection and storytelling framework for career growth",
   short_description: "A workflow for artists and designers to select, arrange, and narrate their best work to land high-end clients or jobs.",
-  emotional_hook: "이 프롬프트는 단순한 작품 나열을 넘어, 당신의 커리어를 하나의 전설로 만드는 전략적인 큐레이션을 제공한다.",
+  emotional_hook: "Beyond a simple list of works, this prompt provides a strategic curation that turns your career into a legend.",
   category: "workflow_recipe",
   vertical: "career",
   use_cases: ["portfolio_building", "job_application", "freelance_pitching", "personal_branding"],
@@ -556,24 +556,24 @@ export const portfolioCuratorPrompt: PromptCard = {
       placeholder: "[creative_field]",
       default_value: "UI/UX Designer for Fintech",
       recommended_values: ["3D Environment Artist for AAA Games", "Commercial Fashion Photographer", "Motion Graphics Designer", "Brand Identity Specialist"],
-      variable_behavior_note: "전문 분야를 바꾸면 해당 업계의 채용 담당자가 가장 중요하게 보는 핵심 역량과 포트폴리오 문법이 제안된다."
+      variable_behavior_note: "Changing the creative field suggests core competencies and portfolio grammar most valued by industry recruiters."
     },
     {
       name: "target_platform",
       placeholder: "[target_platform]",
       default_value: "Behance and LinkedIn",
       recommended_values: ["ArtStation", "Dribbble", "Personal Website", "PDF Pitch Deck for Agencies"],
-      variable_behavior_note: "타겟 플랫폼을 바꾸면 각 플랫폼의 시각적 규격과 커뮤니티 특성에 맞는 업로드 전략이 변경된다."
+      variable_behavior_note: "Changing the target platform adjusts the upload strategy to fit each platform's visual specs and community traits."
     }
   ],
   why_this_works: [
-    "Storytelling Structure는 단순한 결과물 대신 당신의 '문제 해결 능력'을 증명하여 기업의 채용 확률을 높인다.",
-    "Visual Flow는 인사 담당자가 3초 만에 당신의 실력을 확신하게 만드는 강력한 시각적 장치를 설계한다."
+    "The Storytelling Structure proves your 'problem-solving ability' rather than just results, increasing hiring probability.",
+    "Visual Flow designs powerful visual cues that convince recruiters of your skills in just 3 seconds."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "글로벌 채용 시장의 트렌드와 포트폴리오 미학에 대한 인사이트가 매우 깊음." }],
-  comparison_notes: "수많은 지원자들 속에서 당신을 '독보적인 전문가'로 포지셔닝하는 고급 큐레이션 전략을 제공한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Deep insights into global hiring market trends and portfolio aesthetics." }],
+  comparison_notes: "Provides a premium curation strategy to position you as a 'unique expert' among numerous applicants.",
   variations: [{ label: "Freelance Pitch", prompt_delta: "Focus on ROI, testimonials, and specific service packages for direct clients", use_case: "Freelance business growth", pre_generated_asset_id: null }],
-  common_failure_modes: ["작품 수가 너무 적은 경우 → 'how to use personal projects and process shots' 키워드 보강"],
+  common_failure_modes: ["Low number of works -> reinforce with 'how to use personal projects and process shots' keywords."],
   seo: {
     primary_keyword: "portfolio curation strategy prompt",
     secondary_keywords: ["creative career coaching ai", "artstation portfolio guide prompt"],
@@ -582,13 +582,13 @@ export const portfolioCuratorPrompt: PromptCard = {
     meta_description: "Build a high-impact creative portfolio with a strategic curation plan. Verified GPT-4 prompt for designers and artists."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-creator-port-009-hero.png",
+    hero_image: "/images/prompts/recipe-creator-port-009-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Strategic portfolio layout and storytelling map",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "port-plan-009",
@@ -608,7 +608,7 @@ export const marketResearchPlanPrompt: PromptCard = {
   title: "Market Research Plan",
   result_first_title: "Structured market research strategy covering competitors, audience, and trends",
   short_description: "A comprehensive workflow for conducting deep market analysis to validate business ideas and identify growth opportunities.",
-  emotional_hook: "이 레시피는 안개 속 같은 시장에서 데이터라는 등불을 켜고, 승률이 가장 높은 길을 선명하게 비춘다.",
+  emotional_hook: "This recipe lights the lantern of data in a foggy market, clearly illuminating the path with the highest probability of winning.",
   category: "workflow_recipe",
   vertical: "business_strategy",
   use_cases: ["market_validation", "competitor_analysis", "new_product_planning", "business_strategy"],
@@ -624,24 +624,24 @@ export const marketResearchPlanPrompt: PromptCard = {
       placeholder: "[business_sector]",
       default_value: "sustainable vertical farming in urban areas",
       recommended_values: ["decentralized identity (DID) for fintech", "luxury pet wellness and longevity", "on-demand mental health for Gen Z", "AI-driven supply chain optimization"],
-      variable_behavior_note: "비즈니스 분야를 바꾸면 해당 산업군의 경쟁 환경과 주요 고객 페르소나가 장르 특성에 맞춰 재설계된다."
+      variable_behavior_note: "Changing the sector redesigns the competitive landscape and key customer personas to match industry traits."
     },
     {
       name: "target_region",
       placeholder: "[target_region]",
       default_value: "North America and Europe",
       recommended_values: ["Southeast Asia (emerging markets)", "Global (SaaS focus)", "South Korea (high-tech focus)", "Middle East (infrastructure focus)"],
-      variable_behavior_note: "목표 지역을 바꾸면 문화적 배경, 규제 환경 및 시장 성숙도가 반영된 조사 방식이 제안된다."
+      variable_behavior_note: "Changing the target region suggests research methods reflecting cultural backgrounds, regulatory environments, and market maturity."
     }
   ],
   why_this_works: [
-    "Competitor Landscaping은 막연한 추측 대신 객관적인 지표를 통해 자신의 시장 위치를 파악하게 한다.",
-    "Target Audience Profile은 마케팅 비용을 낭비하지 않고 핵심 타겟에게 메시지를 전달할 수 있는 기초 자료가 된다."
+    "Competitor Landscaping helps identify your market position through objective metrics rather than vague guesses.",
+    "The Target Audience Profile serves as foundational data to deliver messages to core targets without wasting marketing costs."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "방대한 산업 데이터를 구조화하고 핵심 전략을 도출하는 로직이 매우 강력함." }],
-  comparison_notes: "맥킨지나 베인앤컴퍼니 같은 글로벌 전략 컨설팅 펌의 초기 리서치 프레임워크를 재현한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Powerful logic in structuring vast industrial data and deriving key strategies." }],
+  comparison_notes: "Reproduces the initial research framework of global strategy consulting firms like McKinsey or Bain & Company.",
   variations: [{ label: "Competitor Focus", prompt_delta: "Deep dive into competitor product pricing and feature comparison matrix", use_case: "Competitive pricing strategy", pre_generated_asset_id: null }],
-  common_failure_modes: ["정보가 너무 포괄적인 경우 → 'focus on niche market segments and specific entry barriers' 키워드 보강"],
+  common_failure_modes: ["Comprehensive info -> reinforce with 'focus on niche market segments and specific entry barriers' keywords."],
   seo: {
     primary_keyword: "market research plan prompt",
     secondary_keywords: ["business validation ai workflow", "competitor analysis strategy prompt"],
@@ -650,13 +650,13 @@ export const marketResearchPlanPrompt: PromptCard = {
     meta_description: "Conduct deep market research with a structured analyst-grade plan. Verified GPT-4 prompt for business validation."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-research-010-hero.png",
+    hero_image: "/images/prompts/recipe-biz-research-010-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Detailed market research strategy and data map",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "research-010",
@@ -676,7 +676,7 @@ export const productRoadmapPrompt: PromptCard = {
   title: "Strategic Product Roadmap",
   result_first_title: "Clear and executable product roadmap with phases, features, and milestones",
   short_description: "A framework for product managers to plan long-term product evolution, prioritizing features based on user value and technical effort.",
-  emotional_hook: "이 레시피는 복잡한 개발 요구사항들 사이에서 브랜드의 북극성(North Star)을 찾고, 그곳에 도달하기 위한 최단 경로를 설계한다.",
+  emotional_hook: "This recipe finds the North Star of your brand among complex development requirements and designs the shortest path to reach it.",
   category: "workflow_recipe",
   vertical: "product_management",
   use_cases: ["product_planning", "stakeholder_alignment", "agile_development", "feature_prioritization"],
@@ -692,24 +692,24 @@ export const productRoadmapPrompt: PromptCard = {
       placeholder: "[product_name]",
       default_value: "Aura: AI Meditation & Sleep Assistant",
       recommended_values: ["Nexus: Decentralized B2B Marketplace", "Orbit: Personal Wealth Management Bot", "Flow: Team Productivity Dashboard", "EcoTrack: Carbon Footprint Monitor"],
-      variable_behavior_note: "제품 이름을 바꾸면 해당 서비스가 지향해야 할 장기적 비전과 핵심 기능군이 산업 문법에 맞춰 정의된다."
+      variable_behavior_note: "Changing the product name defines the long-term vision and core feature sets in accordance with industry standards."
     },
     {
       name: "product_type",
       placeholder: "[product_type]",
       default_value: "Mobile-first SaaS for Wellness",
       recommended_values: ["Enterprise Web Platform", "Blockchain dApp", "AI-powered Desktop App", "IoT Consumer Device"],
-      variable_behavior_note: "제품 타입을 바꾸면 개발 난이도와 시장 진입 전략에 따른 단계별 목표가 재구성된다."
+      variable_behavior_note: "Changing the product type reconstructs milestones based on development difficulty and market entry strategies."
     }
   ],
   why_this_works: [
-    "North Star Metric은 팀 전체가 분산되지 않고 하나의 핵심 가치에 집중하게 만든다.",
-    "Phase-based structure는 성급한 확장을 경계하고 탄탄한 성장을 위한 논리적 순서를 제시한다."
+    "The North Star Metric keeps the entire team focused on a single core value without dispersion.",
+    "The Phase-based structure cautions against hasty expansion and presents a logical sequence for solid growth."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "비즈니스 로직과 기술적 타당성을 조화시킨 로드맵 설계 능력이 탁월함." }],
-  comparison_notes: "실리콘밸리 유니콘 기업들이 제품의 비전과 실행력을 일치시킬 때 사용하는 로드맵 프레임워크를 제공한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Superb at designing roadmaps that harmonize business logic with technical feasibility." }],
+  comparison_notes: "Provides the roadmap framework used by Silicon Valley unicorns to align product vision with execution.",
   variations: [{ label: "Feature Focus", prompt_delta: "Deep dive into feature prioritization matrix using RICE framework", use_case: "Granular planning", pre_generated_asset_id: null }],
-  common_failure_modes: ["일정이 너무 빽빽한 경우 → 'build in 20% buffer for technical debt and R&D' 키워드 보강"],
+  common_failure_modes: ["Tight schedule -> reinforce with 'build in 20% buffer for technical debt and R&D' keywords."],
   seo: {
     primary_keyword: "product roadmap planning prompt",
     secondary_keywords: ["pm product strategy ai", "agile roadmap workflow prompt"],
@@ -718,13 +718,13 @@ export const productRoadmapPrompt: PromptCard = {
     meta_description: "Plan your product's future with a structured strategic roadmap. Verified GPT-4 prompt for product managers and founders."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-roadmap-011-hero.png",
+    hero_image: "/images/prompts/recipe-biz-roadmap-011-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Strategic product roadmap with phases and milestones",
     width: 1600,
     height: 900,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "roadmap-011",
@@ -744,7 +744,7 @@ export const seoStrategyPrompt: PromptCard = {
   title: "Advanced SEO Strategy",
   result_first_title: "In-depth SEO plan with keyword clusters, content pillars, and technical audit",
   short_description: "A professional SEO workflow to dominate search rankings, focusing on semantic search, topical authority, and technical health.",
-  emotional_hook: "이 레시피는 단순히 유입을 늘리는 것을 넘어, 당신의 브랜드가 해당 분야의 가장 신뢰받는 '답변'이 되게 한다.",
+  emotional_hook: "Beyond just increasing traffic, this recipe ensures your brand becomes the most trusted 'answer' in its field.",
   category: "workflow_recipe",
   vertical: "digital_marketing",
   use_cases: ["organic_growth", "content_marketing", "website_audit", "search_optimization"],
@@ -760,24 +760,24 @@ export const seoStrategyPrompt: PromptCard = {
       placeholder: "[website_topic]",
       default_value: "remote work tools and productivity hacks",
       recommended_values: ["luxury eco-friendly skincare reviews", "cryptocurrency investing for beginners", "modern home interior design trends", "advanced python programming for data science"],
-      variable_behavior_note: "주제를 바꾸면 구글의 검색 의도(Search Intent)에 부합하는 키워드 맵과 콘텐츠 구조가 자동 생성된다."
+      variable_behavior_note: "Changing the topic automatically generates a keyword map and content structure that aligns with Google's search intent."
     },
     {
       name: "outreach_target",
       placeholder: "[outreach_target]",
       default_value: "tech blogs and productivity influencers",
       recommended_values: ["high-end design magazines", "financial news websites", "educational platforms and forums", "lifestyle and wellness publications"],
-      variable_behavior_note: "오트리치 대상을 바꾸면 백링크를 확보하기 위한 전략적 접근 방식과 협업 제안서의 톤이 달라진다."
+      variable_behavior_note: "Changing the outreach target adjusts the strategic approach and the tone of collaboration proposals for securing backlinks."
     }
   ],
   why_this_works: [
-    "Keyword Cluster Analysis는 파편화된 키워드가 아닌 주제 전반을 장악하는 '주제 권위(Topical Authority)'를 형성하게 한다.",
-    "Technical SEO Checklist는 콘텐츠가 아무리 좋아도 기술적 결함으로 인해 검색 결과에서 밀리는 경우를 방지한다."
+    "Keyword Cluster Analysis enables building 'Topical Authority' that dominates the entire subject rather than fragmented keywords.",
+    "The Technical SEO Checklist prevents high-quality content from being buried in search results due to technical flaws."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "구글 검색 알고리즘의 최신 트렌드(E-E-A-T)를 반영한 전략 도출 능력이 뛰어남." }],
-  comparison_notes: "전문 SEO 대행사의 수천만 원 상당의 전략 컨설팅 리포트 구조를 바탕으로 설계되었다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Exceptional at deriving strategies that reflect the latest Google search algorithm trends (E-E-A-T)." }],
+  comparison_notes: "Designed based on the strategic consulting report structures of professional SEO agencies worth tens of millions of won.",
   variations: [{ label: "Local SEO", prompt_delta: "Focus on Google Maps optimization, local citation building, and regional keyword focus", use_case: "Local businesses", pre_generated_asset_id: null }],
-  common_failure_modes: ["키워드만 나열하는 경우 → 'prioritize search intent and user pain points over search volume' 키워드 보강"],
+  common_failure_modes: ["Keyword listing only -> reinforce with 'prioritize search intent and user pain points over search volume' keywords."],
   seo: {
     primary_keyword: "advanced seo strategy prompt",
     secondary_keywords: ["content marketing ai workflow", "search engine optimization guide prompt"],
@@ -786,13 +786,13 @@ export const seoStrategyPrompt: PromptCard = {
     meta_description: "Dominate search rankings with a structured advanced SEO plan. Verified GPT-4 prompt for content and technical SEO."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-seo-012-hero.png",
+    hero_image: "/images/prompts/recipe-biz-seo-012-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Comprehensive SEO strategy and keyword clustering map",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "seo-012",
@@ -812,7 +812,7 @@ export const customerJourneyMapPrompt: PromptCard = {
   title: "Customer Journey Map",
   result_first_title: "Detailed customer journey map with touchpoints, pain points, and delight opportunities",
   short_description: "A framework to visualize the entire user experience from awareness to advocacy, identifying critical moments that drive conversion.",
-  emotional_hook: "이 레시피는 고객의 발걸음 하나하나에 담긴 감정과 고민을 읽어내어, 우연한 방문을 필연적인 팬덤으로 바꾼다.",
+  emotional_hook: "This recipe reads the emotions and concerns behind every customer's footstep, transforming a chance visit into an inevitable fandom.",
   category: "workflow_recipe",
   vertical: "ux_strategy",
   use_cases: ["user_experience_design", "marketing_funnel", "product_discovery", "customer_retention"],
@@ -828,24 +828,24 @@ export const customerJourneyMapPrompt: PromptCard = {
       placeholder: "[service_type]",
       default_value: "high-end boutique hotel booking",
       recommended_values: ["B2B project management software", "organic meal kit delivery service", "personal fitness coaching app", "luxury car subscription"],
-      variable_behavior_note: "서비스 타입을 바꾸면 사용자의 의사결정 주기와 주요 페인포인트가 산업 특성에 맞춰 재구조화된다."
+      variable_behavior_note: "Changing the service type restructures the user's decision-making cycle and key pain points according to industry traits."
     },
     {
       name: "target_persona",
       placeholder: "[target_persona]",
       default_value: "busy executive looking for a seamless escape",
       recommended_values: ["tech-savvy solo traveler", "health-conscious young parent", "small business owner optimizing costs", "high-net-worth car enthusiast"],
-      variable_behavior_note: "페르소나를 바꾸면 각 단계에서 느끼는 감정과 기대하는 보상이 개인의 가치관에 따라 달라진다."
+      variable_behavior_note: "Changing the persona adjusts the emotions felt and rewards expected at each stage based on individual values."
     }
   ],
   why_this_works: [
-    "Emotional State 분석은 기능적인 불편함 뒤에 숨겨진 사용자의 심리적 장벽을 파악하게 한다.",
-    "Opportunities 제안은 단순한 문제 해결을 넘어 경쟁사와 차별화되는 '와우 포인트'를 설계하게 돕는다."
+    "Emotional State analysis enables identifying the psychological barriers hidden behind functional inconveniences.",
+    "Opportunities suggestions help design 'Wow Points' that differentiate from competitors beyond simple problem-solving."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "사용자 심리와 마케팅 퍼널의 관계를 입체적으로 분석함." }],
-  comparison_notes: "글로벌 에이전시에서 사용하는 CX(Customer Experience) 전략 지도의 표준 규격을 담고 있다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Provides a multi-dimensional analysis of the relationship between user psychology and marketing funnels." }],
+  comparison_notes: "Contains the standard specifications of CX (Customer Experience) strategy maps used by global agencies.",
   variations: [{ label: "B2B Focus", prompt_delta: "Change stages to Awareness, Lead Gen, Sales Meeting, Onboarding, Expansion", use_case: "B2B Sales strategy", pre_generated_asset_id: null }],
-  common_failure_modes: ["터치포인트가 너무 뻔한 경우 → 'consider obscure or high-friction touchpoints like customer support or social proof' 키워드 보강"],
+  common_failure_modes: ["Generic touchpoints -> reinforce with 'consider obscure or high-friction touchpoints like customer support or social proof' keywords."],
   seo: {
     primary_keyword: "customer journey map planning prompt",
     secondary_keywords: ["ux strategy ai workflow", "marketing funnel analysis prompt"],
@@ -854,13 +854,13 @@ export const customerJourneyMapPrompt: PromptCard = {
     meta_description: "Visualize the entire user experience with a detailed customer journey map. Verified GPT-4 prompt for UX and marketing."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-journey-013-hero.png",
+    hero_image: "/images/prompts/recipe-biz-journey-013-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Visual customer journey map with emotional curve",
     width: 1600,
     height: 1200,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "journey-013",
@@ -880,7 +880,7 @@ export const investorPitchDeckPrompt: PromptCard = {
   title: "Investor Pitch Deck Outline",
   result_first_title: "Professional pitch deck outline with problem/solution, market, and financials",
   short_description: "A strategic storyboard for founders to build a compelling 10-12 slide deck that wins investor interest and funding.",
-  emotional_hook: "이 레시피는 당신의 비전을 투자자의 언어로 번역하여, 그들의 머릿속에 '이것은 거대한 기회다'라는 확신을 심는다.",
+  emotional_hook: "This recipe translates your vision into the language of investors, planting the conviction in their minds that 'this is a massive opportunity.'",
   category: "workflow_recipe",
   vertical: "startup",
   use_cases: ["fundraising", "startup_pitch", "business_presentation", "vc_meeting"],
@@ -896,24 +896,24 @@ export const investorPitchDeckPrompt: PromptCard = {
       placeholder: "[startup_name]",
       default_value: "Lumina: AI-powered grid management for renewable energy",
       recommended_values: ["HealthCore: AI early detection for clinics", "SwiftPay: Cross-border settlements for SMEs", "Modu: Modular housing for rapid urban expansion", "ZenSpace: Remote work sanctuary builder"],
-      variable_behavior_note: "스타트업 이름을 통해 사업의 핵심 비전과 기술적 차별점이 슬라이드 전반에 스며든다."
+      variable_behavior_note: "The startup name helps the core vision and technical differentiation permeate throughout the slides."
     },
     {
       name: "startup_industry",
       placeholder: "[startup_industry]",
       default_value: "ClimateTech and Energy Infrastructure",
       recommended_values: ["Fintech / Payments", "HealthTech / SaaS", "PropTech / Construction", "Consumer AI / Productivity"],
-      variable_behavior_note: "산업 분야를 바꾸면 투자자가 중요하게 보는 지표(KPI)와 시장 규모 추정 방식이 해당 도메인의 문법에 맞춰 조정된다."
+      variable_behavior_note: "Changing the industry adjusts the KPIs and market sizing methods to fit the domain's specific grammar."
     }
   ],
   why_this_works: [
-    "Slide-by-slide structure는 복잡한 사업 내용을 논리적이고 간결하게 전달하여 청중의 이탈을 막는다.",
-    "The Ask는 구체적인 자금 활용 계획을 제시하여 투자자에게 실행 준비가 완료되었음을 증명한다."
+    "The Slide-by-slide structure delivers complex business content logically and concisely to prevent audience dropout.",
+    "The Ask section presents a specific fund utilization plan to prove readiness for execution to investors."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "투자 유치를 위한 설득의 논리 체계와 시장성 분석 능력이 매우 강력함." }],
-  comparison_notes: "Sequoia나 Y Combinator가 선호하는 'Problem-First' 방식의 정통 피치덱 구조를 기반으로 한다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Possesses extremely powerful logic for persuasion and marketability analysis for fundraising." }],
+  comparison_notes: "Based on the authentic 'Problem-First' pitch deck structures preferred by Sequoia or Y Combinator.",
   variations: [{ label: "Seed Stage", prompt_delta: "Focus more on the vision and team strength, less on historical financials", use_case: "Pre-revenue startups", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 장황한 경우 → 'limit each slide description to 3 bullet points' 키워드 보강"],
+  common_failure_modes: ["Too long-winded -> reinforce with 'limit each slide description to 3 bullet points' keywords."],
   seo: {
     primary_keyword: "investor pitch deck outline prompt",
     secondary_keywords: ["startup fundraising ai guide", "vc pitch presentation prompt"],
@@ -922,13 +922,13 @@ export const investorPitchDeckPrompt: PromptCard = {
     meta_description: "Build a winning investor pitch deck with a strategic slide-by-slide outline. Verified GPT-4 prompt for founders."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-pitch-014-hero.png",
+    hero_image: "/images/prompts/recipe-biz-pitch-014-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Professional 12-slide pitch deck structure for startups",
     width: 1920,
     height: 1080,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "pitch-014",
@@ -948,7 +948,7 @@ export const marketingCampaignPlanPrompt: PromptCard = {
   title: "Integrated Marketing Campaign",
   result_first_title: "Complete marketing campaign plan with channels, budget, and creative strategy",
   short_description: "A framework for marketing managers to launch high-performance campaigns, integrating paid, earned, and owned media.",
-  emotional_hook: "이 레시피는 당신의 제품을 세상의 소음 속에서 끌어내어, 타겟 오디언스의 마음속에 잊히지 않는 첫인상을 새긴다.",
+  emotional_hook: "This recipe pulls your product out from the noise of the world and carves an unforgettable first impression in the minds of your target audience.",
   category: "workflow_recipe",
   vertical: "marketing",
   use_cases: ["campaign_launch", "brand_awareness", "product_promotion", "performance_marketing"],
@@ -964,24 +964,24 @@ export const marketingCampaignPlanPrompt: PromptCard = {
       placeholder: "[campaign_goal]",
       default_value: "launching a new premium coffee subscription service",
       recommended_values: ["scaling a B2B SaaS for small law firms", "holiday season sale for sustainable fashion", "promoting a nationwide charity run event", "rebranding a traditional local bakery"],
-      variable_behavior_note: "캠페인 목표를 바꾸면 달성해야 할 핵심 전환 지점과 마케팅 퍼널의 비중이 자동으로 조정된다."
+      variable_behavior_note: "Changing the campaign goal automatically adjusts the key conversion points and the weight of the marketing funnel."
     },
     {
       name: "budget_amount",
       placeholder: "[budget_amount]",
       default_value: "$50,000 for the first month",
       recommended_values: ["$5,000 bootstrap budget", "$200,000 aggressive scale budget", "$1,000 micro-testing budget", "$1,000,000 nationwide campaign"],
-      variable_behavior_note: "예산 규모를 바꾸면 현실적인 채널 믹스와 광고 집행 전략의 강도가 변경된다."
+      variable_behavior_note: "Changing the budget amount shifts the realistic channel mix and the intensity of the ad execution strategy."
     }
   ],
   why_this_works: [
-    "Integrated approach는 파편화된 광고가 아닌 통합된 메시지로 브랜드 인지도를 빠르게 쌓게 한다.",
-    "Budget Allocation은 ROI(투자 대비 수익)가 가장 높은 채널에 자원을 집중할 수 있게 가이드한다."
+    "The Integrated approach enables building brand awareness quickly through unified messaging rather than fragmented ads.",
+    "Budget Allocation guides resource focus on channels with the highest ROI (Return on Investment)."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "퍼포먼스 마케팅과 브랜드 마케팅의 조화로운 전략 도출 능력이 뛰어남." }],
-  comparison_notes: "글로벌 광고 대행사의 연간 미디어 믹스 제안서 구조를 간소화하여 즉시 실행 가능하도록 설계했다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Exceptional at deriving a harmonious strategy between performance marketing and brand marketing." }],
+  comparison_notes: "Designed based on the annual media mix proposal structures of global advertising agencies for immediate execution.",
   variations: [{ label: "Retargeting Focus", prompt_delta: "Focus heavily on bottom-of-funnel retargeting and email automation to drive immediate conversions", use_case: "E-commerce sales", pre_generated_asset_id: null }],
-  common_failure_modes: ["채널이 너무 많은 경우 → 'focus on 2 primary channels and 1 experimental channel' 키워드 보강"],
+  common_failure_modes: ["Too many channels -> reinforce with 'focus on 2 primary channels and 1 experimental channel' keywords."],
   seo: {
     primary_keyword: "integrated marketing campaign plan prompt",
     secondary_keywords: ["growth marketing ai strategy", "product launch campaign prompt"],
@@ -990,13 +990,13 @@ export const marketingCampaignPlanPrompt: PromptCard = {
     meta_description: "Launch successful marketing campaigns with a structured channel and budget plan. Verified GPT-4 prompt for growth managers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-marketing-015-hero.png",
+    hero_image: "/images/prompts/recipe-biz-marketing-015-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Integrated marketing campaign roadmap and media mix",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "campaign-015",
@@ -1016,7 +1016,7 @@ export const hiringPlanPrompt: PromptCard = {
   title: "Strategic Hiring Plan",
   result_first_title: "Complete recruitment plan with job definition, sourcing strategy, and interview process",
   short_description: "A framework for founders and HR managers to find and hire top-tier talent, ensuring culture fit and technical excellence.",
-  emotional_hook: "이 레시피는 단순히 일손을 찾는 것이 아니라, 브랜드의 운명을 함께 바꿀 최고의 동료를 발굴하는 여정을 설계한다.",
+  emotional_hook: "This recipe is not just about finding helping hands, but designing a journey to discover the best colleagues who will change the brand's fate together.",
   category: "workflow_recipe",
   vertical: "human_resources",
   use_cases: ["team_expansion", "recruitment_strategy", "culture_building", "startup_growth"],
@@ -1032,24 +1032,24 @@ export const hiringPlanPrompt: PromptCard = {
       placeholder: "[job_title]",
       default_value: "Lead AI Engineer with product vision",
       recommended_values: ["Creative Marketing Director", "Senior Customer Success Lead", "Full-stack Developer (Rust/Next.js)", "Head of Operations"],
-      variable_behavior_note: "직무명을 바꾸면 해당 역할에 필요한 핵심 역량과 검증해야 할 기술적/정서적 지표가 재정의된다."
+      variable_behavior_note: "Changing the job title redefines the core competencies and the technical/emotional metrics to be verified for the role."
     },
     {
       name: "company_type",
       placeholder: "[company_type]",
       default_value: "early-stage seed-funded AI startup",
       recommended_values: ["rapidly scaling B2B SaaS company", "established luxury boutique agency", "non-profit social enterprise", "high-volume e-commerce brand"],
-      variable_behavior_note: "기업 타입을 바꾸면 후보자에게 제안해야 할 가치(Equity vs Stability vs Mission)와 인재상이 달라진다."
+      variable_behavior_note: "Changing the company type adjusts the value propositions (Equity vs Stability vs Mission) and the ideal talent profile to be offered to candidates."
     }
   ],
   why_this_works: [
-    "Evaluation Rubric은 면접관의 주관을 배제하고 팀의 일관된 기준에 따라 최적의 인재를 선택하게 돕는다.",
-    "Onboarding Milestones는 채용 이후 신규 입사자가 조직에 빠르게 안착하고 성과를 내게 만드는 지도가 된다."
+    "The Evaluation Rubric excludes interviewer subjectivity and helps select the best talent based on the team's consistent standards.",
+    "Onboarding Milestones serve as a map for new hires to settle quickly and perform effectively after recruitment."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "인사 전략과 조직 문화에 대한 깊은 통찰을 바탕으로 실무적인 채용 가이드를 제공함." }],
-  comparison_notes: "글로벌 테크 기업의 리크루팅 프로세스를 스타트업에서도 즉시 적용 가능하도록 표준화했다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Provides practical hiring guides based on deep insights into HR strategies and organizational culture." }],
+  comparison_notes: "Standardized the recruiting processes of global tech companies for immediate application in startups.",
   variations: [{ label: "Executive Search", prompt_delta: "Focus on leadership alignment, strategic vision, and long-term retention packages", use_case: "C-level hiring", pre_generated_asset_id: null }],
-  common_failure_modes: ["인터뷰 질문이 너무 뻔한 경우 → 'add behavioral and situational interview questions with ideal answer guides' 키워드 보강"],
+  common_failure_modes: ["Generic interview questions -> reinforce with 'add behavioral and situational interview questions with ideal answer guides' keywords."],
   seo: {
     primary_keyword: "strategic hiring recruitment plan prompt",
     secondary_keywords: ["startup team building ai", "hr recruitment process prompt"],
@@ -1058,13 +1058,13 @@ export const hiringPlanPrompt: PromptCard = {
     meta_description: "Hire top talent with a structured strategic recruitment plan. Verified GPT-4 prompt for founders and HR managers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-hiring-016-hero.png",
+    hero_image: "/images/prompts/recipe-biz-hiring-016-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Strategic hiring pipeline and candidate evaluation rubric",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "hiring-016",
@@ -1084,7 +1084,7 @@ export const saasPricingStrategyPrompt: PromptCard = {
   title: "SaaS Pricing Strategy",
   result_first_title: "Optimized SaaS pricing tiers with value-based features and retention logic",
   short_description: "A strategic framework for software-as-a-service companies to design pricing plans that maximize revenue and user lifetime value.",
-  emotional_hook: "이 레시피는 숫자를 넘어서 사용자가 당신의 가치를 인정하고 '기꺼이' 비용을 지불하게 만드는 심리적 설계를 제공한다.",
+  emotional_hook: "Beyond numbers, this recipe provides a psychological design that makes users recognize your value and 'willingly' pay the cost.",
   category: "workflow_recipe",
   vertical: "business_strategy",
   use_cases: ["saas_monetization", "revenue_optimization", "product_tier_design", "market_positioning"],
@@ -1100,24 +1100,24 @@ export const saasPricingStrategyPrompt: PromptCard = {
       placeholder: "[product_concept]",
       default_value: "AI-powered creative asset management for agencies",
       recommended_values: ["no-code automation platform for HR", "cloud-native cybersecurity for fintech", "real-time collaboration tool for 3D artists", "customer data platform for luxury retail"],
-      variable_behavior_note: "제품 컨셉을 바꾸면 타겟 고객의 지불 의지(Willingness to pay)와 산업별 표준 요금제가 자동으로 분석된다."
+      variable_behavior_note: "Changing the product concept automatically analyzes target customers' willingness to pay and industry standard pricing plans."
     },
     {
       name: "unit_metric",
       placeholder: "[unit_metric]",
       default_value: "per seats or storage usage",
       recommended_values: ["per active customer tracked", "per automation workflow executed", "per GB of encrypted data", "per API call processed"],
-      variable_behavior_note: "과금 단위를 바꾸면 수익 모델의 확장성과 사용자 성장에 따른 매출 증가 곡선이 재구조화된다."
+      variable_behavior_note: "Changing the billing unit reconstructs the scalability of the revenue model and the revenue growth curve as users grow."
     }
   ],
   why_this_works: [
-    "Value Metrics 설계는 고객이 느끼는 효용과 요금이 정비례하게 만들어 이탈률(Churn)을 낮춘다.",
-    "Psychological Triggers는 고객의 구매 결정을 망설이게 하는 장벽을 낮추고 더 상위 요금제를 선택하게 유도한다."
+    "Value Metrics design aligns user utility with pricing, lowering churn rates.",
+    "Psychological Triggers lower barriers to purchase decisions and encourage selection of higher-tier plans."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "비즈니스 모델링과 행동 경제학을 결합한 고도의 수익화 전략 도출 가능." }],
-  comparison_notes: "SaaS 명가인 ProfitWell이나 OpenView의 프라이싱 프레임워크를 디지털 환경에 맞게 최적화했다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Capable of deriving sophisticated monetization strategies combining business modeling with behavioral economics." }],
+  comparison_notes: "Optimized the pricing frameworks of SaaS leaders like ProfitWell or OpenView for the digital environment.",
   variations: [{ label: "PLG Focus", prompt_delta: "Focus heavily on self-serve onboarding, viral loops, and freemium-to-paid conversion triggers", use_case: "Product-Led Growth startups", pre_generated_asset_id: null }],
-  common_failure_modes: ["요금제가 너무 복잡한 경우 → 'prioritize simplicity and transparency to reduce cognitive load' 키워드 보강"],
+  common_failure_modes: ["Overly complex plans -> reinforce with 'prioritize simplicity and transparency to reduce cognitive load' keywords."],
   seo: {
     primary_keyword: "saas pricing strategy framework prompt",
     secondary_keywords: ["revenue optimization ai strategy", "saas monetization guide prompt"],
@@ -1126,13 +1126,13 @@ export const saasPricingStrategyPrompt: PromptCard = {
     meta_description: "Maximize revenue with an optimized SaaS pricing strategy. Verified GPT-4 prompt for value-based pricing design."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-pricing-017-hero.png",
+    hero_image: "/images/prompts/recipe-biz-pricing-017-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Optimized SaaS pricing tiers and value-based strategy",
     width: 1600,
     height: 1200,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "pricing-017",
@@ -1152,7 +1152,7 @@ export const riskManagementPlanPrompt: PromptCard = {
   title: "Risk Management Plan",
   result_first_title: "Proactive risk management strategy with identification, mitigation, and recovery",
   short_description: "A critical framework for business leaders to identify potential threats and create a resilient system for long-term survival.",
-  emotional_hook: "이 레시피는 예기치 못한 위기 속에서도 브랜드가 흔들리지 않고 더 단단하게 일어설 수 있는 '디지털 방공호'를 설계한다.",
+  emotional_hook: "This recipe designs a 'digital bomb shelter' where your brand can stand firmer even in the face of unexpected crises.",
   category: "workflow_recipe",
   vertical: "business_strategy",
   use_cases: ["crisis_management", "business_continuity", "strategic_planning", "operational_resilience"],
@@ -1168,24 +1168,24 @@ export const riskManagementPlanPrompt: PromptCard = {
       placeholder: "[business_type]",
       default_value: "global e-commerce platform with regional supply chain",
       recommended_values: ["early-stage biotech laboratory", "decentralized crypto exchange", "luxury hospitality group", "high-volume manufacturing plant"],
-      variable_behavior_note: "비즈니스 형태를 바꾸면 산업별 핵심 위기 요소(보안, 공급망, 규제, 자금 등)가 맞춤형으로 도출된다."
+      variable_behavior_note: "Changing the business type derives industry-specific key risk factors (security, supply chain, regulations, funding, etc.)."
     },
     {
       name: "market_threat",
       placeholder: "[market_threat]",
       default_value: "impending economic recession and high inflation",
       recommended_values: ["rapidly changing privacy regulations", "hostile competitive takeover", "cybersecurity data breach", "global supply chain disruption"],
-      variable_behavior_note: "시장 위협 요소를 바꾸면 해당 위협에 대한 구체적인 방어 기제와 대응 매뉴얼이 강화된다."
+      variable_behavior_note: "Changing the market threat strengthens specific defense mechanisms and response manuals for that threat."
     }
   ],
   why_this_works: [
-    "Risk Identification Matrix는 막연한 불안감을 관리 가능한 구체적인 데이터로 변환한다.",
-    "Contingency Plan은 최악의 상황에서도 사업이 중단되지 않고 지속될 수 있는 안전장치를 제공한다."
+    "The Risk Identification Matrix transforms vague anxiety into specific manageable data.",
+    "The Contingency Plan provides safeguards ensuring business continuity even in worst-case scenarios."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "복합적인 위기 상황을 시나리오별로 분석하고 실천적인 대응책을 도출함." }],
-  comparison_notes: "글로벌 대기업의 CSO(Chief Strategy Officer)가 수립하는 위기 관리 체계의 핵심 로직을 담고 있다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Analyzes complex crisis situations by scenario and derives actionable countermeasures." }],
+  comparison_notes: "Contains the core logic of crisis management systems established by global enterprise CSOs (Chief Strategy Officers).",
   variations: [{ label: "Cyber Focus", prompt_delta: "Deep dive into data breach response, incident reporting, and digital infrastructure recovery", use_case: "IT/Tech companies", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 비관적인 경우 → 'focus on proactive prevention and resilience building over pure reaction' 키워드 보강"],
+  common_failure_modes: ["Too pessimistic -> reinforce with 'focus on proactive prevention and resilience building over pure reaction' keywords."],
   seo: {
     primary_keyword: "business risk management plan prompt",
     secondary_keywords: ["crisis management ai strategy", "business continuity guide prompt"],
@@ -1194,13 +1194,13 @@ export const riskManagementPlanPrompt: PromptCard = {
     meta_description: "Build a resilient business with a structured risk management and recovery plan. Verified GPT-4 prompt for leaders."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-risk-018-hero.png",
+    hero_image: "/images/prompts/recipe-biz-risk-018-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Proactive risk management matrix and recovery roadmap",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "risk-018",
@@ -1220,7 +1220,7 @@ export const socialMediaAuditPrompt: PromptCard = {
   title: "Social Media Performance Audit",
   result_first_title: "Complete social media audit with channel performance, content gaps, and growth actions",
   short_description: "A diagnostic framework to evaluate your brand's social media presence across all channels and find opportunities for improvement.",
-  emotional_hook: "이 레시피는 숫자로 가득한 데이터 속에서 브랜드의 진짜 목소리를 찾고, 시청자가 열광하는 지점을 정확히 짚어낸다.",
+  emotional_hook: "This recipe finds the brand's true voice among noise-filled data and pinpoint exactly what the audience is raving about.",
   category: "workflow_recipe",
   vertical: "digital_marketing",
   use_cases: ["social_media_strategy", "brand_health_check", "content_optimization", "competitor_benchmarking"],
@@ -1236,24 +1236,24 @@ export const socialMediaAuditPrompt: PromptCard = {
       placeholder: "[brand_name]",
       default_value: "Aura: Sustainable Fashion Marketplace",
       recommended_values: ["TechNova: Enterprise Cloud Solutions", "GlowUp: Organic Skincare", "Modu: Prefabricated Housing", "ZenSpace: Productivity App"],
-      variable_behavior_note: "브랜드 이름을 바꾸면 해당 카테고리의 트렌드와 성공적인 소셜 미디어 지표가 자동으로 대입된다."
+      variable_behavior_note: "Changing the brand name automatically applies the trends and successful social media metrics of that category."
     },
     {
       name: "competitor_benchmark",
       placeholder: "[competitor_benchmark]",
       default_value: "top 3 direct competitors in the eco-fashion niche",
       recommended_values: ["market leaders like Patagonia", "fast-growing startups in the industry", "best-in-class social media examples", "global enterprise competitors"],
-      variable_behavior_note: "비교 대상을 바꾸면 격차 분석(Gap Analysis)의 기준이 달라져 더 날카로운 개선 전략이 도출된다."
+      variable_behavior_note: "Changing the benchmark adjusts the criteria for Gap Analysis, deriving sharper improvement strategies."
     }
   ],
   why_this_works: [
-    "Gap Analysis는 자사 채널에만 갇히지 않고 시장 전체에서의 경쟁력을 객관적으로 보게 한다.",
-    "Optimization Plan은 즉각적인 성과 개선을 위해 지금 당장 해야 할 일의 우선순위를 정해준다."
+    "Gap Analysis prevents being trapped in own channels and allows objective viewing of competitiveness in the whole market.",
+    "The Optimization Plan prioritizes immediate actions to improve performance right now."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "소셜 미디어 트렌드와 데이터 분석을 결합한 전략 도출 능력이 뛰어남." }],
-  comparison_notes: "전문 SNS 대행사의 월간 성과 보고서 및 전략 제안서의 핵심 구성 요소를 담고 있다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Exceptional at deriving strategies that combine social media trends with data analysis." }],
+  comparison_notes: "Contains core components of monthly performance reports and strategy proposals from professional social agencies.",
   variations: [{ label: "Ad Audit", prompt_delta: "Focus heavily on paid social performance, ROAS analysis, and creative fatigue audit", use_case: "Performance marketing audit", pre_generated_asset_id: null }],
-  common_failure_modes: ["내용이 너무 일반적인 경우 → 'focus on specific engagement metrics like share rate and save count' 키워드 보강"],
+  common_failure_modes: ["Generic content -> reinforce with 'focus on specific engagement metrics like share rate and save count' keywords."],
   seo: {
     primary_keyword: "social media performance audit prompt",
     secondary_keywords: ["brand health check ai strategy", "social media growth guide prompt"],
@@ -1262,13 +1262,13 @@ export const socialMediaAuditPrompt: PromptCard = {
     meta_description: "Audit your brand's social presence and identify growth gaps. Verified GPT-4 prompt for social media managers."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-social-audit-019-hero.png",
+    hero_image: "/images/prompts/recipe-biz-social-audit-019-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Social media channel performance audit and gap analysis",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "social-audit-019",
@@ -1288,7 +1288,7 @@ export const brandVoiceGuidePrompt: PromptCard = {
   title: "Brand Voice & Tone Guide",
   result_first_title: "Consistent brand voice guide with personality, vocabulary, and writing samples",
   short_description: "A framework to define how your brand speaks, ensuring a consistent and recognizable personality across all touchpoints.",
-  emotional_hook: "이 레시피는 브랜드에 영혼을 불어넣어, 고객이 당신의 글을 읽는 순간 말하는 이가 누구인지 바로 느낄 수 있게 한다.",
+  emotional_hook: "This recipe breathes a soul into your brand, making customers feel exactly who is speaking the moment they read your text.",
   category: "workflow_recipe",
   vertical: "branding",
   use_cases: ["content_creation", "brand_identity", "copywriting_guide", "internal_alignment"],
@@ -1304,24 +1304,24 @@ export const brandVoiceGuidePrompt: PromptCard = {
       placeholder: "[brand_personality]",
       default_value: "a wise and encouraging mentor for small business owners",
       recommended_values: ["a witty and energetic rebel in tech", "a luxurious and exclusive quiet-luxury expert", "a friendly and reliable local community builder", "a sharp and innovative futurist"],
-      variable_behavior_note: "브랜드 성격을 바꾸면 사용하는 단어의 온도와 문장의 길이, 유머의 사용 여부가 완전히 재설계된다."
+      variable_behavior_note: "Changing the brand personality completely redesigns the temperature of words, sentence length, and humor usage."
     },
     {
       name: "target_audience",
       placeholder: "[target_audience]",
       default_value: "solo entrepreneurs and freelancers aged 25-45",
       recommended_values: ["high-net-worth luxury travelers", "tech-savvy Gen Z developers", "health-conscious young parents", "corporate executives in traditional industries"],
-      variable_behavior_note: "타겟 고객을 바꾸면 그들이 신뢰하고 공감하는 언어 스타일(전문어 vs 쉬운 말)로 가이드가 최적화된다."
+      variable_behavior_note: "Changing the target audience optimizes the guide to the language style (Technical vs Simple) they trust and relate to."
     }
   ],
   why_this_works: [
-    "Do vs Don't examples는 마케터나 작가들이 실수하기 쉬운 지점을 명확히 짚어주어 브랜드 일관성을 지킨다.",
-    "Writing Samples는 이론적인 가이드를 넘어서 실제 텍스트가 어떤 느낌이어야 하는지 구체적인 기준을 제시한다."
+    "Do vs Don't examples clearly pinpoint where marketers or writers might fail, ensuring brand consistency.",
+    "Writing Samples go beyond theoretical guides to provide specific standards for how actual text should feel."
   ],
-  model_notes: [{ model: "gpt-4", version: "turbo", note: "언어의 뉘앙스와 감정적 무게를 분석하여 브랜드 고유의 페르소나를 구축함." }],
-  comparison_notes: "글로벌 기업들의 브랜드 버벌 아이덴티티(Verbal Identity) 매뉴얼 구조를 바탕으로 설계되었다.",
+  model_notes: [{ model: "gpt-4", version: "turbo", note: "Builds a unique brand persona by analyzing language nuances and emotional weight." }],
+  comparison_notes: "Designed based on the verbal identity manual structures of global corporations.",
   variations: [{ label: "UX Writing Focus", prompt_delta: "Focus heavily on button labels, error messages, and microcopy to ensure the voice lives inside the product", use_case: "Product/UI copywriting", pre_generated_asset_id: null }],
-  common_failure_modes: ["설명이 너무 장황한 경우 → 'focus on 4 main pillars with clear visual examples of text layout' 키워드 보강"],
+  common_failure_modes: ["Long-winded descriptions -> reinforce with 'focus on 4 main pillars with clear visual examples of text layout' keywords."],
   seo: {
     primary_keyword: "brand voice and tone guide prompt",
     secondary_keywords: ["copywriting guide ai strategy", "brand identity verbal guide prompt"],
@@ -1330,13 +1330,13 @@ export const brandVoiceGuidePrompt: PromptCard = {
     meta_description: "Define your brand's personality with a structured voice and tone guide. Verified GPT-4 prompt for copywriters and founders."
   },
   asset_metadata: {
-    hero_image: "/images/prompts/recipe-biz-brand-voice-020-hero.png",
+    hero_image: "/images/prompts/recipe-biz-brand-voice-020-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Brand voice guide with persona and writing samples",
     width: 1200,
     height: 1600,
-    format: "png",
+    format: "webp",
     placeholder: null,
     source_model: "gpt-4",
     source_prompt_hash: "voice-020",

@@ -12,7 +12,8 @@ import {
   Layout,
   Gamepad2,
   Megaphone,
-  Library
+  Library,
+  Sparkles
 } from 'lucide-react';
 import PromptCard from './PromptCard';
 import { PromptCard as PromptCardType } from '../lib/types';
@@ -42,6 +43,11 @@ const categoryInfo: Record<string, { title: string; description: string; icon: a
     title: 'Workflow Recipes',
     description: 'End-to-end procedural frameworks for professional creators and strategists. Integrated business and creative production recipes.',
     icon: Library
+  },
+  'trend': {
+    title: 'Visual Trends & Styles',
+    description: 'Cutting-edge aesthetic modules and experimental style frameworks. From retro-futurism to hyper-realism trends.',
+    icon: Sparkles
   }
 };
 
