@@ -28,6 +28,7 @@ export const productPhotoPrompt: PromptCard = {
   variables: [
     {
       name: "product_description",
+      name_ko: "제품 설명",
       placeholder: "[product_description]",
       default_value: "elegant perfume bottle with gold cap on marble surface",
       recommended_values: [
@@ -39,11 +40,11 @@ export const productPhotoPrompt: PromptCard = {
         "artisanal candle in glass container"
       ],
       variable_behavior_note: "Changing the product updates the subject while maintaining soft studio lighting, elegant reflections, and professional color grading. Reflection properties automatically adjust based on material (glass, metal, leather).",
-      variable_behavior_note_ko: "제품 설명을 변경하면 부드러운 스튜디오 조명, 우아한 반사, 전문가급 컬러 그레이딩을 유지하면서 피사체가 업데이트됩니다. 반사 특성은 재질(유리, 금속, 가죽)에 따라 자동으로 조정됩니다.",
-        name_ko: "product_description"
+      variable_behavior_note_ko: "제품 설명을 변경하면 부드러운 스튜디오 조명, 우아한 반사, 전문가급 컬러 그레이딩을 유지하면서 피사체가 업데이트됩니다. 반사 특성은 재질(유리, 금속, 가죽)에 따라 자동으로 조정됩니다."
     },
     {
       name: "background_type",
+      name_ko: "배경 유형",
       placeholder: "[background_type]",
       default_value: "neutral gradient gray",
       recommended_values: [
@@ -55,8 +56,7 @@ export const productPhotoPrompt: PromptCard = {
         "soft bokeh lights"
       ],
       variable_behavior_note: "Changing the background shifts the brand tone. Marble/Linen suits beauty products, Matte Black/Acrylic for tech, and Wood/Paper for eco-friendly brands.",
-      variable_behavior_note_ko: "배경을 변경하면 브랜드 톤이 바뀝니다. 대리석/리넨은 뷰티 제품에, 매트 블랙/아크릴은 테크 제품에, 나무/종이는 친환경 브랜드에 적합합니다.",
-        name_ko: "background_type"
+      variable_behavior_note_ko: "배경을 변경하면 브랜드 톤이 바뀝니다. 대리석/리넨은 뷰티 제품에, 매트 블랙/아크릴은 테크 제품에, 나무/종이는 친환경 브랜드에 적합합니다."
     }
   ],
   why_this_works: [
@@ -205,15 +205,16 @@ export const fashionLifestylePrompt: PromptCard = {
   variables: [
     {
       name: "model_description",
+      name_ko: "모델 설명",
       placeholder: "[model_description]",
       default_value: "graceful young woman",
       recommended_values: ["stylish male model", "diverse group of friends", "mature elegant woman", "streetwear enthusiast"],
       variable_behavior_note: "Changing the model modifies the brand's target persona, but maintains the natural lifestyle tone and high-end editorial sentiment.",
-      variable_behavior_note_ko: "모델을 변경하면 브랜드의 타겟 페르소나가 수정되지만, 자연스러운 라이프스타일 톤과 하이엔드 에디토리얼 정서는 유지됩니다.",
-        name_ko: "model_description"
+      variable_behavior_note_ko: "모델을 변경하면 브랜드의 타겟 페르소나가 수정되지만, 자연스러운 라이프스타일 톤과 하이엔드 에디토리얼 정서는 유지됩니다."
     },
     {
       name: "location_setting",
+      name_ko: "위치 설정",
       placeholder: "[location_setting]",
       default_value: "at a Parisian street cafe",
       recommended_values: ["on a sun-drenched rooftop", "walking through a minimalist art gallery", "in a cozy urban apartment", "at a serene beach during sunset"],
@@ -261,6 +262,7 @@ export const fashionLifestylePrompt: PromptCard = {
     thumbnail: null,
     variations: [],
     alt_text: "Aesthetic lifestyle fashion photography",
+    alt_text_ko: "감성적인 라이프스타일 패션 사진",
     width: 1000,
     height: 1250,
     format: "webp",
@@ -268,9 +270,8 @@ export const fashionLifestylePrompt: PromptCard = {
     source_model: "midjourney",
     source_prompt_hash: "fashion-002",
     exif_extracted: true,
-    cdn_cache_tier: "public_long_cache",
-      alt_text_ko: "Aesthetic lifestyle fashion photography"
-},
+    cdn_cache_tier: "public_long_cache"
+  },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for natural skin tones." }
 };
 
@@ -282,12 +283,17 @@ export const techMockupPrompt: PromptCard = {
   verified_badge: true,
   last_verified_at: "2026-05-07",
   title: "Minimalist Tech Product Mockup",
+  title_ko: "미니멀 테크 제품 목업",
   result_first_title: "Sleek tech product photography with apple-style minimalist aesthetic",
+  result_first_title_ko: "애플 스타일의 미니멀 미학이 돋보이는 세련된 테크 제품 사진",
   short_description: "Professional product shots for gadgets, hardware, and tech accessories with a focus on form and material.",
+  short_description_ko: "형태와 소재에 중점을 둔 가젯, 하드웨어 및 테크 액세서리용 전문 제품 사진입니다.",
   emotional_hook: "This prompt captures the cold yet intellectual charm that arises when technical sophistication meets restrained minimalism.",
+  emotional_hook_ko: "이 프롬프트는 기술적 정교함이 절제된 미니멀리즘과 만날 때 발생하는 차갑고 지적인 매력을 포착합니다.",
   category: "marketing",
   vertical: "tech",
   use_cases: ["tech_startup", "gadget_listing", "product_launch", "hardware_branding"],
+  use_cases_ko: ["테크 스타트업", "가젯 리스팅", "제품 출시", "하드웨어 브랜딩"],
   target_model: "midjourney",
   model_version: "v6",
   model_confidence: "tested",
@@ -297,6 +303,7 @@ export const techMockupPrompt: PromptCard = {
   variables: [
     {
       name: "tech_product",
+      name_ko: "테크 제품",
       placeholder: "[tech_product]",
       default_value: "high-end wireless earbuds",
       recommended_values: ["sleek aluminum laptop", "smart home hub with glass finish", "premium mechanical keyboard", "minimalist fitness tracker"],
@@ -308,29 +315,47 @@ export const techMockupPrompt: PromptCard = {
     "Apple-style aesthetic is the most preferred design language in the tech industry, instilling an immediate premium impression.",
     "Crisp shadows bring out the three-dimensional feel of the product while maintaining cleanliness, making it optimal for detail page thumbnails."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional representation of reflective textures on metal and plastic.",
-      note_ko: "Exceptional representation of reflective textures on metal and plastic."
-}],
+  why_this_works_ko: [
+    "Apple 스타일의 미학은 테크 업계에서 가장 선호되는 디자인 언어로, 즉각적인 프리미엄 인상을 심어줍니다.",
+    "선명한 그림자는 깔끔함을 유지하면서 제품의 입체감을 살려주어, 상세 페이지 썸네일에 최적화되어 있습니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Exceptional representation of reflective textures on metal and plastic.",
+      note_ko: "금속과 플라스틱의 반사 질감 표현이 탁월합니다."
+    }
+  ],
   comparison_notes: "Guarantees high-quality product images most suitable for tech startup websites and marketing materials.",
-  variations: [{ label: "Space Gray", prompt_delta: "Change white background to deep gray, anodized aluminum finish", use_case: "Dark theme products", pre_generated_asset_id: null,
-      label_ko: "Space Gray",
-      use_case_ko: "Dark theme products"
-}],
+  comparison_notes_ko: "테크 스타트업 웹사이트 및 마케팅 자료에 가장 적합한 고품질 제품 이미지를 보장합니다.",
+  variations: [
+    {
+      label: "Space Gray",
+      label_ko: "스페이스 그레이",
+      prompt_delta: "Change white background to deep gray, anodized aluminum finish",
+      use_case: "Dark theme products",
+      use_case_ko: "어두운 테마 제품",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Details appearing blurry -> reinforce with 'macro photography, sharp focus' keywords."],
+  common_failure_modes_ko: ["디테일이 흐릿하게 보임 -> 'macro photography, sharp focus' 키워드로 보강하세요."],
   seo: {
     primary_keyword: "tech product mockup prompt",
     secondary_keywords: ["minimalist gadget photo ai", "apple style prompt"],
     lsi_keywords: ["industrial design", "studio lighting"],
     meta_title: "Minimalist Tech Product Mockup Prompt | Midjourney v6 Verified",
+    meta_title_ko: "미니멀 테크 제품 목업 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Generate professional tech product shots with a clean minimalist aesthetic. Verified Midjourney v6 prompt for gadgets.",
-      meta_title_ko: "Minimalist Tech Product Mockup Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Generate professional tech product shots with a clean minimalist aesthetic. Verified Midjourney v6 prompt for gadgets."
-},
+    meta_description_ko: "깔끔하고 미니멀한 미감의 전문 테크 제품 사진을 생성하세요. 가젯을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/marketing-tech-003-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Sleek tech product on white background",
+    alt_text_ko: "화이트 배경 위의 세련된 테크 제품",
     width: 1600,
     height: 900,
     format: "webp",
@@ -338,9 +363,8 @@ export const techMockupPrompt: PromptCard = {
     source_model: "midjourney",
     source_prompt_hash: "tech-003",
     exif_extracted: true,
-    cdn_cache_tier: "public_long_cache",
-      alt_text_ko: "Sleek tech product on white background"
-},
+    cdn_cache_tier: "public_long_cache"
+  },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for clean hardware edges." }
 };
 
@@ -372,12 +396,12 @@ export const jewelryMacroPrompt: PromptCard = {
   variables: [
     {
       name: "jewelry_type",
+      name_ko: "주얼리 유형",
       placeholder: "[jewelry_type]",
       default_value: "diamond engagement ring",
       recommended_values: ["sapphire pendant necklace", "emerald stud earrings", "platinum luxury watch", "ruby tennis bracelet"],
       variable_behavior_note: "Changing the gem and jewelry types modifies gemstone colors and setting designs, but maintains the ultra-precision detail unique to macro shots.",
-        name_ko: "jewelry_type",
-        variable_behavior_note_ko: "Changing the gem and jewelry types modifies gemstone colors and setting designs, but maintains the ultra-precision detail unique to macro shots."
+      variable_behavior_note_ko: "보석과 주얼리 유형을 변경하면 보석 색상과 세팅 디자인이 수정되지만, 매크로 샷 특유의 초정밀 디테일은 유지됩니다."
     }
   ],
   why_this_works: [
@@ -388,29 +412,43 @@ export const jewelryMacroPrompt: PromptCard = {
     "가성 반사(Caustic reflections)는 보석 내부의 빛 굴절을 극대화하여 실제 하이 주얼리 광고와 같은 화려함을 부여합니다.",
     "초근접 촬영은 제품의 완결성과 희소성을 시각적으로 강조하여 구매 욕구를 자극합니다."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "The ability to express metallic reflections and gemstone transparency is divine.",
-      note_ko: "The ability to express metallic reflections and gemstone transparency is divine."
-}],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "The ability to express metallic reflections and gemstone transparency is divine.",
+      note_ko: "금속 반사와 보석의 투명도를 표현하는 능력이 경이로운 수준입니다."
+    }
+  ],
   comparison_notes: "Overwhelmingly represents the minute details and brilliance unique to jewelry.",
-  variations: [{ label: "Natural Lighting", prompt_delta: "Change to soft window light, blurred garden background", use_case: "Bohemian jewelry brands", pre_generated_asset_id: null,
-      label_ko: "Natural Lighting",
-      use_case_ko: "Bohemian jewelry brands"
-}],
+  comparison_notes_ko: "주얼리 특유의 미세한 디테일과 광채를 압도적으로 표현합니다.",
+  variations: [
+    {
+      label: "Natural Lighting",
+      label_ko: "자연 조명",
+      prompt_delta: "Change to soft window light, blurred garden background",
+      use_case: "Bohemian jewelry brands",
+      use_case_ko: "보헤미안 주얼리 브랜드",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Gems appearing like fake glass -> add 'internal light refraction' keywords."],
+  common_failure_modes_ko: ["보석이 가짜 유리처럼 보임 -> 'internal light refraction' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "jewelry macro prompt",
     secondary_keywords: ["diamond photography ai", "luxury jewelry ad prompt"],
     lsi_keywords: ["macro close-up", "caustic reflections"],
     meta_title: "Luxury Jewelry Macro Prompt | Midjourney v6 Verified",
+    meta_title_ko: "럭셔리 주얼리 매크로 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Generate stunning close-up jewelry photos with sparkling gems. Verified Midjourney v6 prompt for luxury brands.",
-      meta_title_ko: "Luxury Jewelry Macro Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Generate stunning close-up jewelry photos with sparkling gems. Verified Midjourney v6 prompt for luxury brands."
-},
+    meta_description_ko: "반짝이는 보석이 돋보이는 놀라운 주얼리 근접 사진을 생성하세요. 럭셔리 브랜드를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/marketing-jewelry-004-hero.webp",
     thumbnail: null,
     variations: [],
     alt_text: "Extreme macro of a diamond ring",
+    alt_text_ko: "다이아몬드 반지의 초근접 매크로 사진",
     width: 1000,
     height: 1250,
     format: "webp",
@@ -418,9 +456,8 @@ export const jewelryMacroPrompt: PromptCard = {
     source_model: "midjourney",
     source_prompt_hash: "jewelry-004",
     exif_extracted: true,
-    cdn_cache_tier: "public_long_cache",
-      alt_text_ko: "Extreme macro of a diamond ring"
-},
+    cdn_cache_tier: "public_long_cache"
+  },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for gemstone clarity." }
 };
 
@@ -452,36 +489,53 @@ export const gourmetFoodPrompt: PromptCard = {
   variables: [
     {
       name: "food_item",
+      name_ko: "음식 항목",
       placeholder: "[food_item]",
       default_value: "artisan beef burger with melting cheddar and caramelized onions",
       recommended_values: ["authentic napoli pizza with fresh basil", "colorful sushi platter on slate", "steaming bowl of tonkotsu ramen", "delicate french macarons"],
       variable_behavior_note: "Changing the food type modifies textures and styling, but maintains the vivid details and professional lighting that stimulate the appetite.",
-        name_ko: "food_item",
-        variable_behavior_note_ko: "Changing the food type modifies textures and styling, but maintains the vivid details and professional lighting that stimulate the appetite."
+      variable_behavior_note_ko: "음식 유형을 변경하면 질감과 스타일링이 수정되지만, 식욕을 자극하는 생생한 디테일과 전문적인 조명은 유지됩니다."
     }
   ],
   why_this_works: [
     "Dramatic side lighting highlights food textures (grain, moisture, crispness), maximizing visual palatability.",
     "Rising steam communicates food freshness and temperature, inducing an immediate response."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Photorealistically depicts ingredient textures and colors.",
-      note_ko: "Photorealistically depicts ingredient textures and colors."
-}],
+  why_this_works_ko: [
+    "드라마틱한 측면 조명은 음식의 질감(결, 수분, 바삭함)을 강조하여 시각적인 맛을 극대화합니다.",
+    "피어오르는 김은 음식의 신선도와 온도를 전달하여 즉각적인 반응을 유도합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Photorealistically depicts ingredient textures and colors.",
+      note_ko: "재료의 질감과 색상을 포토리얼리스틱하게 묘사합니다."
+    }
+  ],
   comparison_notes: "Guarantees high commercial quality ready for immediate use in delivery apps or menus.",
-  variations: [{ label: "Bright Cafe", prompt_delta: "Change to bright natural light, marble table, flat lay", use_case: "Instagram-worthy cafe food", pre_generated_asset_id: null,
-      label_ko: "Bright Cafe",
-      use_case_ko: "Instagram-worthy cafe food"
-}],
+  comparison_notes_ko: "배달 앱이나 메뉴판에서 즉시 사용할 수 있는 높은 상업적 품질을 보장합니다.",
+  variations: [
+    {
+      label: "Bright Cafe",
+      label_ko: "밝은 카페",
+      prompt_delta: "Change to bright natural light, marble table, flat lay",
+      use_case: "Instagram-worthy cafe food",
+      use_case_ko: "인스타그램 감성 카페 음식",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Food appearing like processed goods -> add 'freshly cooked, natural textures' keywords."],
+  common_failure_modes_ko: ["음식이 가공품처럼 보임 -> 'freshly cooked, natural textures' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "gourmet food photography prompt",
     secondary_keywords: ["food ad ai prompt", "restaurant menu photo ai"],
     lsi_keywords: ["macro food detail", "gourmet styling"],
     meta_title: "Gourmet Food Photography Prompt | Midjourney v6 Verified",
+    meta_title_ko: "고메 푸드 사진 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Create mouth-watering food photos for menus and ads. Verified Midjourney v6 prompt for restaurants and delivery apps.",
-      meta_title_ko: "Gourmet Food Photography Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Create mouth-watering food photos for menus and ads. Verified Midjourney v6 prompt for restaurants and delivery apps."
-},
+    meta_description_ko: "메뉴와 광고를 위한 군침 도는 음식 사진을 제작하세요. 레스토랑과 배달 앱을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/marketing-food-005-hero.webp",
     thumbnail: null,
@@ -528,45 +582,62 @@ export const cosmeticsFlatlayPrompt: PromptCard = {
   variables: [
     {
       name: "product_list",
+      name_ko: "제품 리스트",
       placeholder: "[product_list]",
       default_value: "minimalist glass serum bottle and cream jar",
       recommended_values: ["luxury lipstick collection with swatches", "herbal skincare set with natural ingredients", "organic facial oils and flowers", "premium foundation and makeup brushes"],
       variable_behavior_note: "Changing the product list alters the brand concept, but maintains the neat horizontal layout (flat lay) style unique to Instagram.",
-        name_ko: "product_list",
-        variable_behavior_note_ko: "Changing the product list alters the brand concept, but maintains the neat horizontal layout (flat lay) style unique to Instagram."
+      variable_behavior_note_ko: "제품 리스트를 변경하면 브랜드 컨셉이 바뀌지만, 인스타그램 특유의 깔끔한 수평 배치(플랫 레이) 스타일은 유지됩니다."
     },
     {
       name: "accent_elements",
+      name_ko: "액센트 요소",
       placeholder: "[accent_elements]",
       default_value: "white rose petals and gold silk",
       recommended_values: ["fresh eucalyptus leaves", "rough stone textures", "soft shadow of a window frame", "pearls and silver jewelry"],
       variable_behavior_note: "Changing props alters the brand mood to sophisticated (stone), feminine (rose), or natural (leaves).",
-        name_ko: "accent_elements",
-        variable_behavior_note_ko: "Changing props alters the brand mood to sophisticated (stone), feminine (rose), or natural (leaves)."
+      variable_behavior_note_ko: "소품을 변경하면 브랜드 분위기가 세련된(돌), 여성스러운(장미), 또는 자연스러운(잎사귀) 느낌으로 바뀝니다."
     }
   ],
   why_this_works: [
     "A top-down view is optimal for showing the brand lineup at a glance by arranging products equally.",
     "The neutral linen background serves as a calm supporting role so that product colors and designs stand out."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Perfectly captures minute differences in textures (glass, cream, fabric).",
-      note_ko: "Perfectly captures minute differences in textures (glass, cream, fabric)."
-}],
+  why_this_works_ko: [
+    "탑다운 뷰는 제품을 균등하게 배치하여 브랜드 라인업을 한눈에 보여주기에 최적입니다.",
+    "뉴트럴 리넨 배경은 차분한 조연 역할을 하여 제품의 색상과 디자인이 돋보이게 합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Perfectly captures minute differences in textures (glass, cream, fabric).",
+      note_ko: "유리, 크림, 직물 등 질감의 미세한 차이를 완벽하게 포착합니다."
+    }
+  ],
   comparison_notes: "Provides the most consistent and sophisticated style in creating Instagram-aesthetic beauty content.",
-  variations: [{ label: "Action/Texture", prompt_delta: "Add cream smudges and liquid splashes for texture focus", use_case: "Texture shots", pre_generated_asset_id: null,
-      label_ko: "Action/Texture",
-      use_case_ko: "Texture shots"
-}],
+  comparison_notes_ko: "인스타그램 감성의 뷰티 콘텐츠를 제작하는 데 있어 가장 일관되고 세련된 스타일을 제공합니다.",
+  variations: [
+    {
+      label: "Action/Texture",
+      label_ko: "액션/질감",
+      prompt_delta: "Add cream smudges and liquid splashes for texture focus",
+      use_case: "Texture shots",
+      use_case_ko: "질감 강조 샷",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Items overlapping awkwardly -> add 'organized flat lay, no overlap' keywords."],
+  common_failure_modes_ko: ["아이템이 어색하게 겹침 -> 'organized flat lay, no overlap' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "cosmetics flat lay prompt",
     secondary_keywords: ["beauty photography ai", "skincare photo prompt"],
     lsi_keywords: ["top-down view", "neutral background"],
     meta_title: "Cosmetics Flat Lay Prompt | Midjourney v6 Verified",
+    meta_title_ko: "코스메틱 플랫 레이 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design aesthetic beauty flat lays for Instagram. Verified Midjourney v6 prompt for skincare and makeup brands.",
-      meta_title_ko: "Cosmetics Flat Lay Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design aesthetic beauty flat lays for Instagram. Verified Midjourney v6 prompt for skincare and makeup brands."
-},
+    meta_description_ko: "인스타그램을 위한 감성적인 뷰티 플랫 레이를 디자인하세요. 스킨케어 및 메이크업 브랜드를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/marketing-cosmetics-006-hero.webp",
     thumbnail: null,
@@ -613,36 +684,53 @@ export const carPhotographyPrompt: PromptCard = {
   variables: [
     {
       name: "car_model",
+      name_ko: "자동차 모델",
       placeholder: "[car_model]",
       default_value: "modern electric supercar with aerodynamic curves",
       recommended_values: ["classic vintage porsche 911", "rugged off-road expedition vehicle", "futuristic concept hydrogen car", "luxury executive sedan"],
       variable_behavior_note: "Changing the vehicle model modifies form and texture, but maintains the long exposure effect with a sense of speed and cinematic night lighting.",
-        name_ko: "car_model",
-        variable_behavior_note_ko: "Changing the vehicle model modifies form and texture, but maintains the long exposure effect with a sense of speed and cinematic night lighting."
+      variable_behavior_note_ko: "차량 모델을 변경하면 형태와 질감이 수정되지만, 속도감 넘치는 장노출 효과와 시네마틱한 야간 조명은 유지됩니다."
     }
   ],
   why_this_works: [
     "Long exposure light trails increase visual immersion by granting explosive speed within a static image.",
     "The 21:9 ratio presents a cinematic panoramic view, emphasizing the grandeur of luxury car brands."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Extremely realistic representation of metallic reflections and motion blur.",
-      note_ko: "Extremely realistic representation of metallic reflections and motion blur."
-}],
+  why_this_works_ko: [
+    "장노출 빛의 궤적은 정적인 이미지에 폭발적인 속도감을 부여하여 시각적 몰입도를 높여줍니다.",
+    "21:9 비율은 시네마틱한 파노라마 뷰를 제공하여 럭셔리 자동차 브랜드의 웅장함을 강조합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Extremely realistic representation of metallic reflections and motion blur.",
+      note_ko: "금속 반사와 모션 블러 표현이 매우 사실적입니다."
+    }
+  ],
   comparison_notes: "Perfectly implements the 'Night City Drive' aesthetics most preferred in car advertisements.",
-  variations: [{ label: "Sunset Desert", prompt_delta: "Change to desert road at sunset, warm golden glow, dust trails", use_case: "SUV/Adventure brands", pre_generated_asset_id: null,
-      label_ko: "Sunset Desert",
-      use_case_ko: "SUV/Adventure brands"
-}],
+  comparison_notes_ko: "자동차 광고에서 가장 선호되는 '나이트 시티 드라이브' 미학을 완벽하게 구현합니다.",
+  variations: [
+    {
+      label: "Sunset Desert",
+      label_ko: "일몰 사막",
+      prompt_delta: "Change to desert road at sunset, warm golden glow, dust trails",
+      use_case: "SUV/Adventure brands",
+      use_case_ko: "SUV/어드벤처 브랜드",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Wheels appearing distorted -> add 'perfectly circular alloy wheels' keywords."],
+  common_failure_modes_ko: ["휠이 왜곡되어 보임 -> 'perfectly circular alloy wheels' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "premium car photography prompt",
     secondary_keywords: ["automotive ad ai", "car wallpaper prompt"],
     lsi_keywords: ["light trails", "motion blur photography"],
     meta_title: "Premium Car Photography Prompt | Midjourney v6 Verified",
+    meta_title_ko: "프리미엄 자동차 사진 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Generate cinematic car photos with light trails and motion blur. Verified Midjourney v6 prompt for automotive ads.",
-      meta_title_ko: "Premium Car Photography Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Generate cinematic car photos with light trails and motion blur. Verified Midjourney v6 prompt for automotive ads."
-},
+    meta_description_ko: "빛의 궤적과 모션 블러가 포함된 시네마틱한 자동차 사진을 생성하세요. 자동차 광고를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/marketing-car-007-hero.webp",
     thumbnail: null,
@@ -689,54 +777,71 @@ export const fbIgProductAdPrompt: PromptCard = {
   variables: [
     {
       name: "product_category",
+      name_ko: "제품 카테고리",
       placeholder: "[product_category]",
       default_value: "minimalist skincare glass bottle",
       recommended_values: ["luxury leather handbag", "sleek wireless headphones", "organic artisanal coffee beans", "modern ceramic watch"],
       variable_behavior_note: "Changing the product category slightly adjusts lighting and composition according to the trendy aesthetics of that industry.",
-        name_ko: "product_category",
-        variable_behavior_note_ko: "Changing the product category slightly adjusts lighting and composition according to the trendy aesthetics of that industry."
+      variable_behavior_note_ko: "제품 카테고리를 변경하면 해당 산업의 트렌디한 미학에 따라 조명과 구도가 미세하게 조정됩니다."
     },
     {
       name: "surface_type",
+      name_ko: "표면 유형",
       placeholder: "[surface_type]",
       default_value: "textured travertine stone block",
       recommended_values: ["minimalist oak wood table", "reflective glass pool edge", "soft linen fabric folds", "architectural concrete pedestal"],
       variable_behavior_note: "Changing the floor material visually hints at the overall 'temperature' of the ad and the brand's price range.",
-        name_ko: "surface_type",
-        variable_behavior_note_ko: "Changing the floor material visually hints at the overall 'temperature' of the ad and the brand's price range."
+      variable_behavior_note_ko: "바닥 재질을 변경하면 광고의 전체적인 '온도'와 브랜드의 가격대를 시각적으로 암시합니다."
     },
     {
       name: "lifestyle_props",
+      name_ko: "라이프스타일 소품",
       placeholder: "[lifestyle_props]",
       default_value: "dried eucalyptus and a silk ribbon",
       recommended_values: ["fresh morning coffee and a tablet", "abstract geometric sculptures", "scattered rose petals and pearls", "modern architecture in the background"],
       variable_behavior_note: "Changing props allows for the completion of a lifestyle look preferred by the target customer base.",
-        name_ko: "lifestyle_props",
-        variable_behavior_note_ko: "Changing props allows for the completion of a lifestyle look preferred by the target customer base."
+      variable_behavior_note_ko: "소품을 변경하면 타겟 고객층이 선호하는 라이프스타일 룩을 완성할 수 있습니다."
     }
   ],
   why_this_works: [
     "Soft natural sunlight with harsh shadows is the core lighting aesthetic of 'emotional photos' most popular on Instagram recently.",
     "Hyper-detailed magazine style delivers brand credibility and product premium value at a glance."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional representation of texture and shadow sharpness, hard to distinguish from actual studio shots.",
-      note_ko: "Exceptional representation of texture and shadow sharpness, hard to distinguish from actual studio shots."
-}],
+  why_this_works_ko: [
+    "강한 그림자가 있는 부드러운 자연광은 최근 인스타그램에서 가장 인기 있는 '감성 사진'의 핵심 조명 미학입니다.",
+    "하이퍼 디테일 매거진 스타일은 브랜드의 신뢰도와 제품의 프리미엄 가치를 한눈에 전달합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Exceptional representation of texture and shadow sharpness, hard to distinguish from actual studio shots.",
+      note_ko: "질감과 그림자의 선명도 표현이 뛰어나 실제 스튜디오 촬영본과 구분이 어려울 정도입니다."
+    }
+  ],
   comparison_notes: "Guarantees high-level commercial results as if shot by a professional ad studio photographer.",
-  variations: [{ label: "Dark Moody", prompt_delta: "Change to deep shadows, spotlighting on product, moody navy and gold tones", use_case: "Luxury night-time products", pre_generated_asset_id: null,
-      label_ko: "Dark Moody",
-      use_case_ko: "Luxury night-time products"
-}],
+  comparison_notes_ko: "전문 광고 스튜디오 사진가가 촬영한 듯한 높은 수준의 상업적 결과물을 보장합니다.",
+  variations: [
+    {
+      label: "Dark Moody",
+      label_ko: "다크 무드",
+      prompt_delta: "Change to deep shadows, spotlighting on product, moody navy and gold tones",
+      use_case: "Luxury night-time products",
+      use_case_ko: "럭셔리 야간용 제품",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Product logos appearing strange -> recommended to perform background removal or retouching on the logo part after generation."],
+  common_failure_modes_ko: ["제품 로고가 이상하게 나타남 -> 생성 후 로고 부분에 배경 제거 또는 리터칭을 수행하는 것을 권장합니다."],
   seo: {
     primary_keyword: "instagram product ad design prompt",
     secondary_keywords: ["social media marketing ai art", "lifestyle product photography prompt"],
     lsi_keywords: ["magazine style", "natural lighting"],
     meta_title: "Instagram Product Ad Design Prompt | Midjourney v6 Verified",
+    meta_title_ko: "인스타그램 제품 광고 디자인 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design aesthetic Instagram ads with premium product photography. Verified Midjourney v6 prompt for high-conversion social media marketing.",
-      meta_title_ko: "Instagram Product Ad Design Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design aesthetic Instagram ads with premium product photography. Verified Midjourney v6 prompt for high-conversion social media marketing."
-},
+    meta_description_ko: "프리미엄 제품 사진으로 감성적인 인스타그램 광고를 디자인하세요. 높은 전환율을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-ad-008-hero.webp",
     thumbnail: null,
@@ -783,45 +888,62 @@ export const linkedinBannerPrompt: PromptCard = {
   variables: [
     {
       name: "banner_theme",
+      name_ko: "배너 테마",
       placeholder: "[banner_theme]",
       default_value: "abstract network of flowing glass lines",
       recommended_values: ["modern architectural office interior", "minimalist desk setup with apple devices", "creative workshop with sticky notes and sketches", "dynamic tech world map with light trails"],
       variable_behavior_note: "Changing the banner theme immediately reflects the characteristics of the industry you are engaged in.",
-        name_ko: "banner_theme",
-        variable_behavior_note_ko: "Changing the banner theme immediately reflects the characteristics of the industry you are engaged in."
+      variable_behavior_note_ko: "배너 테마를 변경하면 종사하고 있는 산업의 특성이 즉각적으로 반영됩니다."
     },
     {
       name: "color_scheme",
+      name_ko: "색상 구성",
       placeholder: "[color_scheme]",
       default_value: "corporate blue and silver grey",
       recommended_values: ["vibrant creative orange and white", "eco-friendly green and wood tones", "luxurious dark charcoal and gold", "clean startup white and sky blue"],
       variable_behavior_note: "Changing the color configuration alters the emotional message regarding the brand's personality (trust, creativity, innovation, etc.).",
-        name_ko: "color_scheme",
-        variable_behavior_note_ko: "Changing the color configuration alters the emotional message regarding the brand's personality (trust, creativity, innovation, etc.)."
+      variable_behavior_note_ko: "색상 구성을 변경하면 브랜드의 성격(신뢰, 창의성, 혁신 등)에 관한 감성적인 메시지가 달라집니다."
     }
   ],
   why_this_works: [
     "Copy space on the right prevents overlapping with the profile picture positioned at the bottom left and secures space for slogans.",
     "The 4:1 aspect ratio is optimized for LinkedIn header specifications, applying perfectly without image distortion."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Highly harmonious balance between abstract graphic precision and the beauty of whitespace.",
-      note_ko: "Highly harmonious balance between abstract graphic precision and the beauty of whitespace."
-}],
+  why_this_works_ko: [
+    "오른쪽의 텍스트 공간(Copy space)은 왼쪽 하단에 배치되는 프로필 사진과의 겹침을 방지하고 슬로건을 위한 공간을 확보합니다.",
+    "4:1 종횡비는 링크드인 헤더 사양에 최적화되어 있어 이미지 왜곡 없이 완벽하게 적용됩니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Highly harmonious balance between abstract graphic precision and the beauty of whitespace.",
+      note_ko: "추상적인 그래픽의 정밀함과 여백의 미가 매우 조화롭게 균형을 이룹니다."
+    }
+  ],
   comparison_notes: "Completes a unique professional look that is on a different level from generic backgrounds on free stock image sites.",
-  variations: [{ label: "Team/Company", prompt_delta: "Add a blurred background of a collaborative team meeting in a bright office", use_case: "Corporate branding", pre_generated_asset_id: null,
-      label_ko: "Team/Company",
-      use_case_ko: "Corporate branding"
-}],
+  comparison_notes_ko: "무료 스톡 이미지 사이트의 일반적인 배경과는 차원이 다른, 독보적인 전문적 룩을 완성합니다.",
+  variations: [
+    {
+      label: "Team/Company",
+      label_ko: "팀/기업",
+      prompt_delta: "Add a blurred background of a collaborative team meeting in a bright office",
+      use_case: "Corporate branding",
+      use_case_ko: "기업 브랜딩",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Images too complex, reducing text readability -> add 'blurry background, simple elements' keywords."],
+  common_failure_modes_ko: ["이미지가 너무 복잡하여 텍스트 가독성이 떨어짐 -> 'blurry background, simple elements' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "linkedin professional banner prompt",
     secondary_keywords: ["corporate branding background ai", "personal branding banner prompt"],
     lsi_keywords: ["copy space", "minimalist composition"],
     meta_title: "LinkedIn Professional Banner Prompt | Midjourney v6 Verified",
+    meta_title_ko: "링크드인 프로페셔널 배너 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design modern and clean LinkedIn banners for professional branding. Verified Midjourney v6 prompt with copy space for slogans.",
-      meta_title_ko: "LinkedIn Professional Banner Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design modern and clean LinkedIn banners for professional branding. Verified Midjourney v6 prompt with copy space for slogans."
-},
+    meta_description_ko: "전문적인 브랜딩을 위한 현대적이고 깔끔한 링크드인 배너를 디자인하세요. 슬로건을 위한 여백이 포함된 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-linkedin-009-hero.webp",
     thumbnail: null,
@@ -868,45 +990,62 @@ export const youtubeThumbnailPrompt: PromptCard = {
   variables: [
     {
       name: "video_topic",
+      name_ko: "비디오 주제",
       placeholder: "[video_topic]",
       default_value: "future of artificial intelligence tech",
       recommended_values: ["luxury travel world tour", "epic gaming world adventure", "healthy meal prep challenge", "modern home renovation reveal"],
       variable_behavior_note: "Changing the video topic emphasizes symbolic visual elements that allow viewers to immediately infer the content.",
-        name_ko: "video_topic",
-        variable_behavior_note_ko: "Changing the video topic emphasizes symbolic visual elements that allow viewers to immediately infer the content."
+      variable_behavior_note_ko: "비디오 주제를 변경하면 시청자가 내용을 즉각적으로 유추할 수 있도록 상징적인 시각적 요소를 강조합니다."
     },
     {
       name: "subject_focus",
+      name_ko: "주요 대상",
       placeholder: "[subject_focus]",
       default_value: "glowing robotic brain and neural network",
       recommended_values: ["shocked person face", "luxury private jet interior", "giant gold trophy", "mysterious locked chest"],
       variable_behavior_note: "Changing the focal subject alters the thumbnail's 'hooking point'.",
-        name_ko: "subject_focus",
-        variable_behavior_note_ko: "Changing the focal subject alters the thumbnail's 'hooking point'."
+      variable_behavior_note_ko: "주요 대상을 변경하면 썸네일의 '후킹 포인트'가 달라집니다."
     }
   ],
   why_this_works: [
     "Extreme high contrast is the most powerful element that makes thumbnails stand out even on small mobile screens.",
     "Cinematic depth of field clearly isolates the core subject, guiding viewers on what to look at."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Very high intensity of hue and contrast, good for use as thumbnails without post-processing.",
-      note_ko: "Very high intensity of hue and contrast, good for use as thumbnails without post-processing."
-}],
+  why_this_works_ko: [
+    "극한의 고대비는 작은 모바일 화면에서도 썸네일을 돋보이게 하는 가장 강력한 요소입니다.",
+    "시네마틱한 심도 표현은 핵심 피사체를 명확하게 분리하여 시청자가 무엇을 보아야 할지 안내합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Very high intensity of hue and contrast, good for use as thumbnails without post-processing.",
+      note_ko: "채도와 대비의 강도가 매우 높아 후처리 없이 썸네일로 사용하기 좋습니다."
+    }
+  ],
   comparison_notes: "Perfectly replicates the 'eye-catching' visual grammar of thumbnails used by top YouTube creators.",
-  variations: [{ label: "Educational", prompt_delta: "Change to clean studio background, professional lighting, focus on a single high-quality product", use_case: "Review or Tech channels", pre_generated_asset_id: null,
-      label_ko: "Educational",
-      use_case_ko: "Review or Tech channels"
-}],
-  common_failure_modes: ["Screen too crowded -> add 'minimalist focal point, clean negative space' keywords."],
+  comparison_notes_ko: "최정상 유튜버들이 사용하는 '시선을 사로잡는' 비주얼 문법을 완벽하게 재현합니다.",
+  variations: [
+    {
+      label: "Educational",
+      label_ko: "교육용",
+      prompt_delta: "Change to clean studio background, professional lighting, focus on a single high-quality product",
+      use_case: "Review or Tech channels",
+      use_case_ko: "리뷰 또는 테크 채널",
+      pre_generated_asset_id: null
+    }
+  ],
+  common_failure_modes: ["Subject appearing too small -> add 'close-up, large focal point' keywords."],
+  common_failure_modes_ko: ["피사체가 너무 작게 나타남 -> 'close-up, large focal point' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "youtube thumbnail art prompt",
-    secondary_keywords: ["high ctr thumbnail design ai", "video marketing background prompt"],
-    lsi_keywords: ["high contrast", "focal point"],
-    meta_title: "YouTube High-CTR Thumbnail Prompt | Midjourney v6 Verified",
-    meta_description: "Design eye-catching YouTube thumbnails that drive clicks. Verified Midjourney v6 prompt for content creators and marketers.",
-      meta_title_ko: "YouTube High-CTR Thumbnail Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design eye-catching YouTube thumbnails that drive clicks. Verified Midjourney v6 prompt for content creators and marketers."
-},
+    secondary_keywords: ["high ctr thumbnail ai", "video marketing art prompt"],
+    lsi_keywords: ["high contrast", "vibrant colors"],
+    meta_title: "YouTube High-CTR Thumbnail Art Prompt | Midjourney v6 Verified",
+    meta_title_ko: "유튜브 고클릭 썸네일 아트 프롬프트 | 미드저니 v6 검증됨",
+    meta_description: "Generate striking backgrounds for YouTube thumbnails to increase CTR. Verified Midjourney v6 prompt for creators.",
+    meta_description_ko: "클릭률(CTR)을 높이기 위한 강렬한 유튜브 썸네일 배경을 생성하세요. 크리에이터를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-yt-010-hero.webp",
     thumbnail: null,
@@ -953,45 +1092,62 @@ export const tiktokLifestylePrompt: PromptCard = {
   variables: [
     {
       name: "lifestyle_scene",
+      name_ko: "라이프스타일 장면",
       placeholder: "[lifestyle_scene]",
       default_value: "skating through a sunny city park while holding a soda",
       recommended_values: ["friends laughing in a neon-lit night market", "unboxing a tech gadget in a minimalist bedroom", "dancing at a beach music festival", "sipping matcha in a cozy sunlit cafe"],
       variable_behavior_note: "Changing the scene forms various visual narratives that stimulate the empathy of the target community.",
-        name_ko: "lifestyle_scene",
-        variable_behavior_note_ko: "Changing the scene forms various visual narratives that stimulate the empathy of the target community."
+      variable_behavior_note_ko: "장면을 변경하면 타겟 커뮤니티의 공감을 자극하는 다양한 시각적 서사가 형성됩니다."
     },
     {
       name: "lighting_vibe",
+      name_ko: "조명 분위기",
       placeholder: "[lighting_vibe]",
       default_value: "warm golden hour glow",
       recommended_values: ["cool neon street lights", "natural overcast soft light", "vibrant flash photography vibe", "shadowy cinematic interior lighting"],
       variable_behavior_note: "Changing the lighting completely alters the video's emotional line and 'vibe'.",
-        name_ko: "lighting_vibe",
-        variable_behavior_note_ko: "Changing the lighting completely alters the video's emotional line and 'vibe'."
+      variable_behavior_note_ko: "조명을 변경하면 영상의 감정선과 '바이브(vibe)'가 완전히 달라집니다."
     }
   ],
   why_this_works: [
     "Captured on a modern smartphone removes the distance of professional equipment and grants credibility like user-generated content (UGC).",
     "Slight motion blur vividly replicates the energy and real-time nature unique to TikTok or Reels."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "The ability to implement natural facial expressions and poses has significantly improved.",
-      note_ko: "The ability to implement natural facial expressions and poses has significantly improved."
-}],
+  why_this_works_ko: [
+    "최신 스마트폰으로 촬영된 느낌은 전문 장비의 거리감을 없애고 사용자 생성 콘텐츠(UGC)와 같은 신뢰성을 부여합니다.",
+    "약간의 모션 블러는 틱톡이나 릴스 특유의 에너지와 실시간성을 생생하게 재현합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "The ability to implement natural facial expressions and poses has significantly improved.",
+      note_ko: "자연스러운 얼굴 표정과 포즈를 구현하는 능력이 크게 향상되었습니다."
+    }
+  ],
   comparison_notes: "Yields highest efficiency in performance marketing phases where 'non-ad ads' are required.",
-  variations: [{ label: "Product Focused", prompt_delta: "Change to close-up hand holding the product in use, blurred lifestyle background", use_case: "Direct response ads", pre_generated_asset_id: null,
-      label_ko: "Product Focused",
-      use_case_ko: "Direct response ads"
-}],
+  comparison_notes_ko: "'광고 같지 않은 광고'가 필요한 퍼포먼스 마케팅 단계에서 최고의 효율을 발휘합니다.",
+  variations: [
+    {
+      label: "Product Focused",
+      label_ko: "제품 중심",
+      prompt_delta: "Change to close-up hand holding the product in use, blurred lifestyle background",
+      use_case: "Direct response ads",
+      use_case_ko: "직접 반응 광고(DR)",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Appearing too much like a model photoshoot -> add 'amateur shot, non-professional model' keywords."],
+  common_failure_modes_ko: ["모델 화보처럼 너무 정제되어 보임 -> 'amateur shot, non-professional model' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "tiktok lifestyle photography prompt",
     secondary_keywords: ["ugc style marketing ai", "gen-z aesthetic prompt"],
     lsi_keywords: ["vertical composition", "motion blur"],
     meta_title: "TikTok Dynamic Lifestyle Prompt | Midjourney v6 Verified",
+    meta_title_ko: "틱톡 다이나믹 라이프스타일 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design authentic and dynamic lifestyle shots for short-form video ads. Verified Midjourney v6 prompt for TikTok and Reels.",
-      meta_title_ko: "TikTok Dynamic Lifestyle Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design authentic and dynamic lifestyle shots for short-form video ads. Verified Midjourney v6 prompt for TikTok and Reels."
-},
+    meta_description_ko: "숏폼 비디오 광고를 위한 실감 나고 역동적인 라이프스타일 샷을 디자인하세요. 틱톡과 릴스를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-tiktok-011-hero.webp",
     thumbnail: null,
@@ -1038,45 +1194,62 @@ export const newsletterHeaderPrompt: PromptCard = {
   variables: [
     {
       name: "newsletter_topic",
+      name_ko: "뉴스레터 주제",
       placeholder: "[newsletter_topic]",
       default_value: "tech and innovation updates",
       recommended_values: ["luxury travel and lifestyle", "finance and market analysis", "creative design and art curation", "health and wellness tips"],
       variable_behavior_note: "Changing the newsletter topic subtly expresses suitable abstract forms and symbols.",
-        name_ko: "newsletter_topic",
-        variable_behavior_note_ko: "Changing the newsletter topic subtly expresses suitable abstract forms and symbols."
+      variable_behavior_note_ko: "뉴스레터 주제를 변경하면 적합한 추상적 형태와 상징이 미묘하게 표현됩니다."
     },
     {
       name: "color_palette",
+      name_ko: "색상 팔레트",
       placeholder: "[color_palette]",
       default_value: "soft pastel blue and cream white",
       recommended_values: ["professional navy and silver", "vibrant lime and charcoal", "warm terracotta and beige", "modern dark mode purple and black"],
       variable_behavior_note: "Changing the color palette visualizes information credibility and brand temperature.",
-        name_ko: "color_palette",
-        variable_behavior_note_ko: "Changing the color palette visualizes information credibility and brand temperature."
+      variable_behavior_note_ko: "색상 팔레트를 변경하면 정보의 신뢰도와 브랜드의 온도가 시각화됩니다."
     }
   ],
   why_this_works: [
     "The 3:1 aspect ratio is the most stable specification that fills the top of email client screens without obscuring the body.",
     "Plenty of copy space maximizes readability by not interfering with titles and logos when placed."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Very elegant depth of soft gradients and 3D textures.",
-      note_ko: "Very elegant depth of soft gradients and 3D textures."
-}],
+  why_this_works_ko: [
+    "3:1 종횡비는 본문을 가리지 않으면서 이메일 클라이언트 화면 상단을 가득 채우는 가장 안정적인 규격입니다.",
+    "충분한 여백(Copy space)은 타이틀과 로고를 배치했을 때 간섭하지 않아 가독성을 극대화합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Very elegant depth of soft gradients and 3D textures.",
+      note_ko: "부드러운 그라데이션과 3D 질감의 깊이감이 매우 우아합니다."
+    }
+  ],
   comparison_notes: "Replicates sensual headers of well-made newsletters sent by global tech unicorn companies.",
-  variations: [{ label: "Illustration", prompt_delta: "Change 3D shapes to flat 2D minimalist vector illustrations", use_case: "Artistic/Creative newsletters", pre_generated_asset_id: null,
-      label_ko: "Illustration",
-      use_case_ko: "Artistic/Creative newsletters"
-}],
+  comparison_notes_ko: "글로벌 테크 유니콘 기업들이 발송하는 잘 만들어진 뉴스레터의 감각적인 헤더를 재현합니다.",
+  variations: [
+    {
+      label: "Illustration",
+      label_ko: "일러스트레이션",
+      prompt_delta: "Change 3D shapes to flat 2D minimalist vector illustrations",
+      use_case: "Artistic/Creative newsletters",
+      use_case_ko: "예술/크리에이티브 뉴스레터",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Background appearing too bland -> add 'subtle texture, soft grain' keywords."],
+  common_failure_modes_ko: ["배경이 너무 밋밋해 보임 -> 'subtle texture, soft grain' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "newsletter header design prompt",
     secondary_keywords: ["email marketing banner ai", "saas newsletter background prompt"],
     lsi_keywords: ["copy space", "minimalist composition"],
     meta_title: "Newsletter Premium Header Prompt | Midjourney v6 Verified",
+    meta_title_ko: "뉴스레터 프리미엄 헤더 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design clean and sophisticated headers for email marketing. Verified Midjourney v6 prompt for high-impact newsletters.",
-      meta_title_ko: "Newsletter Premium Header Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design clean and sophisticated headers for email marketing. Verified Midjourney v6 prompt for high-impact newsletters."
-},
+    meta_description_ko: "이메일 마케팅을 위한 깔끔하고 세련된 헤더를 디자인하세요. 높은 영향력을 가진 뉴스레터를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-news-012-hero.webp",
     thumbnail: null,
@@ -1123,45 +1296,62 @@ export const eventPosterPrompt: PromptCard = {
   variables: [
     {
       name: "event_type",
+      name_ko: "이벤트 유형",
       placeholder: "[event_type]",
       default_value: "global AI innovation summit",
       recommended_values: ["underground electronic music festival", "luxury watch expo", "indie game developer meetup", "future city architecture forum"],
       variable_behavior_note: "Changing the event type selects visual languages (Tech vs Art vs Luxury) suitable for the nature and scale of the event.",
-        name_ko: "event_type",
-        variable_behavior_note_ko: "Changing the event type selects visual languages (Tech vs Art vs Luxury) suitable for the nature and scale of the event."
+      variable_behavior_note_ko: "이벤트 유형을 변경하면 이벤트의 성격과 규모에 적합한 시각적 언어(테크, 예술, 럭셔리 등)를 선택하게 됩니다."
     },
     {
       name: "core_motif",
+      name_ko: "핵심 모티프",
       placeholder: "[core_motif]",
       default_value: "glowing holographic neural network sphere",
       recommended_values: ["shattering geometric glass crystals", "neon light trails forming a city", "abstract liquid metal waves", "minimalist architectural monolithic pillar"],
       variable_behavior_note: "Changing the core motif alters the poster's 'visual anchor', leading the entire concept.",
-        name_ko: "core_motif",
-        variable_behavior_note_ko: "Changing the core motif alters the poster's 'visual anchor', leading the entire concept."
+      variable_behavior_note_ko: "핵심 모티프를 변경하면 포스터의 '시각적 앵커(Visual anchor)'가 바뀌어 전체 컨셉을 주도합니다."
     }
   ],
   why_this_works: [
     "Deep perspective strongly draws the reader's eye to the center of the image, emphasizing the importance of the event.",
     "Plenty of copy space ensures the visuals remain intact even with vast information like event dates, venues, and lineups."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Overwhelming representation of three-dimensional structures and dramatic light-dark contrast.",
-      note_ko: "Overwhelming representation of three-dimensional structures and dramatic light-dark contrast."
-}],
+  why_this_works_ko: [
+    "깊은 원근감은 독자의 시선을 이미지 중앙으로 강력하게 끌어들여 이벤트의 중요성을 강조합니다.",
+    "충분한 여백(Copy space)은 이벤트 날짜, 장소, 라인업 등 방대한 정보가 들어가더라도 비주얼의 무결성을 유지해줍니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Overwhelming representation of three-dimensional structures and dramatic light-dark contrast.",
+      note_ko: "3차원 구조물과 극적인 명암 대비 표현이 압도적입니다."
+    }
+  ],
   comparison_notes: "Boasts a level of completion on par with the main key visuals of global IT conferences or large music festivals.",
-  variations: [{ label: "Minimalist", prompt_delta: "Change to single minimalist shape on a clean white background, focus on Swiss design style", use_case: "Design/Art exhibitions", pre_generated_asset_id: null,
-      label_ko: "Minimalist",
-      use_case_ko: "Design/Art exhibitions"
-}],
+  comparison_notes_ko: "글로벌 IT 컨퍼런스나 대형 음악 페스티벌의 메인 키 비주얼과 맞먹는 완성도를 자랑합니다.",
+  variations: [
+    {
+      label: "Minimalist",
+      label_ko: "미니멀리스트",
+      prompt_delta: "Change to single minimalist shape on a clean white background, focus on Swiss design style",
+      use_case: "Design/Art exhibitions",
+      use_case_ko: "디자인/예술 전시회",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Motif appearing too large with no space for text -> add 'smaller motif, wide background' keywords."],
+  common_failure_modes_ko: ["모티프가 너무 커서 텍스트 공간이 부족함 -> 'smaller motif, wide background' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "event poster design prompt",
     secondary_keywords: ["conference background ai", "webinar banner prompt"],
     lsi_keywords: ["deep perspective", "copy space"],
     meta_title: "Tech Event Poster Art Prompt | Midjourney v6 Verified",
+    meta_title_ko: "테크 이벤트 포스터 아트 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design impactful poster backgrounds for conferences and events. Verified Midjourney v6 prompt for high-scale promotions.",
-      meta_title_ko: "Tech Event Poster Art Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design impactful poster backgrounds for conferences and events. Verified Midjourney v6 prompt for high-scale promotions."
-},
+    meta_description_ko: "컨퍼런스 및 이벤트를 위한 임팩트 있는 포스터 배경을 디자인하세요. 대규모 프로모션을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-event-013-hero.webp",
     thumbnail: null,
@@ -1208,45 +1398,62 @@ export const twitterViralCardPrompt: PromptCard = {
   variables: [
     {
       name: "announcement_type",
+      name_ko: "공지 유형",
       placeholder: "[announcement_type]",
       default_value: "major software update release",
       recommended_values: ["new community milestone 100k", "exclusive limited edition drop", "secret collaboration reveal", "important security update"],
       variable_behavior_note: "Changing the announcement type selects visual metaphors suitable for the nature of the news (Congratulations, Urgent, Innovation, etc.).",
-        name_ko: "announcement_type",
-        variable_behavior_note_ko: "Changing the announcement type selects visual metaphors suitable for the nature of the news (Congratulations, Urgent, Innovation, etc.)."
+      variable_behavior_note_ko: "공지 유형을 변경하면 소식의 성격(축하, 긴급, 혁신 등)에 적합한 시각적 메타포를 선택하게 됩니다."
     },
     {
       name: "main_object",
+      name_ko: "주요 오브젝트",
       placeholder: "[main_object]",
       default_value: "glowing 3D rocket ship taking off",
       recommended_values: ["giant golden party popper", "sleek futuristic lock icon", "vibrant abstract starburst", "minimalist open treasure box"],
       variable_behavior_note: "Changing the main object allows for immediate visual communication of the core keywords of the news.",
-        name_ko: "main_object",
-        variable_behavior_note_ko: "Changing the main object allows for immediate visual communication of the core keywords of the news."
+      variable_behavior_note_ko: "주요 오브젝트를 변경하면 소식의 핵심 키워드를 즉각적으로 시각 전달할 수 있습니다."
     }
   ],
   why_this_works: [
     "Minimalist flat 3D style is the trendy design grammar most preferred in recent tech communities on Twitter/X.",
     "The 16:9 aspect ratio is optimized for Twitter card specifications, showing the entire visual without cropping in the feed."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Extremely clear color clarity and object silhouettes.",
-      note_ko: "Extremely clear color clarity and object silhouettes."
-}],
+  why_this_works_ko: [
+    "미니멀한 플랫 3D 스타일은 최근 트위터/X의 테크 커뮤니티에서 가장 선호되는 트렌디한 디자인 문법입니다.",
+    "16:9 종횡비는 트위터 카드 사양에 최적화되어 있어, 피드에서 이미지 잘림 없이 전체 비주얼을 보여줍니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Extremely clear color clarity and object silhouettes.",
+      note_ko: "색상의 선명도와 오브젝트의 실루엣이 매우 명확하게 표현됩니다."
+    }
+  ],
   comparison_notes: "Replicates the restrained high-quality graphic sentiment used during new product announcements by Apple or Tesla.",
-  variations: [{ label: "Celebration", prompt_delta: "Add confetti, sparkles, and festive warm lighting, use bright gold and orange", use_case: "Milestone celebrations", pre_generated_asset_id: null,
-      label_ko: "Celebration",
-      use_case_ko: "Milestone celebrations"
-}],
+  comparison_notes_ko: "애플이나 테슬라의 신제품 발표 시 사용되는 절제된 고품질 그래픽 정서를 재현합니다.",
+  variations: [
+    {
+      label: "Celebration",
+      label_ko: "축하",
+      prompt_delta: "Add confetti, sparkles, and festive warm lighting, use bright gold and orange",
+      use_case: "Milestone celebrations",
+      use_case_ko: "이정표 달성 축하",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Image appearing too serious -> reinforce with 'playful 3D style, vibrant tones' keywords."],
+  common_failure_modes_ko: ["이미지가 너무 진지해 보임 -> 'playful 3D style, vibrant tones' 키워드로 보강하세요."],
   seo: {
     primary_keyword: "twitter viral graphic prompt",
     secondary_keywords: ["product announcement ai design", "social media viral art prompt"],
     lsi_keywords: ["16:9 aspect ratio", "minimalist 3D"],
     meta_title: "Twitter/X Viral Announcement Prompt | Midjourney v6 Verified",
+    meta_title_ko: "트위터/X 바이럴 공지 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design high-impact announcement graphics for Twitter/X. Verified Midjourney v6 prompt for viral marketing and reveals.",
-      meta_title_ko: "Twitter/X Viral Announcement Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design high-impact announcement graphics for Twitter/X. Verified Midjourney v6 prompt for viral marketing and reveals."
-},
+    meta_description_ko: "트위터/X를 위한 고임팩트 공지 그래픽을 디자인하세요. 바이럴 마케팅 및 공개를 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-social-tw-014-hero.webp",
     thumbnail: null,
@@ -1293,45 +1500,62 @@ export const magazineEditorialPrompt: PromptCard = {
   variables: [
     {
       name: "model_archetype",
+      name_ko: "모델 아키타입",
       placeholder: "[model_archetype]",
       default_value: "androgynous model with sharp features",
       recommended_values: ["graceful elder model with silver hair", "diverse group of avant-garde models", "mysterious hooded figure", "elegant dancer in motion"],
       variable_behavior_note: "Changing the model archetype alters the artistic message and brand 'edge' conveyed by the photoshoot.",
-        name_ko: "model_archetype",
-        variable_behavior_note_ko: "Changing the model archetype alters the artistic message and brand 'edge' conveyed by the photoshoot."
+      variable_behavior_note_ko: "모델 아키타입을 변경하면 화보가 전달하는 예술적 메시지와 브랜드의 '엣지'가 달라집니다."
     },
     {
       name: "avant_garde_outfit",
+      name_ko: "아방가르드 의상",
       placeholder: "[avant_garde_outfit]",
       default_value: "architectural pleated silk gown in crimson",
       recommended_values: ["oversized metallic puffer coat", "minimalist black tailoring with deconstructed elements", "ethereal sheer fabric layers", "bold geometric leather structures"],
       variable_behavior_note: "Changing attire determines the theme of the photoshoot (Minimalism vs Maximalism).",
-        name_ko: "avant_garde_outfit",
-        variable_behavior_note_ko: "Changing attire determines the theme of the photoshoot (Minimalism vs Maximalism)."
+      variable_behavior_note_ko: "의상을 변경하면 화보의 테마(미니멀리즘 vs 맥시멀리즘)가 결정됩니다."
     }
   ],
   why_this_works: [
     "Vogue aesthetic satisfies the highest visual standards of the fashion industry, immediately elevating the brand's stature.",
     "Cinematic grain and professional color grading remove digital coldness and add artistic analog film depth."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Unequaled ability to express facial expressions and complex fabric details.",
-      note_ko: "Unequaled ability to express facial expressions and complex fabric details."
-}],
+  why_this_works_ko: [
+    "보그(Vogue) 미학은 패션 업계의 가장 높은 시각적 기준을 충족시켜 브랜드의 위상을 즉각적으로 높여줍니다.",
+    "시네마틱 그레인과 전문적인 컬러 그레이딩은 디지털의 차가움을 제거하고 예술적인 아날로그 필름의 깊이감을 더합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Unequaled ability to express facial expressions and complex fabric details.",
+      note_ko: "얼굴 표정과 복잡한 옷감 디테일을 표현하는 능력이 타의 추종을 불허합니다."
+    }
+  ],
   comparison_notes: "Guarantees overwhelming artistry on par with season campaign visuals of global fashion houses.",
-  variations: [{ label: "Studio Minimal", prompt_delta: "Change backdrop to plain charcoal grey, use single spotlight, focus on silhouette", use_case: "Minimalist brand campaigns", pre_generated_asset_id: null,
-      label_ko: "Studio Minimal",
-      use_case_ko: "Minimalist brand campaigns"
-}],
+  comparison_notes_ko: "글로벌 패션 하우스의 시즌 캠페인 비주얼과 맞먹는 압도적인 예술성을 보장합니다.",
+  variations: [
+    {
+      label: "Studio Minimal",
+      label_ko: "스튜디오 미니멀",
+      prompt_delta: "Change backdrop to plain charcoal grey, use single spotlight, focus on silhouette",
+      use_case: "Minimalist brand campaigns",
+      use_case_ko: "미니멀리스트 브랜드 캠페인",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Image appearing like too generic an ad -> reinforce with 'avant-garde, conceptual, unusual angles' keywords."],
+  common_failure_modes_ko: ["이미지가 너무 일반적인 광고처럼 보임 -> 'avant-garde, conceptual, unusual angles' 키워드로 보강하세요."],
   seo: {
     primary_keyword: "magazine editorial fashion prompt",
     secondary_keywords: ["high fashion ai photography", "vogue style prompt"],
     lsi_keywords: ["avant-garde outfit", "cinematic grain"],
     meta_title: "High-End Magazine Editorial Prompt | Midjourney v6 Verified",
+    meta_title_ko: "하이엔드 매거진 에디토리얼 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design sophisticated fashion editorials for high-end magazines. Verified Midjourney v6 prompt for artistic brand campaigns.",
-      meta_title_ko: "High-End Magazine Editorial Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design sophisticated fashion editorials for high-end magazines. Verified Midjourney v6 prompt for artistic brand campaigns."
-},
+    meta_description_ko: "하이엔드 매거진을 위한 세련된 패션 에디토리얼을 디자인하세요. 예술적인 브랜드 캠페인을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-editorial-015-hero.webp",
     thumbnail: null,
@@ -1378,45 +1602,62 @@ export const minimalistBrandIdentityPrompt: PromptCard = {
   variables: [
     {
       name: "brand_industry",
+      name_ko: "브랜드 산업군",
       placeholder: "[brand_industry]",
       default_value: "luxury skincare brand",
       recommended_values: ["modern architectural firm", "sustainable coffee roastery", "high-tech software startup", "artisanal organic bakery"],
       variable_behavior_note: "Changing the industry adjusts paper texture (smooth vs rough) and overall design tone to match that field's grammar.",
-        name_ko: "brand_industry",
-        variable_behavior_note_ko: "Changing the industry adjusts paper texture (smooth vs rough) and overall design tone to match that field's grammar."
+      variable_behavior_note_ko: "산업군을 변경하면 해당 분야의 문법에 맞게 종이 질감(매끄러움 vs 거침)과 전체적인 디자인 톤이 조정됩니다."
     },
     {
       name: "stationery_items",
+      name_ko: "문구류 구성",
       placeholder: "[stationery_items]",
       default_value: "business cards, letterhead, and a minimalist envelope",
       recommended_values: ["packaging boxes and shopping bag", "digital tablet and smartphone screens", "notebook and premium pen", "folded brochures and stickers"],
       variable_behavior_note: "Changing item configurations allows for diverse visualization of brand touchpoints.",
-        name_ko: "stationery_items",
-        variable_behavior_note_ko: "Changing item configurations allows for diverse visualization of brand touchpoints."
+      variable_behavior_note_ko: "아이템 구성을 변경하면 브랜드의 다양한 접점을 다채롭게 시각화할 수 있습니다."
     }
   ],
   why_this_works: [
     "The premium textured paper keyword grants physical luxury that feels as if it can actually be touched, beyond simple graphics.",
     "Soft natural window light creates a much more comfortable and sophisticated atmosphere than artificial studio lighting."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Highly realistic representation of minute paper textures and shadow depth.",
-      note_ko: "Highly realistic representation of minute paper textures and shadow depth."
-}],
+  why_this_works_ko: [
+    "프리미엄 질감의 종이(Premium textured paper) 키워드는 단순한 그래픽을 넘어 실제로 만져질 듯한 물리적인 고급스러움을 부여합니다.",
+    "부드러운 자연광(Natural window light)은 인위적인 스튜디오 조명보다 훨씬 편안하고 세련된 분위기를 연출합니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Highly realistic representation of minute paper textures and shadow depth.",
+      note_ko: "미세한 종이 질감과 그림자의 깊이감을 매우 사실적으로 표현합니다."
+    }
+  ],
   comparison_notes: "Provides quality ready for immediate use as brand design portfolios or key visuals for client proposals.",
-  variations: [{ label: "Dark Mode", prompt_delta: "Change color palette to charcoal and copper, use dark moody lighting", use_case: "Premium/Luxury branding", pre_generated_asset_id: null,
-      label_ko: "Dark Mode",
-      use_case_ko: "Premium/Luxury branding"
-}],
+  comparison_notes_ko: "브랜드 디자인 포트폴리오나 클라이언트 제안용 키 비주얼로 즉시 사용 가능한 품질을 제공합니다.",
+  variations: [
+    {
+      label: "Dark Mode",
+      label_ko: "다크 모드",
+      prompt_delta: "Change color palette to charcoal and copper, use dark moody lighting",
+      use_case: "Premium/Luxury branding",
+      use_case_ko: "프리미엄/럭셔리 브랜딩",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Items overlapping and appearing cluttered -> add 'neatly organized, geometric arrangement' keywords."],
+  common_failure_modes_ko: ["아이템들이 겹쳐서 어수선해 보임 -> 'neatly organized, geometric arrangement' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "minimalist brand identity mockup prompt",
     secondary_keywords: ["branding stationery ai design", "corporate identity mockup prompt"],
     lsi_keywords: ["textured paper", "natural light"],
     meta_title: "Minimalist Brand Identity Mockup Prompt | Midjourney v6 Verified",
+    meta_title_ko: "미니멀 브랜드 아이덴티티 목업 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design clean and cohesive brand identity mockups. Verified Midjourney v6 prompt for stationery and business cards.",
-      meta_title_ko: "Minimalist Brand Identity Mockup Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design clean and cohesive brand identity mockups. Verified Midjourney v6 prompt for stationery and business cards."
-},
+    meta_description_ko: "깔끔하고 통일감 있는 브랜드 아이덴티티 목업을 디자인하세요. 문구류와 명함을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-identity-016-hero.webp",
     thumbnail: null,
@@ -1463,45 +1704,62 @@ export const outdoorBillboardPrompt: PromptCard = {
   variables: [
     {
       name: "urban_location",
+      name_ko: "도시 위치",
       placeholder: "[urban_location]",
       default_value: "Times Square-style bustling intersection",
       recommended_values: ["minimalist modern highway", "upscale shopping district", "foggy coastal bridge", "underground subway entrance"],
       variable_behavior_note: "Changing the city location visually alters the brand's target region and exposure context.",
-        name_ko: "urban_location",
-        variable_behavior_note_ko: "Changing the city location visually alters the brand's target region and exposure context."
+      variable_behavior_note_ko: "도시 위치를 변경하면 브랜드의 타겟 지역과 노출 컨텍스트가 시각적으로 달라집니다."
     },
     {
       name: "time_of_day",
+      name_ko: "시간대",
       placeholder: "[time_of_day]",
       default_value: "dusk with vibrant city lights",
       recommended_values: ["bright sunny morning with clear sky", "rainy night with neon reflections", "foggy early morning", "golden hour sunset"],
       variable_behavior_note: "Changing the time of day alters lighting effects (billboard light vs natural light), leading the atmosphere.",
-        name_ko: "time_of_day",
-        variable_behavior_note_ko: "Changing the time of day alters lighting effects (billboard light vs natural light), leading the atmosphere."
+      variable_behavior_note_ko: "시간대를 변경하면 조명 효과(빌보드 조명 vs 자연광)가 달라져 전체적인 분위기를 주도합니다."
     }
   ],
   why_this_works: [
     "Cinematic wide shot emphasizes the massive physical presence of the billboard and shows harmony with the surroundings.",
     "Hyper-realistic city environment helps accurately simulate the feel of the actual ad implementation."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional representation of city building details and billboard illumination.",
-      note_ko: "Exceptional representation of city building details and billboard illumination."
-}],
+  why_this_works_ko: [
+    "시네마틱한 와이드 샷(Wide shot)은 빌보드의 거대한 물리적 존재감을 강조하고 주변 환경과의 조화를 보여줍니다.",
+    "초현실적인 도시 환경은 실제 광고 집행 시의 느낌을 정확하게 시뮬레이션할 수 있도록 돕습니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Exceptional representation of city building details and billboard illumination.",
+      note_ko: "도시 건물의 디테일과 빌보드의 조명 효과를 표현하는 능력이 매우 뛰어납니다."
+    }
+  ],
   comparison_notes: "Optimal for high-quality mockups for major brand campaigns or client persuasion.",
-  variations: [{ label: "Mega Screen", prompt_delta: "Change to giant 3D anamorphic LED screen on a corner building", use_case: "Future-tech advertising", pre_generated_asset_id: null,
-      label_ko: "Mega Screen",
-      use_case_ko: "Future-tech advertising"
-}],
+  comparison_notes_ko: "대규모 브랜드 캠페인이나 클라이언트 설득을 위한 고품질 목업 제작에 최적화되어 있습니다.",
+  variations: [
+    {
+      label: "Mega Screen",
+      label_ko: "메가 스크린",
+      prompt_delta: "Change to giant 3D anamorphic LED screen on a corner building",
+      use_case: "Future-tech advertising",
+      use_case_ko: "미래 지향적 테크 광고",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Billboard appearing small -> add 'massive scale, skyscraper billboard' keywords."],
+  common_failure_modes_ko: ["빌보드가 작게 나타남 -> 'massive scale, skyscraper billboard' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "outdoor billboard mockup prompt",
     secondary_keywords: ["urban advertising ai design", "city billboard prompt"],
     lsi_keywords: ["cinematic wide shot", "urban location"],
     meta_title: "Outdoor Billboard Mockup Prompt | Midjourney v6 Verified",
+    meta_title_ko: "야외 빌보드 목업 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design massive outdoor billboard mockups in urban locations. Verified Midjourney v6 prompt for brand campaigns.",
-      meta_title_ko: "Outdoor Billboard Mockup Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design massive outdoor billboard mockups in urban locations. Verified Midjourney v6 prompt for brand campaigns."
-},
+    meta_description_ko: "도시의 주요 거점에 설치될 거대한 야외 빌보드 목업을 디자인하세요. 브랜드 캠페인을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-billboard-017-hero.webp",
     thumbnail: null,
@@ -1548,36 +1806,53 @@ export const transitAdPrompt: PromptCard = {
   variables: [
     {
       name: "transit_type",
+      name_ko: "대중교통 유형",
       placeholder: "[transit_type]",
       default_value: "modern Tokyo subway station platform",
       recommended_values: ["futuristic bus stop in a glass shelter", "clean airport terminal corridor", "underground train interior with digital screens", "exterior of a high-speed train wrapping"],
       variable_behavior_note: "Changing the transit type adjusts the exposure context and visual clutter.",
-        name_ko: "transit_type",
-        variable_behavior_note_ko: "Changing the transit type adjusts the exposure context and visual clutter."
+      variable_behavior_note_ko: "대중교통 유형을 변경하면 노출 컨텍스트와 시각적 어수선함의 정도가 조정됩니다."
     }
   ],
   why_this_works: [
     "Blurred commuters in motion adds liveliness to static billboards and grants credibility as space where actual people are active.",
     "High-end urban photography style elevates everyday spaces into premium advertising media."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Highly sophisticated representation of artificial interior lighting and reflections.",
-      note_ko: "Highly sophisticated representation of artificial interior lighting and reflections."
-}],
+  why_this_works_ko: [
+    "이동 중인 보행자의 블러(Blur) 처리는 정적인 빌보드에 생동감을 더하고, 실제 사람들이 활동하는 공간이라는 신뢰성을 부여합니다.",
+    "하이엔드 어반 사진 스타일은 일상적인 공간을 프리미엄 광고 매체로 격상시켜줍니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Highly sophisticated representation of artificial interior lighting and reflections.",
+      note_ko: "인위적인 실내 조명과 반사 효과를 매우 정교하게 표현합니다."
+    }
+  ],
   comparison_notes: "Provides highest quality images most suitable for simulation of lifestyle-embedded branding campaigns.",
-  variations: [{ label: "Night Stop", prompt_delta: "Change to bus stop at night with glowing LED ads and wet pavement", use_case: "Nighttime campaigns", pre_generated_asset_id: null,
-      label_ko: "Night Stop",
-      use_case_ko: "Nighttime campaigns"
-}],
+  comparison_notes_ko: "생활 밀착형 브랜딩 캠페인의 시뮬레이션에 가장 적합한 최고 품질의 이미지를 제공합니다.",
+  variations: [
+    {
+      label: "Night Stop",
+      label_ko: "야간 정류장",
+      prompt_delta: "Change to bus stop at night with glowing LED ads and wet pavement",
+      use_case: "Nighttime campaigns",
+      use_case_ko: "야간 광고 캠페인",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Space appearing too cluttered -> add 'clean minimalist architecture, modern station' keywords."],
+  common_failure_modes_ko: ["공간이 너무 어수선해 보임 -> 'clean minimalist architecture, modern station' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "transit advertising mockup prompt",
     secondary_keywords: ["subway ad design ai", "bus stop poster prompt"],
     lsi_keywords: ["motion blur commuters", "urban photography"],
     meta_title: "Transit & Subway Ad Mockup Prompt | Midjourney v6 Verified",
+    meta_title_ko: "대중교통 및 지하철 광고 목업 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design professional transit and subway advertisements. Verified Midjourney v6 prompt for urban marketing campaigns.",
-      meta_title_ko: "Transit & Subway Ad Mockup Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design professional transit and subway advertisements. Verified Midjourney v6 prompt for urban marketing campaigns."
-},
+    meta_description_ko: "지하철과 버스 정류장을 위한 전문적인 대중교통 광고를 디자인하세요. 어반 마케팅 캠페인을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-transit-018-hero.webp",
     thumbnail: null,
@@ -1624,45 +1899,62 @@ export const lookbookLayoutPrompt: PromptCard = {
   variables: [
     {
       name: "brand_style",
+      name_ko: "브랜드 스타일",
       placeholder: "[brand_style]",
       default_value: "Scandinavian minimalist",
       recommended_values: ["Parisian chic", "streetwear hypebeast", "bohemian artisanal", "futuristic techwear"],
       variable_behavior_note: "Changing the brand style consistently alters attire and background tones across all frames within the layout.",
-        name_ko: "brand_style",
-        variable_behavior_note_ko: "Changing the brand style consistently alters attire and background tones across all frames within the layout."
+      variable_behavior_note_ko: "브랜드 스타일을 변경하면 레이아웃 내의 모든 프레임에서 의상과 배경 톤이 일관되게 달라집니다."
     },
     {
       name: "shot_types",
+      name_ko: "샷 유형",
       placeholder: "[shot_types]",
       default_value: "mix of full-body and close-up fabric details",
       recommended_values: ["dynamic movement poses and static portraits", "interior setting and outdoor landscape shots", "multiple models and product flat lays"],
       variable_behavior_note: "Changing shot configurations alters the visual rhythm and amount of information conveyed by the lookbook.",
-        name_ko: "shot_types",
-        variable_behavior_note_ko: "Changing shot configurations alters the visual rhythm and amount of information conveyed by the lookbook."
+      variable_behavior_note_ko: "샷 구성을 변경하면 룩북이 전달하는 시각적 리듬과 정보의 양이 달라집니다."
     }
   ],
   why_this_works: [
     "Grid composition shows multiple subjects and details at a glance, strongly imprinting the brand's season theme.",
     "Minimalist white space gives the images room to breathe, enhancing editorial design completion."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Exceptional maintenance of tone and manner consistency across multiple frames.",
-      note_ko: "Exceptional maintenance of tone and manner consistency across multiple frames."
-}],
+  why_this_works_ko: [
+    "그리드 구성은 한눈에 여러 피사체와 디테일을 보여주어 브랜드의 시즌 테마를 강력하게 각인시킵니다.",
+    "미니멀한 여백(White space)은 이미지에 숨쉴 공간을 주어 에디토리얼 디자인의 완성도를 높입니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Exceptional maintenance of tone and manner consistency across multiple frames.",
+      note_ko: "여러 프레임에 걸쳐 톤 앤 매너의 일관성을 유지하는 능력이 탁월합니다."
+    }
+  ],
   comparison_notes: "Optimal for implementing neat and emotional brand lookbooks in the style of Kinfolk or MUJI.",
-  variations: [{ label: "Action Focus", prompt_delta: "Change to sequence of action shots, motion blur, dynamic layout", use_case: "Activewear brands", pre_generated_asset_id: null,
-      label_ko: "Action Focus",
-      use_case_ko: "Activewear brands"
-}],
+  comparison_notes_ko: "킨포크(Kinfolk)나 무인양품(MUJI) 스타일의 깔끔하고 감성적인 브랜드 룩북을 구현하는 데 최적입니다.",
+  variations: [
+    {
+      label: "Action Focus",
+      label_ko: "액션 포커스",
+      prompt_delta: "Change to sequence of action shots, motion blur, dynamic layout",
+      use_case: "Activewear brands",
+      use_case_ko: "액티브웨어 브랜드",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Inconsistent lighting between frames -> add 'single lighting source, studio setting' keywords."],
+  common_failure_modes_ko: ["프레임 간 조명이 일관되지 않음 -> 'single lighting source, studio setting' 키워드를 추가하세요."],
   seo: {
     primary_keyword: "fashion lookbook layout prompt",
     secondary_keywords: ["brand storytelling grid ai", "ecommerce lookbook prompt"],
     lsi_keywords: ["grid composition", "minimalist white space"],
     meta_title: "Fashion Lookbook Layout Prompt | Midjourney v6 Verified",
+    meta_title_ko: "패션 룩북 레이아웃 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design minimalist fashion lookbook grids for brands. Verified Midjourney v6 prompt for cohesive style storytelling.",
-      meta_title_ko: "Fashion Lookbook Layout Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design minimalist fashion lookbook grids for brands. Verified Midjourney v6 prompt for cohesive style storytelling."
-},
+    meta_description_ko: "브랜드를 위한 미니멀한 패션 룩북 그리드를 디자인하세요. 일관된 스타일 스토리텔링을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-lookbook-019-hero.webp",
     thumbnail: null,
@@ -1709,45 +2001,62 @@ export const premiumGiftCardPrompt: PromptCard = {
   variables: [
     {
       name: "card_theme",
+      name_ko: "카드 테마",
       placeholder: "[card_theme]",
       default_value: "high-end luxury boutique",
       recommended_values: ["sustainable eco-friendly organic shop", "modern minimalist tech brand", "vibrant artistic museum membership", "classic five-star hotel spa"],
       variable_behavior_note: "Changing the card theme selects symbolic colors and graphic motifs suitable for the brand's personality.",
-        name_ko: "card_theme",
-        variable_behavior_note_ko: "Changing the card theme selects symbolic colors and graphic motifs suitable for the brand's personality."
+      variable_behavior_note_ko: "카드 테마를 변경하면 브랜드의 성격에 적합한 상징적 색상과 그래픽 모티프가 선택됩니다."
     },
     {
       name: "material_effect",
+      name_ko: "소재 효과",
       placeholder: "[material_effect]",
       default_value: "gold foil stamping on black matte paper",
       recommended_values: ["embossed silver on white textured linen", "transparent frosted acrylic with white ink", "recycled craft paper with dark green print", "iridescent holographic finish on pearl card"],
       variable_behavior_note: "Changing material effects visualizes the physical value of the card and the brand's price range.",
-        name_ko: "material_effect",
-        variable_behavior_note_ko: "Changing material effects visualizes the physical value of the card and the brand's price range."
+      variable_behavior_note_ko: "소재 효과를 변경하면 카드의 물리적 가치와 브랜드의 가격대를 시각화할 수 있습니다."
     }
   ],
   why_this_works: [
     "The material_effect keyword grants 'physicality' that reflects light and feels textured, beyond flat cards.",
     "The 3:2 aspect ratio is similar to actual card specifications, making it highly practical as a design proposal."
   ],
-  model_notes: [{ model: "midjourney", version: "v6", note: "Extremely precise light reflection representation of foil stamping and embossing.",
-      note_ko: "Extremely precise light reflection representation of foil stamping and embossing."
-}],
+  why_this_works_ko: [
+    "소재 효과(Material effect) 키워드는 평면적인 카드를 넘어 빛을 반사하고 질감이 느껴지는 '물리성'을 부여합니다.",
+    "3:2 종횡비는 실제 카드 사양과 유사하여 디자인 제안서로서의 실용성이 매우 높습니다."
+  ],
+  model_notes: [
+    {
+      model: "midjourney",
+      version: "v6",
+      note: "Extremely precise light reflection representation of foil stamping and embossing.",
+      note_ko: "포일 스탬핑과 엠보싱의 정교한 빛 반사 표현이 매우 뛰어납니다."
+    }
+  ],
   comparison_notes: "Perfectly replicates the sentiment of top-tier membership/gift cards provided by department stores or luxury brands.",
-  variations: [{ label: "Digital Version", prompt_delta: "Change to flat 2D graphic version, clean gradients, no shadows, focus on UI design", use_case: "Mobile app wallet cards", pre_generated_asset_id: null,
-      label_ko: "Digital Version",
-      use_case_ko: "Mobile app wallet cards"
-}],
+  comparison_notes_ko: "백화점이나 럭셔리 브랜드에서 제공하는 최상위 멤버십/기프트 카드의 감성을 완벽하게 재현합니다.",
+  variations: [
+    {
+      label: "Digital Version",
+      label_ko: "디지털 버전",
+      prompt_delta: "Change to flat 2D graphic version, clean gradients, no shadows, focus on UI design",
+      use_case: "Mobile app wallet cards",
+      use_case_ko: "모바일 앱 지갑 카드",
+      pre_generated_asset_id: null
+    }
+  ],
   common_failure_modes: ["Card appearing too generic -> reinforce with 'intricate geometric patterns, premium stock' keywords."],
+  common_failure_modes_ko: ["카드가 너무 평범해 보임 -> 'intricate geometric patterns, premium stock' 키워드로 보강하세요."],
   seo: {
     primary_keyword: "premium gift card design prompt",
     secondary_keywords: ["luxury membership card ai", "retail loyalty card prompt"],
     lsi_keywords: ["metallic foil", "textured cardstock"],
     meta_title: "Premium Gift Card Design Prompt | Midjourney v6 Verified",
+    meta_title_ko: "프리미엄 기프트 카드 디자인 프롬프트 | 미드저니 v6 검증됨",
     meta_description: "Design luxurious gift and membership cards for retail brands. Verified Midjourney v6 prompt for high-end loyalty programs.",
-      meta_title_ko: "Premium Gift Card Design Prompt | Midjourney v6 Verified",
-      meta_description_ko: "Design luxurious gift and membership cards for retail brands. Verified Midjourney v6 prompt for high-end loyalty programs."
-},
+    meta_description_ko: "리테일 브랜드를 위한 럭셔리 기프트 및 멤버십 카드를 디자인하세요. 하이엔드 로열티 프로그램을 위한 검증된 미드저니 v6 프롬프트입니다."
+  },
   asset_metadata: {
     hero_image: "/images/prompts/mkt-branding-giftcard-020-hero.webp",
     thumbnail: null,

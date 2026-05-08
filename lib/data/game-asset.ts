@@ -182,6 +182,7 @@ export const tilesetPrompt: PromptCard = {
 };
 
 
+
 export const rpgIconPrompt: PromptCard = {
   id: "game-rpg-icon-003",
   slug: "rpg-item-icon-prompt",
@@ -290,6 +291,7 @@ export const rpgIconPrompt: PromptCard = {
 };
 
 
+
 export const cyberpunkCityPrompt: PromptCard = {
   id: "game-cyberpunk-bg-004",
   slug: "cyberpunk-cityscape-background-prompt",
@@ -382,6 +384,7 @@ export const cyberpunkCityPrompt: PromptCard = {
   },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for environment art quality." }
 };
+
 
 export const spaceInteriorPrompt: PromptCard = {
   id: "game-space-interior-005",
@@ -476,6 +479,7 @@ export const spaceInteriorPrompt: PromptCard = {
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for hard-surface consistency." }
 };
 
+
 export const lowPolyNaturePrompt: PromptCard = {
   id: "game-low-poly-nature-006",
   slug: "low-poly-nature-pack-prompt",
@@ -568,6 +572,7 @@ export const lowPolyNaturePrompt: PromptCard = {
   },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for low-poly geometry consistency." }
 };
+
 
 export const retroArcadeUiPrompt: PromptCard = {
   id: "game-retro-ui-007",
@@ -662,6 +667,7 @@ export const retroArcadeUiPrompt: PromptCard = {
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for retro pixel art consistency." }
 };
 
+
 export const magicVfxPrompt: PromptCard = {
   id: "game-magic-vfx-008",
   slug: "magic-spell-vfx-prompt",
@@ -754,6 +760,7 @@ export const magicVfxPrompt: PromptCard = {
   },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for high-contrast VFX layout." }
 };
+
 
 export const cyberpunkAssassinPrompt: PromptCard = {
   id: "game-char-cyberpunk-009",
@@ -857,6 +864,7 @@ export const cyberpunkAssassinPrompt: PromptCard = {
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for character design consistency." }
 };
 
+
 export const medievalWizardPrompt: PromptCard = {
   id: "game-char-wizard-010",
   slug: "medieval-wizard-mage-concept-art-prompt",
@@ -958,6 +966,7 @@ export const medievalWizardPrompt: PromptCard = {
   },
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for fantasy aesthetic." }
 };
+
 
 export const mechWarriorPrompt: PromptCard = {
   id: "game-char-mech-011",
@@ -1061,6 +1070,7 @@ export const mechWarriorPrompt: PromptCard = {
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for mechanical realism." }
 };
 
+
 export const darkFantasyRoguePrompt: PromptCard = {
   id: "game-char-rogue-012",
   slug: "dark-fantasy-rogue-concept-art-prompt",
@@ -1163,6 +1173,7 @@ export const darkFantasyRoguePrompt: PromptCard = {
   review: { human_review_required: true, review_status: "approved", reviewer_note: "Verified for dark fantasy atmosphere." }
 };
 
+
 export const steampunkExplorerPrompt: PromptCard = {
   id: "game-char-steampunk-013",
   slug: "steampunk-explorer-concept-art-prompt",
@@ -1171,12 +1182,17 @@ export const steampunkExplorerPrompt: PromptCard = {
   verified_badge: true,
   last_verified_at: "2026-05-07",
   title: "Steampunk Explorer",
+  title_ko: "스팀펑크 탐험가",
   result_first_title: "Vintage steampunk explorer character with brass goggles and mechanical gadgets",
+  result_first_title_ko: "황동 고글과 기계 장치를 갖춘 빈티지 스팀펑크 탐험가 캐릭터",
   short_description: "A character design blending Victorian fashion with industrial machinery, featuring leather gear and brass clockwork.",
+  short_description_ko: "빅토리아 시대의 패션과 산업 기계가 조화를 이룬 가죽 장비와 황동 태엽 장치를 특징으로 하는 캐릭터 디자인.",
   emotional_hook: "This prompt summons an explorer full of the romance of steam engines and a sense of adventure toward the unknown.",
+  emotional_hook_ko: "이 프롬프트는 증기 기관의 낭만과 미지에 대한 모험심으로 가득 찬 탐험가를 소환합니다.",
   category: "game_asset",
   vertical: "character_design",
   use_cases: ["adventure_game", "steampunk_world", "concept_art", "character_sheet"],
+  use_cases_ko: ["어드벤처 게임", "스팀펑크 세계관", "컨셉 아트", "캐릭터 시트"],
   target_model: "midjourney",
   model_version: "v6",
   model_confidence: "tested",
